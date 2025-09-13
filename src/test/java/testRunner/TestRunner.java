@@ -26,7 +26,7 @@ import io.cucumber.junit.CucumberOptions;
 					monochrome=true,    // to avoid junk characters in output
 					publish=true // to publish report in cucumber server
 					//tags="@trail and @smoke"  // this will execute scenarios tagged with @sanity
-					//tags="@regression"
+					//tags="@smoke"
 					//tags="@sanity and @regression" //Scenarios tagged with both @sanity and @regression
 					//tags="@sanity and not @regression" //Scenarios tagged with @sanity but not tagged with @regression
 					//tags="@sanity or @regression" //Scenarios tagged with either @sanity or @regression

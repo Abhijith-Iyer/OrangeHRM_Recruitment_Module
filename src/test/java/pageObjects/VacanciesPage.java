@@ -18,7 +18,7 @@ public class VacanciesPage extends BasePage {
 			
 			@FindBy(xpath ="(//div/div[contains(text(),'Select')])[2]")
 			public WebElement vacancydrpdwn;
-			
+			//div[@role='listbox']/div[@role='option']/span[contains(text(), 'Junior')]
 			@FindBy(xpath ="(//div/div[contains(text(),'Select')])[3]")
 			public WebElement hmdwn;
 			

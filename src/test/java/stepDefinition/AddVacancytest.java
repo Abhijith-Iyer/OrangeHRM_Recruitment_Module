@@ -24,6 +24,8 @@ public class AddVacancytest extends Commons {
 	VacanciesPage vp;
 	VacancyformPage vfp;
 	String temp;
+	String vacancyname = "Test Automation Genius";
+
 
 	@Given("User Logs in with Credentials and Navigates to Recruitment Section")
 	public void user_logs_in_with_credentials_and_navigates_to_recruitment_section() throws InterruptedException {
@@ -69,7 +71,7 @@ public class AddVacancytest extends Commons {
 	    Commons.getLogger().info("Starting to fill the form...");
 	    vfp = new VacancyformPage(Commons.getDriver());
 	    //Commons.forcesendkeys(vfp.vacancyname, "Test Automation Genius" );
-	    Commons.sendkeys(vfp.vacancyname, "Test Automation Genius");
+	    Commons.sendkeys(vfp.vacancyname, vacancyname);
 	    Commons.clickop(vfp.jobtitledrpdwn);
 	    Commons.clickop(driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), '"+jobtlt+"')]")));
 	    Commons.sendkeys(vfp.vacancydesc, "Candidate should be automation genius");
@@ -148,7 +150,54 @@ public class AddVacancytest extends Commons {
 			Assert.fail();
 		}
 	}
-	
+	@When("Search for the vacancy by vacancy name")
+	public void search_vacancy() throws InterruptedException {
+		Commons.getLogger().info("Search for vacancy started...");
+		vp = new VacanciesPage(Commons.getDriver());
+		Commons.clickop(vp.vacancydrpdwn);
+		Commons.clickop(driver.findElement(By.xpath("//div[@role='listbox']/div[@role='option']/span[contains(text(), '"+vacancyname+"')]")));
+		Thread.sleep(3000);
+		Commons.clickop(vp.searchbtn);
+		Thread.sleep(3000);
+	}
+	@When("Click on Edit Icon for {string} position with Hiring Manager as {string}")
+	public void edit_vacancy(String jobtlt,String HM) throws InterruptedException {
+		Commons.getLogger().info("Performing Delete...");
+		Commons.scrolltoelement(driver.findElement(By.xpath("//div[contains(text(),'"+jobtlt+"')]")));
+		Commons.clickop(driver.findElement(By.xpath("//div[contains(text(),'"+jobtlt+"')]/parent::div/following-sibling::div/div[contains(text(),'"+HM+"')]/parent::div/following-sibling::div/following-sibling::div/div/button/i[contains(@class, 'pencil')]")));
+	}
+	@When("Update the Job title field to {string}")
+	public void update_vacancy_form(String jobtlt) throws InterruptedException {
+		Commons.getLogger().info("Updating Job Title...");
+		vfp = new VacancyformPage(Commons.getDriver());
+		Thread.sleep(3000);
+		Commons.clickop(vfp.jobtitledrpdwn);
+		Commons.clickop(driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), '"+jobtlt+"')]")));
+	}
+	@Then("Validate if the Job title is updated for the Vacancy to {string}")
+	public void confirm_vacancy_update(String jobtlt) {
+		
+		String actual_jobtlt=driver.findElement(By.xpath("//div[@role='cell']/div[contains(text(), '"+vacancyname+"')]/parent::div/following-sibling::div/div")).getText();
+		if(actual_jobtlt.equalsIgnoreCase(jobtlt)){
+			Commons.getLogger().info("Successfully Updated...");
+			Assert.assertTrue(true);
+		}
+		else{
+			Commons.getLogger().info("Update operation failed...");
+			Assert.assertTrue(false);
+		}
+	}
+	@Then("Check if the newly added vacancy is filtered and displayed in the vacancy table")
+	public void search_confirmation() {
+		if(driver.findElement(By.xpath("//div[@role='cell']//div[contains(text(),'"+vacancyname+"')]")).isDisplayed()) {
+			Commons.getLogger().info("Search Successfull...");
+			Assert.assertTrue(true);
+		}
+		else {
+			Commons.getLogger().info("Search Unsuccessfull...");
+			Assert.fail();
+		}
+	}
 
 
 }
