@@ -13,6 +13,9 @@ public class VacanciesPage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 	
+	        @FindBy(xpath ="//li/a[text() = 'Vacancies']")
+	        public WebElement vacancies;
+
 			@FindBy(xpath ="(//div/div[contains(text(),'Select')])[1]")
 			public WebElement jobtitledrpdwn;
 			

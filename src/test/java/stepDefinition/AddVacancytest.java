@@ -10,7 +10,6 @@ import io.cucumber.java.en.When;
 import pageObjects.CandidatePage;
 import pageObjects.DashboardPage;
 import pageObjects.LoginPage;
-import pageObjects.RecruitementPage;
 import pageObjects.VacanciesPage;
 import pageObjects.VacancyformPage;
 
@@ -19,7 +18,6 @@ public class AddVacancytest extends Commons {
 	AddVacancytest Avt;
 	LoginPage lp;
 	DashboardPage dp;
-	RecruitementPage rp;
 	CandidatePage cp;
 	VacanciesPage vp;
 	VacancyformPage vfp;
@@ -54,20 +52,23 @@ public class AddVacancytest extends Commons {
 	public void clicks_on_vacancy() throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
 	    Commons.getLogger().info("Navigating to Vacancy section");
-	    rp = new RecruitementPage(Commons.getDriver());
+	    vp = new VacanciesPage(Commons.getDriver());
 	    //Commons.waitandclick(rp.vacancies, 30);
 	    //Commons.clickop(rp.vacancies);
-	    Commons.forceclick(rp.vacancies);
+	    Commons.forceclick(vp.vacancies);
+	    Thread.sleep(3000);
+	}
+	@When("Navigate to Vacancy form")
+	public void navigateto_vacancyform() throws InterruptedException {
+		Commons.getLogger().info("Navigating to Vacancy form");
+	    vp = new VacanciesPage(Commons.getDriver());
+	    Commons.forceclick(vp.addbtn);
 	    Thread.sleep(3000);
 	}
 	@When("Fills the Job Vacancy form for {string} position with Hiring Manager as {string}")
 	public void fills_the_job_vacancy_form(String jobtlt, String HM) throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
-	    Commons.getLogger().info("clicking on Add button");
 	   try {
-	    vp = new VacanciesPage(Commons.getDriver());
-	    Commons.clickop(vp.addbtn);
-	    Thread.sleep(3000);
 	    Commons.getLogger().info("Starting to fill the form...");
 	    vfp = new VacancyformPage(Commons.getDriver());
 	    //Commons.forcesendkeys(vfp.vacancyname, "Test Automation Genius" );
@@ -94,16 +95,16 @@ public class AddVacancytest extends Commons {
 		 
 	}
 	@When("Navigates back to Vacancies to see the vacancy table")
-	public void navigate_to_vacancytable() {
+	public void navigate_to_vacancytable() throws InterruptedException {
 		 Commons.getLogger().info("Navigating back to vacancy list...");
-			rp = new RecruitementPage(Commons.getDriver());
-		    Commons.forceclick(rp.vacancies);
+			vp = new VacanciesPage(Commons.getDriver());
+		    Commons.forceclick(vp.vacancies);
+		    Thread.sleep(3000);
 	}
 	
 	@Then("The newly added Job Vacancy for {string} position with Hiring Manager as {string} should be visible in the table")
 	public void Is_jobvacancy_visible_in_vacancytable(String jobtlt, String HM) throws InterruptedException {
 		Commons.getLogger().info("Checking for the added vacancy...");
-		vp = new VacanciesPage(Commons.getDriver());
 		Commons.scrolltoelement(driver.findElement(By.xpath("//div[contains(text(),'"+jobtlt+"')]/parent::div/following-sibling::div/div[contains(text(),'"+HM+"')]")));
 		Thread.sleep(3000);//div[contains(text(),'Junior Account Assistant')]
 		Assert.assertTrue(driver.findElement(By.xpath("//div[contains(text(),'"+jobtlt+"')]/parent::div/following-sibling::div/div[contains(text(),'"+HM+"')]")).isDisplayed());
@@ -126,12 +127,7 @@ public class AddVacancytest extends Commons {
 		
 	}
 	@When("Navigates to fill Vacancy form and enters the captured vacancy in vacancy name")
-	public void navigateto_vacancyform() throws InterruptedException {
-		Commons.getLogger().info("Navigating to filling the form...");
-		vp = new VacanciesPage(Commons.getDriver());
-		//Commons.scrolltoelement(vp.addbtn);
-	    Commons.clickop(vp.addbtn);
-	    Thread.sleep(3000);
+	public void enterduplicatevacancyinvacancyform() throws InterruptedException {
 		Commons.getLogger().info("Starting to fill the form...");
 	    vfp = new VacancyformPage(Commons.getDriver());
 	    //Commons.forcesendkeys(vfp.vacancyname, "Test Automation Genius" );
@@ -174,6 +170,13 @@ public class AddVacancytest extends Commons {
 		Commons.clickop(vfp.jobtitledrpdwn);
 		Commons.clickop(driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), '"+jobtlt+"')]")));
 	}
+	@When("Navigate to Candidates section")
+	public void navigateto_Candidates_section() throws InterruptedException {
+		Commons.getLogger().info("Navigating to Candidates section");
+	    cp = new CandidatePage(Commons.getDriver());
+	    Commons.forceclick(cp.candidates);
+	    Thread.sleep(3000);
+	}
 	@Then("Validate if the Job title is updated for the Vacancy to {string}")
 	public void confirm_vacancy_update(String jobtlt) {
 		
@@ -198,6 +201,85 @@ public class AddVacancytest extends Commons {
 			Assert.fail();
 		}
 	}
+	@Then("Validate if Mandatory field error is displayed under all Mandatory fields")
+	public void Mandatoryerrorcheck_allfields() {
+		String Errormsg = "Required";
+		Commons.getLogger().info("Starting to check error messages");
+		for(int i=1;i<=3;i++) {
+			if(Errormsg.equalsIgnoreCase(driver.findElement(By.xpath("(//label[contains(@class, 'field-required')])["+i+"]/parent::div/following-sibling::span")).getText())) {
+				
+				Commons.getLogger().info("Error Message displayed for Field" + i +"...");
+			}
+			else {
+				Commons.getLogger().info("Error message is not displayed or appropriate");
+				Assert.fail();
+			}
+		}
+	}
+	@Then("Clears each of the Mandatory fields to check if Mandatory error is thrown again for the respective field")
+	public void Mandatoryerrorcheck_afterclear() throws InterruptedException {
+		String Errormsg = "Required";
+		vfp = new VacancyformPage(Commons.getDriver());
+		Commons.getLogger().info("Starting to check error messages");
+		for(int i=1;i<=3;i++) {
+			switch (i) {
+			case 1:
+				Commons.clearWebField(vfp.vacancyname);
+				//Commons.clickop(vfp.savebtn);
+				//Thread.sleep(5000);
+				if(Errormsg.equalsIgnoreCase(driver.findElement(By.xpath("(//label[contains(@class, 'field-required')])["+i+"]/parent::div/following-sibling::span")).getText())) {
+					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
+					vfp.vacancyname.sendKeys(vacancyname);
+				}
+				else {
+					Commons.getLogger().info("Error message is not displayed or appropriate");
+					Assert.fail();
+				}
+				break;
+			case 2:
+				//vfp.jobtitledrpdwn.clear();
+				Commons.clickop(vfp.jobtitledrpdwn);
+			    Commons.clickop(driver.findElement(By.xpath("(//div[@role='listbox']/div)[1]")));
+			    //Commons.clickop(vfp.savebtn);
+				//Thread.sleep(2000);
+				if(Errormsg.equalsIgnoreCase(driver.findElement(By.xpath("(//label[contains(@class, 'field-required')])["+i+"]/parent::div/following-sibling::span")).getText())) {
+					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
+					Commons.clickop(vfp.jobtitledrpdwn);
+				    Commons.clickop(driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), 'QA Lead')]")));
+				}
+				else {
+					Commons.getLogger().info("Error message is not displayed or appropriate");
+					Assert.fail();
+				}
+				break;
+			case 3:
+				Commons.clearWebField(vfp.HMinputbox);
+				Commons.clickop(vfp.savebtn);
+				Thread.sleep(2000);
+				if(Errormsg.equalsIgnoreCase(driver.findElement(By.xpath("(//label[contains(@class, 'field-required')])["+i+"]/parent::div/following-sibling::span")).getText())) {
+					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
+				}
+				else {
+					Commons.getLogger().info("Error message is not displayed or appropriate");
+					Assert.fail();
+				}
+				break;
+			}
+	}
 
 
+}
+	@Then("Validate if the vacancy name is displayed in the respective dropdown")
+	public void validate_vacancydropdown() {
+		cp = new CandidatePage(Commons.getDriver());
+		cp.vacancydrpdwn.click();
+		if(driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), '"+vacancyname+"')]")).isDisplayed()) {
+			Commons.getLogger().info("Newly added vacancy is displayed...");
+			Assert.assertTrue(true);
+		}
+		else {
+			Commons.getLogger().info("Newly added vacancy is not displayed...");
+			Assert.assertTrue(false);
+		}
+	}
 }

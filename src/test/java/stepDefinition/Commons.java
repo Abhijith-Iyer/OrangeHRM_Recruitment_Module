@@ -9,6 +9,7 @@ import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -146,5 +147,10 @@ public static void waitandclick(WebElement element, long i) {
 	wait = new WebDriverWait(driver,Duration.ofSeconds(i));
 	wait.until(ExpectedConditions.visibilityOf(element));
 	element.click();
+}
+public static void clearWebField(WebElement element){
+    while(!element.getAttribute("value").equals("")){
+        element.sendKeys(Keys.BACK_SPACE);
+    }
 }
 }
