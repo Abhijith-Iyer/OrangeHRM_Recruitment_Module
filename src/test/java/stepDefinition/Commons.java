@@ -27,6 +27,7 @@ public class Commons {
      static Properties p;
      static Logger logger;
      static WebDriverWait wait;
+     //static JavascriptExecutor js = (JavascriptExecutor)driver;
   	     
 public static WebDriver initilizeBrowser() throws IOException
 {
@@ -120,9 +121,6 @@ public static Logger getLogger()
 	return logger;
 }
 
-public static void clickop(WebElement element) {
-	element.click();
-}
 public static void sendkeys(WebElement element,String value) {
 	element.sendKeys(value);
 }
@@ -133,6 +131,10 @@ public static void scrolltoelement(WebElement element) {
 public static void forceclick(WebElement element) {
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	js.executeScript("arguments[0].click();", element);
+}
+public static void scrolltolast() {
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 }
 public static void forcesendkeys(WebElement element, String val) {
 	JavascriptExecutor js = (JavascriptExecutor)driver;

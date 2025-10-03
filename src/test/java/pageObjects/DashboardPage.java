@@ -15,5 +15,9 @@ public class DashboardPage extends BasePage {
 	
 	@FindBy(xpath ="//a/span[text() = 'Dashboard']")
 	public WebElement dashboard;
+	@FindBy(xpath="//p[@class='oxd-userdropdown-name']")
+	public WebElement current_user;
+	@FindBy(xpath="//p[text()[contains(.,'Candidate')]]")
+	public WebElement candidate_interview_link;
 
 }

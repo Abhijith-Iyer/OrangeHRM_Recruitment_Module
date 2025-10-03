@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-					features= {".//src/test/java/features/AddVacancy.feature"},
+					features= {".//src/test/java/features/"},
 					//features= {".//Features/Login.feature"},
 					//features= {".//Features/Registration.feature"},
 		
@@ -26,7 +26,7 @@ import io.cucumber.junit.CucumberOptions;
 					monochrome=true,    // to avoid junk characters in output
 					publish=true, // to publish report in cucumber server
 					//tags="@trail and @smoke"  // this will execute scenarios tagged with @sanity
-					tags="@suite1"
+					tags="@trail19"
 					//tags="@sanity and @regression" //Scenarios tagged with both @sanity and @regression
 					//tags="@sanity and not @regression" //Scenarios tagged with @sanity but not tagged with @regression
 					//tags="@sanity or @regression" //Scenarios tagged with either @sanity or @regression

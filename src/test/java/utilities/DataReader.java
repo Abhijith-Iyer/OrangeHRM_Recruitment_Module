@@ -6,13 +6,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
+
 //import org.apache.poi.ss.usermodel.Cell;
 //import org.apache.poi.ss.usermodel.Row;
 
-import org.apache.poi.ss.usermodel.CellStyle;
-import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.ss.usermodel.FillPatternType;
-import org.apache.poi.ss.usermodel.IndexedColors;
+//import org.apache.poi.ss.usermodel.CellStyle;
+//import org.apache.poi.ss.usermodel.DataFormatter;
+//import org.apache.poi.ss.usermodel.FillPatternType;
+//import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -33,18 +35,25 @@ public class DataReader {
 			int totalRows=sheet.getLastRowNum();
 				
 			XSSFRow headerRow=sheet.getRow(0);
-			
+			DataFormatter formatter = new DataFormatter();
+
 			
 			for (int i = 1; i <= totalRows; i++) 
 				{
 				XSSFRow currentRow = sheet.getRow(i);
-				
+				if (currentRow == null) continue;
 				HashMap<String, String> currentHash = new HashMap<String, String>();
 				
 				for (int j = 0; j < currentRow.getLastCellNum(); j++) 
 					{
+					XSSFCell headerCell = headerRow.getCell(j);
 					XSSFCell currentCell = currentRow.getCell(j); 
-					currentHash.put(headerRow.getCell(j).toString(), currentCell.toString());
+					//currentHash.put(headerRow.getCell(j).toString(), currentCell.toString());
+					String key = (headerCell == null) ? "Column" + j : formatter.formatCellValue(headerCell).trim();
+		            String value = (currentCell == null) ? "" : formatter.formatCellValue(currentCell).trim();
+
+		            currentHash.put(key, value);
+
 				 }
 				mydata.add(currentHash);
 				}
