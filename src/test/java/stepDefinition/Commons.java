@@ -23,13 +23,24 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 public class Commons {
 	 static WebDriver driver;
      static Properties p;
      static Logger logger;
      static WebDriverWait wait;
      //static JavascriptExecutor js = (JavascriptExecutor)driver;
-  	     
+    
+     /*public static SoftAssert softAssert = new SoftAssert();
+
+     public static SoftAssert getSoftAssert() {
+         return softAssert;
+     }
+
+     public static void assertAll() {
+         softAssert.assertAll();
+     }*/
+
 public static WebDriver initilizeBrowser() throws IOException
 {
 	p = getProperties();

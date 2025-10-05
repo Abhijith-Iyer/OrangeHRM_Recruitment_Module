@@ -16,7 +16,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 
-public class Hooks {
+public class Hooks extends Commons {
 
 	 WebDriver driver;
 	 Properties p;
@@ -34,7 +34,16 @@ public class Hooks {
     			
 	}
 		
-    
+	/*@After
+    public void afterScenario(Scenario scenario) {
+        try {
+            Commons.assertAll();
+        } catch (AssertionError e) {
+            scenario.attach(e.getMessage().getBytes(), "text/plain", "Soft Assertion Failures");
+            throw e; // rethrow to mark scenario as failed
+        }
+    }*/
+
     @After
     public void tearDown() {
         		

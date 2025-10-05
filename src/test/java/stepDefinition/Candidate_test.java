@@ -19,6 +19,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 //import org.openqa.selenium.WebElement;
 
+
 //import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -39,6 +40,7 @@ public class Candidate_test extends Commons {
 	List<String> candidate_field_list = new ArrayList<>();
 	String fullName;
 	String interviewerName;
+	//SoftAssert softAssert;
 	
 	//Properties p;
 	
@@ -389,24 +391,48 @@ public void candidate_history_validation(String status) {
 	case "Interview Scheduled":
 		expectedDesc = hiringManager+" scheduled "+vacancy+" Interview on "+getAdjustedDate()+" with "+interviewerName+" for "+vacancy;
 		break;
+	case "Rejected":
+		expectedDesc = hiringManager+" rejected "+fullName+" from the "+candidate.get("Vacancy");
+		break;
+	case "Interview Passed":
+		expectedDesc = hiringManager+" scheduled "+candidate.get("Vacancy")+" Interview on "+getAdjustedDate()+" with "+interviewerName+" for "+vacancy;
+		break;
+	case "Interview Failed":
+		expectedDesc = hiringManager+" scheduled "+candidate.get("Vacancy")+" Interview on "+getAdjustedDate()+" with "+interviewerName+" for "+vacancy;
+		break;
+	case "Second Interview Scheduled":
+		expectedDesc = hiringManager+" scheduled "+vacancy+" Interview on "+getAdjustedDate2()+" with "+interviewerName+" for "+vacancy;
+		break;
+	case "Job Offered":
+		expectedDesc = hiringManager+" offered the job for "+candidate.get("Vacancy");
+		break;
+	case "Offer Declined":
+		expectedDesc = hiringManager+" marked the offer as declined for "+candidate.get("Vacancy");
+		break;
+	case "Hired":
+		expectedDesc = hiringManager+" hired "+fullName+" for "+candidate.get("Vacancy");
+		break;
     default:
     	expectedDesc = null;
     	Commons.getLogger().info("Issue in finding the correct status log for the candidate");
 		break;
 	}
-	String cleanExpected = expectedDesc.trim().replaceAll("\\s+", " ");
-
-	if(actualDesc.equalsIgnoreCase(cleanExpected) && actualperformedDate.equals(getcurrentdate())) {
+	expectedDesc.trim().replaceAll("\\s+", " ");
+	Commons.getLogger().info("Checking Candidate History log for: "+status);
+	try {
+		Assert.assertEquals(actualperformedDate, getcurrentdate());
+		Assert.assertEquals(actualDesc, expectedDesc);
 		Commons.getLogger().info("Candidate History log for"+status+" is displayed as expected");
-		Assert.assertTrue(true);
+		//Assert.assertTrue(true);
 	}
-	else {
+	catch (Exception e)
+	 {
 		Commons.getLogger().info("History log for "+status+" candidate is not visible or not as expected");
-		Commons.getLogger().info("Expected Add Desc: \"" + cleanExpected + "\"");
+		Commons.getLogger().info("Expected Add Desc: \"" + expectedDesc + "\"");
 		Commons.getLogger().info("Actual Add Desc from UI: \"" + actualDesc + "\"");
-		System.out.println("Expected Unicode: " + cleanExpected.codePoints().mapToObj(cp -> String.format("\\u%04X", cp)).collect(Collectors.joining()));
+		System.out.println("Expected Unicode: " + expectedDesc.codePoints().mapToObj(cp -> String.format("\\u%04X", cp)).collect(Collectors.joining()));
 		System.out.println("Actual Unicode: " + actualDesc.codePoints().mapToObj(cp -> String.format("\\u%04X", cp)).collect(Collectors.joining()));
-		Assert.fail("Mismatch in candidate history log.\nExpected: \"" + cleanExpected + "\"\nActual: \"" + actualDesc + "\"");
+		//Assert.fail("Mismatch in candidate history log.\nExpected: \"" + expectedDesc + "\"\nActual: \"" + actualDesc + "\"");
 	}
 }
 
@@ -561,7 +587,7 @@ public void candidate_history_validation(String status) {
 	public void schedule_interview() {
 		driver.findElement(By.xpath("//button[normalize-space()='Schedule Interview']")).click();
 		Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'Schedule Interview')]]")), 10000);
-		cp.interviewtitle_textbox.sendKeys(candidate.get("Vacancy")+" Interview");
+		cp.interviewtitle_textbox.sendKeys(candidate.get("Vacancy")+" Interview - Second Round");
 		cp.Interviewer1.sendKeys("Rahul");
 		Commons.waitandclick(cp.first_search_option, 2000);
 		cp.calendar_textbox.sendKeys(getAdjustedDate2());

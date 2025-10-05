@@ -91,11 +91,10 @@ And User fill all Non-Mandatory fields for user with first name as "<first_name>
 And Saves the Add Candidate form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
-#And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate
+And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -114,7 +113,6 @@ And User fill all Non-Mandatory fields for user with first name as "<first_name>
 And Saves the Add Candidate form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
-#And User clicks view icon
 And "Shortlist" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Shortlisted"
@@ -127,7 +125,7 @@ And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate
+And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -152,7 +150,7 @@ And Validate if the status is "Status: Shortlisted"
 And "Schedule Interview" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Interview Scheduled"
-#And Validate the Candidate History for "Interview Scheduled" candidate
+And Validate the Candidate History for "Interview Scheduled" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -161,7 +159,7 @@ And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate
+And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -211,7 +209,7 @@ And Validate if the status is "Status: Interview Scheduled"
 And "Mark Interview Failed" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Interview Failed"
-#And Validate the Candidate History for "Interview Failed" candidate
+And Validate the Candidate History for "Interview Failed" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -220,7 +218,7 @@ And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate
+And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -248,7 +246,7 @@ And Validate if the status is "Status: Interview Scheduled"
 And "Mark Interview Passed" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Interview Passed"
-#And Validate the Candidate History for "Interview Passed" candidate
+And Validate the Candidate History for "Interview Passed" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -257,7 +255,7 @@ And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate
+And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -287,7 +285,7 @@ And Validate if the status is "Status: Interview Passed"
 And Schedule another Interview for the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Interview Scheduled"
-#And Validate the Candidate History for "Interview Scheduled" candidate
+And Validate the Candidate History for "Second Interview Scheduled" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -296,7 +294,7 @@ And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate
+And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -330,7 +328,7 @@ And Validate if the status is "Status: Interview Scheduled"
 And "Mark Interview Failed" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Interview Failed"
-#And Validate the Candidate History for "Interview Failed" candidate
+And Validate the Candidate History for "Interview Failed" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -339,7 +337,7 @@ And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate
+And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -373,7 +371,7 @@ And Validate if the status is "Status: Interview Scheduled"
 And "Mark Interview Passed" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Interview Passed"
-#And Validate the Candidate History for "Interview Passed" candidate
+And Validate the Candidate History for "Interview Passed" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -382,7 +380,7 @@ And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate
+And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -419,7 +417,7 @@ And Validate if the status is "Status: Interview Passed"
 And "Offer Job" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Job Offered"
-#And Validate the Candidate History for "Job Offered" candidate
+And Validate the Candidate History for "Job Offered" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -428,7 +426,7 @@ And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate
+And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -468,7 +466,7 @@ And Validate if the status is "Status: Job Offered"
 And "Offer Declined" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Offer Declined"
-#And Validate the Candidate History for "Offer Declined" candidate
+And Validate the Candidate History for "Offer Declined" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -477,7 +475,7 @@ And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate
+And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -517,12 +515,12 @@ And Validate if the status is "Status: Job Offered"
 And "Hire" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Hired"
-#And Validate the Candidate History for "Hired" candidate
+And Validate the Candidate History for "Hired" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
 And Check if the status of the candidate is "Hired"
-#And Delete the Newly added candidate
+And Delete the Newly added candidate
 
 Examples:
            |first_name|
