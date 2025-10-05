@@ -1,6 +1,6 @@
 Feature: Add new Candidate and validate its behaviour 
 
-@trail3
+@trail @Candidates_Suite @Recruitement_Suite
 Scenario Outline: Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -8,14 +8,14 @@ And Uploads file of format "<format_name>"
 Then Validate if the file gets loaded successfully for the file format: "<format_name>"
 Examples:
           |format_name|
-#          |PDF|
+           |PDF|
            |DOCX|
-#          |ODT|
-#          |RTF|
-#          |TXT|
-#          |DOC|
+           |ODT|
+           |RTF|
+           |TXT|
+           |DOC|
           
-@trail7
+@Candidates_Suite @Recruitement_Suite
 Scenario Outline: Validate if user gets appropriate error message when uploading an invalid file in Resume field 
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -24,13 +24,13 @@ Then Validate if user gets appropriate error message for uploading a "<format_na
 Examples:
            |format_name|
            |PNG        |
-#          |HTML       |
-#          |JPG        |
-#          |JAVA       |
-#          |PDF        |
-#          |JPG        |
+           |HTML       |
+           |JPG        |
+           |JAVA       |
+           |PDF        |
+           |JPG        |
 
-@trail10
+@Candidates_Suite @Recruitement_Suite
 Scenario Outline: Validate if user gets appropriate error message when entering email in invalid format
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -45,7 +45,7 @@ Examples:
            |email_5     |
            |email_6     |
 
-@trail11
+@Candidates_Suite @Recruitement_Suite
 Scenario: Validate if user gets appropriate error message when Mandaotry fields are not filled
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -57,7 +57,7 @@ Examples:
            |first_name|
            |Walter|
 
-@trail12
+@Candidates_Suite @Recruitement_Suite
 Scenario: User Validates adding a New Candidate and deleting thenewly added candidate
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -82,7 +82,7 @@ Examples:
            |first_name|
            |Michael|
 
-@trail14
+@Candidates_Suite @Recruitement_Suite
 Scenario: Validate candidate rejection from Application Initiated stage and Candidate History
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -95,7 +95,7 @@ And Validate if the status is "Status: Application Initiated"
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate from Initiated stage
+#And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -105,7 +105,7 @@ Examples:
            |first_name|
            |Dwight|
 
-@trail15
+@Candidates_Suite @test1 @Recruitement_Suite
 Scenario: Validate if user can Shortlist a candidate, reject the candidate from shortlisted stage and validate the candidate History
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -118,7 +118,7 @@ And Validate if the status is "Status: Application Initiated"
 And "Shortlist" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Shortlisted"
-#And Validate the Candidate History for "Shortlisted" candidate from Initiated stage
+And Validate the Candidate History for "Shortlisted" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -127,7 +127,7 @@ And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate from Shortlisted stage
+#And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -137,7 +137,7 @@ Examples:
            |first_name|
            |James|
 
-@trail16
+@Candidates_Suite @Recruitement_Suite
 Scenario: Validate if user can Schedule Interview for a candidate, reject the candidate from Interview Scheduled stage and validate the candidate History
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -152,7 +152,7 @@ And Validate if the status is "Status: Shortlisted"
 And "Schedule Interview" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Interview Scheduled"
-#And Validate the Candidate History for "Interview Scheduled" candidate from Shortlisted stage
+#And Validate the Candidate History for "Interview Scheduled" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -161,7 +161,7 @@ And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate from Interview Scheduled stage
+#And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -171,7 +171,7 @@ Examples:
            |first_name|
            |Michael|
 
-@trail18        
+@Candidates_Suite @Recruitement_Suite        
 Scenario: Validate the candidate to interview feature in Dashboard screen
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -193,7 +193,7 @@ Examples:
            |first_name|
            |Andrew|
 
-@trail17
+@Candidates_Suite @Recruitement_Suite
 Scenario: Validate if user can mark Interview failed for a candidate, reject the candidate from Interview Failed stage and validate the candidate history
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -211,7 +211,7 @@ And Validate if the status is "Status: Interview Scheduled"
 And "Mark Interview Failed" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Interview Failed"
-#And Validate the Candidate History for "Interview Failed" candidate from Interview Scheduled stage
+#And Validate the Candidate History for "Interview Failed" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -220,7 +220,7 @@ And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate from Interview Failed stage
+#And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -230,7 +230,7 @@ Examples:
            |first_name|
            |Andrew|
 
-@trail19
+@Candidates_Suite @Recruitement_Suite
 Scenario: Validate if user can mark Interview Passed for a candidate, reject the candidate from Interview Passed stage and validate the candidate history
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -248,7 +248,7 @@ And Validate if the status is "Status: Interview Scheduled"
 And "Mark Interview Passed" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Interview Passed"
-#And Validate the Candidate History for "Interview Passed" candidate from Interview Scheduled stage
+#And Validate the Candidate History for "Interview Passed" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -257,7 +257,7 @@ And User clicks view icon
 And "Reject" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Rejected"
-#And Validate the Candidate History for "Rejected" candidate from Interview Passed stage
+#And Validate the Candidate History for "Rejected" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -266,3 +266,264 @@ And Delete the Newly added candidate
 Examples:
            |first_name|
            |Pamela|
+@Candidates_Suite @Recruitement_Suite
+Scenario: Validate if user can Schedule another Interview for the candidate from Interview Passed stage, again reject the candidate from Interview Scheduled stage and validate the candidate History
+Given User Logs in with Credentials and Navigates to Recruitment Section
+When User Navigates to Add Candidate form
+Then User fill all Mandatory fields for user with first name as "<first_name>"
+And User fill all Non-Mandatory fields for user with first name as "<first_name>"
+And Saves the Add Candidate form
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Application Initiated"
+And "Shortlist" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Shortlisted"
+And "Schedule Interview" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Scheduled"
+And "Mark Interview Passed" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Passed"
+And Schedule another Interview for the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Scheduled"
+#And Validate the Candidate History for "Interview Scheduled" candidate
+And Navigate to Candidates section
+And Check if candidate name appears in Candidate filter
+And Filter Candidate list by newly added candidate name
+And Check if the status of the candidate is "Interview Scheduled"
+And User clicks view icon
+And "Reject" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Rejected"
+#And Validate the Candidate History for "Rejected" candidate
+And Navigate to Candidates section
+And Check if candidate name appears in Candidate filter
+And Filter Candidate list by newly added candidate name
+And Check if the status of the candidate is "Rejected"
+And Delete the Newly added candidate
+Examples:
+           |first_name|
+           |Kelly|
+
+@Candidates_Suite @Recruitement_Suite
+Scenario: Validate if user can mark Interview failed for a candidate in the second round of interview, then reject the candidate from Interview Failed stage and validate the candidate history
+Given User Logs in with Credentials and Navigates to Recruitment Section
+When User Navigates to Add Candidate form
+Then User fill all Mandatory fields for user with first name as "<first_name>"
+And User fill all Non-Mandatory fields for user with first name as "<first_name>"
+And Saves the Add Candidate form
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Application Initiated"
+And "Shortlist" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Shortlisted"
+And "Schedule Interview" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Scheduled"
+And "Mark Interview Passed" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Passed"
+And Schedule another Interview for the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Scheduled"
+And "Mark Interview Failed" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Failed"
+#And Validate the Candidate History for "Interview Failed" candidate
+And Navigate to Candidates section
+And Check if candidate name appears in Candidate filter
+And Filter Candidate list by newly added candidate name
+And Check if the status of the candidate is "Interview Failed"
+And User clicks view icon
+And "Reject" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Rejected"
+#And Validate the Candidate History for "Rejected" candidate
+And Navigate to Candidates section
+And Check if candidate name appears in Candidate filter
+And Filter Candidate list by newly added candidate name
+And Check if the status of the candidate is "Rejected"
+And Delete the Newly added candidate
+Examples:
+           |first_name|
+           |Kelly|
+           
+@Candidates_Suite @Recruitement_Suite          
+Scenario: Validate if user can mark Interview passed for a candidate in the second round of interview, then reject the candidate from Interview passed stage and validate the candidate history
+Given User Logs in with Credentials and Navigates to Recruitment Section
+When User Navigates to Add Candidate form
+Then User fill all Mandatory fields for user with first name as "<first_name>"
+And User fill all Non-Mandatory fields for user with first name as "<first_name>"
+And Saves the Add Candidate form
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Application Initiated"
+And "Shortlist" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Shortlisted"
+And "Schedule Interview" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Scheduled"
+And "Mark Interview Passed" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Passed"
+And Schedule another Interview for the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Scheduled"
+And "Mark Interview Passed" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Passed"
+#And Validate the Candidate History for "Interview Passed" candidate
+And Navigate to Candidates section
+And Check if candidate name appears in Candidate filter
+And Filter Candidate list by newly added candidate name
+And Check if the status of the candidate is "Interview Passed"
+And User clicks view icon
+And "Reject" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Rejected"
+#And Validate the Candidate History for "Rejected" candidate
+And Navigate to Candidates section
+And Check if candidate name appears in Candidate filter
+And Filter Candidate list by newly added candidate name
+And Check if the status of the candidate is "Rejected"
+And Delete the Newly added candidate
+Examples:
+           |first_name|
+           |Angella|
+           
+@Candidates_Suite @Recruitement_Suite           
+Scenario: Validate if user can Offer job for candidate who passed second round of interview, then reject the candidate from Job Offered stage and validate the candidate history
+Given User Logs in with Credentials and Navigates to Recruitment Section
+When User Navigates to Add Candidate form
+Then User fill all Mandatory fields for user with first name as "<first_name>"
+And User fill all Non-Mandatory fields for user with first name as "<first_name>"
+And Saves the Add Candidate form
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Application Initiated"
+And "Shortlist" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Shortlisted"
+And "Schedule Interview" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Scheduled"
+And "Mark Interview Passed" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Passed"
+And Schedule another Interview for the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Scheduled"
+And "Mark Interview Passed" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Passed"
+And "Offer Job" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Job Offered"
+#And Validate the Candidate History for "Job Offered" candidate
+And Navigate to Candidates section
+And Check if candidate name appears in Candidate filter
+And Filter Candidate list by newly added candidate name
+And Check if the status of the candidate is "Job Offered"
+And User clicks view icon
+And "Reject" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Rejected"
+#And Validate the Candidate History for "Rejected" candidate
+And Navigate to Candidates section
+And Check if candidate name appears in Candidate filter
+And Filter Candidate list by newly added candidate name
+And Check if the status of the candidate is "Rejected"
+And Delete the Newly added candidate
+Examples:
+           |first_name|
+           |Ryan|
+           
+@Candidates_Suite @Recruitement_Suite           
+Scenario: Validate if user can Decline Job Offer for candidate who was offered the Job, then reject the candidate from Offer Declined stage and validate the candidate history
+Given User Logs in with Credentials and Navigates to Recruitment Section
+When User Navigates to Add Candidate form
+Then User fill all Mandatory fields for user with first name as "<first_name>"
+And User fill all Non-Mandatory fields for user with first name as "<first_name>"
+And Saves the Add Candidate form
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Application Initiated"
+And "Shortlist" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Shortlisted"
+And "Schedule Interview" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Scheduled"
+And "Mark Interview Passed" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Passed"
+And Schedule another Interview for the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Scheduled"
+And "Mark Interview Passed" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Passed"
+And "Offer Job" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Job Offered"
+And "Offer Declined" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Offer Declined"
+#And Validate the Candidate History for "Offer Declined" candidate
+And Navigate to Candidates section
+And Check if candidate name appears in Candidate filter
+And Filter Candidate list by newly added candidate name
+And Check if the status of the candidate is "Offer Declined"
+And User clicks view icon
+And "Reject" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Rejected"
+#And Validate the Candidate History for "Rejected" candidate
+And Navigate to Candidates section
+And Check if candidate name appears in Candidate filter
+And Filter Candidate list by newly added candidate name
+And Check if the status of the candidate is "Rejected"
+And Delete the Newly added candidate
+Examples:
+           |first_name|
+           |Ryan|
+           
+@Candidates_Suite @Recruitement_Suite @test       
+Scenario: Validate if user can Hire the candidate who was offered the Job and validate the candidate history
+Given User Logs in with Credentials and Navigates to Recruitment Section
+When User Navigates to Add Candidate form
+Then User fill all Mandatory fields for user with first name as "<first_name>"
+And User fill all Non-Mandatory fields for user with first name as "<first_name>"
+And Saves the Add Candidate form
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Application Initiated"
+And "Shortlist" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Shortlisted"
+And "Schedule Interview" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Scheduled"
+And "Mark Interview Passed" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Passed"
+And Schedule another Interview for the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Scheduled"
+And "Mark Interview Passed" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Interview Passed"
+And "Offer Job" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Job Offered"
+And "Hire" the Candidate
+And Validate if Candidate details screen is visible
+And Validate if the status is "Status: Hired"
+#And Validate the Candidate History for "Hired" candidate
+And Navigate to Candidates section
+And Check if candidate name appears in Candidate filter
+And Filter Candidate list by newly added candidate name
+And Check if the status of the candidate is "Hired"
+#And Delete the Newly added candidate
+
+Examples:
+           |first_name|
+           |Gabriel|

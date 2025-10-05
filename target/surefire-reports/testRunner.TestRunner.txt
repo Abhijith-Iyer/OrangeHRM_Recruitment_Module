@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: testRunner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 90.27 s -- in testRunner.TestRunner
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 46.83 s <<< FAILURE! -- in testRunner.TestRunner
+Add new Candidate and validate its behaviour.Validate if user can Shortlist a candidate, reject the candidate from shortlisted stage and validate the candidate History -- Time elapsed: 38.76 s <<< FAILURE!
+java.lang.AssertionError: 
+Mismatch in candidate history log.
+Expected: "Shortlisted for Payroll Administrator by Wajiha Khan"
+Actual: "Shortlisted for Payroll Administrator by Wajiha Khan"
+	at org.junit.Assert.fail(Assert.java:89)
+	at stepDefinition.Candidate_test.candidate_history_validation(Candidate_test.java:409)
+	at ✽.Validate the Candidate History for "Shortlisted" candidate(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:121)
+

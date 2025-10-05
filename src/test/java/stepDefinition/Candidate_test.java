@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 //import java.util.Properties;
 //import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -37,7 +38,7 @@ public class Candidate_test extends Commons {
 	Map<String,String> candidate_fields;
 	List<String> candidate_field_list = new ArrayList<>();
 	String fullName;
-	
+	String interviewerName;
 	
 	//Properties p;
 	
@@ -85,14 +86,26 @@ public class Candidate_test extends Commons {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         return adjusted.format(formatter);
     }
+	public String getAdjustedDate2() {
+        LocalDate today = LocalDate.now();
+        LocalDate adjusted = today.plusDays(3);
+
+        // If the month has changed after adding 3 days
+        if (adjusted.getMonthValue() != today.getMonthValue()) {
+            adjusted = adjusted.plusMonths(1);
+        }
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        return adjusted.format(formatter);
+    }
 	public String getcandidatelogxpath(int i, int j) {
 		String xpath = "((//div[@class='oxd-table-body']/div)["+i+"]/div/div/div)["+j+"]";
 		switch(j) {
 		case 1:
-			String DOE=driver.findElement(By.xpath(xpath)).getText();
+			String DOE=driver.findElement(By.xpath(xpath)).getText().strip();
 			return DOE;
 		case 2:
-			String desc=driver.findElement(By.xpath(xpath)).getText();
+			String desc=driver.findElement(By.xpath(xpath)).getText().strip();
 			return desc;
 		/*case 3:
 			String desc=driver.findElement(By.xpath(xpath)).getText();
@@ -330,20 +343,14 @@ public class Candidate_test extends Commons {
 		}
 		
 	}
-	@Then("Validate the Candidate History for {string} candidate from Initiated stage")
-	public void rejected_candidate_history_from_initiated_stage(String status) {
-		String candidateDescActual;
+	/*@Then("Validate the Candidate History for {string} candidate from Initiated stage")
+	public void candidate_history_from_initiated_stage(String status) {
 		String candidateDescExpected = getcandidatelogxpath(1,2).replaceAll("\\s+", " ").trim();
 		Commons.scrolltoelement(cp.candidate_history_section);
 		Commons.waittillvisible(cp.candidate_history_section, 3000);
 		Commons.getLogger().info("Validating candidate history log for "+status+" candidate");
-		if(status.equalsIgnoreCase("Rejected")) {
-			candidateDescActual = (cp.hiringmanger_name.getText()+" rejected "+fullName+" from the "+ candidate.get("Vacancy")).replaceAll("\\s+", " ").trim();
-		}
-		else {
-			candidateDescActual = (status+" for "+candidate.get("Vacancy")+" by "+cp.hiringmanger_name.getText()).replaceAll("\\s+", " ").trim();
-		}
-		
+	    String candidateDescActual = (status+" for "+candidate.get("Vacancy")+" by "+cp.hiringmanger_name.getText()).replaceAll("\\s+", " ").trim();
+
 		for (int i = 0; i < Math.max(candidateDescExpected.length(), candidateDescActual.length()); i++) {
 		    char expectedChar = i < candidateDescExpected.length() ? candidateDescExpected.charAt(i) : '-';
 		    char actualChar = i < candidateDescActual.length() ? candidateDescActual.charAt(i) : '-';
@@ -363,10 +370,46 @@ public class Candidate_test extends Commons {
 				Commons.getLogger().info("Actual Add Desc from UI: \"" + candidateDescActual + "\"");
 				Assert.fail("Mismatch in candidate history log.\nExpected: \"" + candidateDescExpected + "\"\nActual: \"" + candidateDescActual + "\"");
 			}
+	}*/
+		
+@Then("Validate the Candidate History for {string} candidate")
+public void candidate_history_validation(String status) {
+	String hiringManager = cp.hiringmanger_name.getText().strip();
+	String expectedDesc;
+	String actualDesc = (getcandidatelogxpath(1,2)).trim().replaceAll("\\s+", " ");;
+	String actualperformedDate = getcandidatelogxpath(1,1);
+	String vacancy = candidate.get("Vacancy");
+	Commons.getLogger().info("Validating if the history log for addition of candidate");
+	Commons.scrolltoelement(cp.candidate_history_section);
+	Commons.waittillvisible(cp.candidate_history_section, 3000);
+	switch(status) {
+	case "Shortlisted":
+		expectedDesc = status+" for "+vacancy+" by "+hiringManager;
+		break;
+	case "Interview Scheduled":
+		expectedDesc = hiringManager+" scheduled "+vacancy+" Interview on "+getAdjustedDate()+" with "+interviewerName+" for "+vacancy;
+		break;
+    default:
+    	expectedDesc = null;
+    	Commons.getLogger().info("Issue in finding the correct status log for the candidate");
+		break;
 	}
-		
-		
+	String cleanExpected = expectedDesc.trim().replaceAll("\\s+", " ");
+
+	if(actualDesc.equalsIgnoreCase(cleanExpected) && actualperformedDate.equals(getcurrentdate())) {
+		Commons.getLogger().info("Candidate History log for"+status+" is displayed as expected");
+		Assert.assertTrue(true);
+	}
+	else {
+		Commons.getLogger().info("History log for "+status+" candidate is not visible or not as expected");
+		Commons.getLogger().info("Expected Add Desc: \"" + cleanExpected + "\"");
+		Commons.getLogger().info("Actual Add Desc from UI: \"" + actualDesc + "\"");
+		System.out.println("Expected Unicode: " + cleanExpected.codePoints().mapToObj(cp -> String.format("\\u%04X", cp)).collect(Collectors.joining()));
+		System.out.println("Actual Unicode: " + actualDesc.codePoints().mapToObj(cp -> String.format("\\u%04X", cp)).collect(Collectors.joining()));
+		Assert.fail("Mismatch in candidate history log.\nExpected: \"" + cleanExpected + "\"\nActual: \"" + actualDesc + "\"");
+	}
 }
+
 	@Then("Validate the Candidate History for the newly added candidate in Application Initiated stage")
 	public void candidate_history_from_initiated_stage() {
 		Commons.getLogger().info("Validating if the history log for addition of candidate");
@@ -471,9 +514,10 @@ public class Candidate_test extends Commons {
 			cp.interviewtitle_textbox.sendKeys(candidate.get("Vacancy")+" Interview");
 			cp.Interviewer1.sendKeys("Rahul");
 			Commons.waitandclick(cp.first_search_option, 2000);
+			interviewerName = cp.Interviewer1.getText();
 			cp.calendar_textbox.sendKeys(getAdjustedDate());
 			cp.clock_icon.click();
-			for(int i=0;i<10;i++) {
+			for(int i=0;i<9;i++) {
 				cp.hourup_btn.click();
 			}
 			cp.minuteup_btn.click();
@@ -490,12 +534,44 @@ public class Candidate_test extends Commons {
 			Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'"+action+"')]]")), 10000);
 			cp.notes_textbox.sendKeys("Markinging Interview Passed for the candidate");
 		    break;
+		case "Offer Job":
+			driver.findElement(By.xpath("//button[normalize-space()='"+action+"']")).click();
+			Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'"+action+"')]]")), 10000);
+			cp.notes_textbox.sendKeys("Job has been offered for the candidate for the candidate");
+		    break;
+		case "Offer Declined":
+			driver.findElement(By.xpath("//button[normalize-space()='"+action+"']")).click();
+			Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'Decline Offer')]]")), 10000);
+			cp.notes_textbox.sendKeys("Declining the offer for the candidate");
+		    break;
+		case "Hire":
+			driver.findElement(By.xpath("//button[normalize-space()='"+action+"']")).click();
+			Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'Hire Candidate')]]")), 10000);
+			cp.notes_textbox.sendKeys("Hiring the Candidate for the vacancy: "+candidate.get("Vacancy"));
+		    break;
 		default:
 			Commons.getLogger().info("Issue in finding the correct action");
 			break;
 		}
 		
 		//cp.notes_textbox.sendKeys(action+"ing the candidate");
+		cp.save_btn.click();
+	}
+	@Then("Schedule another Interview for the Candidate")
+	public void schedule_interview() {
+		driver.findElement(By.xpath("//button[normalize-space()='Schedule Interview']")).click();
+		Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'Schedule Interview')]]")), 10000);
+		cp.interviewtitle_textbox.sendKeys(candidate.get("Vacancy")+" Interview");
+		cp.Interviewer1.sendKeys("Rahul");
+		Commons.waitandclick(cp.first_search_option, 2000);
+		cp.calendar_textbox.sendKeys(getAdjustedDate2());
+		cp.clock_icon.click();
+		for(int i=0;i<9;i++) {
+			cp.hourup_btn.click();
+		}
+		cp.minuteup_btn.click();
+		Commons.scrolltolast();
+		cp.notes_textbox.sendKeys("Scheduling Interview for the candidate again");
 		cp.save_btn.click();
 	}
 	@Then("Filter Candidate list by newly added candidate name")

@@ -16,6 +16,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -85,7 +86,9 @@ public static WebDriver initilizeBrowser() throws IOException
 		        driver=new ChromeDriver(wdops);
 		        break;
 		    case "edge":
-		    	driver=new EdgeDriver();
+		    	 EdgeOptions wdops1 = new EdgeOptions();
+			     wdops1.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
+		    	driver=new EdgeDriver(wdops1);
 		        break;
 		    case "firefox":
 		    	driver=new FirefoxDriver();

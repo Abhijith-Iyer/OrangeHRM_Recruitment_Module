@@ -1,6 +1,6 @@
 Feature: Add a new Vacancy 
 
-@trail
+@Vacancies_Suite @Recruitement_Suite
 Scenario: Validate adding and deleting of vacancy
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When Clicks on Vacancy
@@ -15,7 +15,7 @@ Examples:
       | QA Lead         | Radha         |
 
 
-@trail
+@Vacancies_Suite @Recruitement_Suite
 Scenario: Validate whether user can create duplicate vacancy
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When Clicks on Vacancy
@@ -24,7 +24,7 @@ And Navigate to Vacancy form
 And Navigates to fill Vacancy form and enters the captured vacancy in vacancy name
 Then Already exists error message should be displayed under the text box
 
-@trail
+@Vacancies_Suite @Recruitement_Suite
 Scenario: Validate whether user can search newly added vacancy using vacancy name
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When Clicks on Vacancy
@@ -39,7 +39,7 @@ Examples:
       | jobtitle        | HiringManager |
       | QA Lead         | Radha         |
 
-@trail
+@Vacancies_Suite @Recruitement_Suite
 Scenario: Validate whether user can edit a Vacancy detail
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When Clicks on Vacancy
@@ -59,7 +59,7 @@ Examples:
       | jobtitle        | HiringManager |
       | QA Lead         | Radha         |
 
-@trail
+@Vacancies_Suite @Recruitement_Suite
 Scenario: Validate whether user gets Mandatory field error
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When Clicks on Vacancy
@@ -72,7 +72,7 @@ Examples:
       | jobtitle        | HiringManager |
       | QA Lead         | Radha         |
 
-@suite1
+@Vacancies_Suite @Recruitement_Suite
 Scenario: Validate whether user can see newly added vacancy in Candidates section
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When Clicks on Vacancy
