@@ -1,11 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-05T17:32:27 IST" name="Surefire suite" finished-at="2025-10-05T17:32:27 IST" duration-ms="22">
+  <suite started-at="2025-10-12T13:06:37 IST" name="Suite" finished-at="2025-10-12T13:07:07 IST" duration-ms="30085">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@233795b6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-10-05T17:32:27 IST" name="Surefire test" finished-at="2025-10-05T17:32:27 IST" duration-ms="22">
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    <test started-at="2025-10-12T13:06:37 IST" name="Test" finished-at="2025-10-12T13:07:07 IST" duration-ms="30085">
+      <class name="testRunner.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestNGTestRunner@233795b6]" started-at="2025-10-12T13:06:37 IST" name="setUpClass" finished-at="2025-10-12T13:06:38 IST" duration-ms="1125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@35fb3209]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@233795b6]" started-at="2025-10-12T13:06:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-12T13:07:03 IST" duration-ms="25088" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Validates adding a New Candidate and deleting the newly added candidate"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.util.Map.keySet()" because "this.candidate_fields" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Map.keySet()" because "this.candidate_fields" is null
+at stepDefinition.Candidate_test.validate_candidate_details_screen_fields(Candidate_test.java:288)
+at ✽.Validate if details in the screen are as per the form filled(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:112)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestNGTestRunner@233795b6]" started-at="2025-10-12T13:07:03 IST" name="tearDownClass" finished-at="2025-10-12T13:07:07 IST" duration-ms="3824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.TestNGTestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

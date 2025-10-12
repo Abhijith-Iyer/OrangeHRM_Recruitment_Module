@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="87.232" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="30.757" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Users\abhij\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\abhij\AppData\Local\Temp\surefire5208906382526943182\surefirebooter-20251010141851127_3.jar C:\Users\abhij\AppData\Local\Temp\surefire5208906382526943182 2025-10-10T14-18-50_966-jvmRun1 surefire-20251010141851127_1tmp surefire_0-20251010141851127_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\abhij\AppData\Local\Temp\surefire6381130170595298758\surefirebooter-20251012130635103_3.jar C:\Users\abhij\AppData\Local\Temp\surefire6381130170595298758 2025-10-12T13-06-34_796-jvmRun1 surefire-20251012130635103_1tmp surefire_0-20251012130635103_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\abhij\OneDrive\Desktop\OrangeHRM_Test_Suite\target\test-classes;C:\Users\abhij\OneDrive\Desktop\OrangeHRM_Test_Suite\target\classes;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-java\4.34.0\selenium-java-4.34.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-api\4.34.0\selenium-api-4.34.0.jar;C:\Users\abhij\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.34.0\selenium-chrome-driver-4.34.0.jar;C:\Users\abhij\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.34.0\selenium-chromium-driver-4.34.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-json\4.34.0\selenium-json-4.34.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.34.0\selenium-manager-4.34.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v136\4.34.0\selenium-devtools-v136-4.34.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.34.0\selenium-devtools-v137-4.34.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.34.0\selenium-devtools-v138-4.34.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.34.0\selenium-edge-driver-4.34.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.34.0\selenium-firefox-driver-4.34.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-http\4.34.0\selenium-http-4.34.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.34.0\selenium-ie-driver-4.34.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.34.0\selenium-remote-driver-4.34.0.jar;C:\Users\abhij\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\abhij\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\abhij\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\abhij\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\abhij\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\abhij\.m2\repository\io\opentelemetry\opentelemetry-api\1.51.0\opentelemetry-api-1.51.0.jar;C:\Users\abhij\.m2\repository\io\opentelemetry\opentelemetry-context\1.51.0\opentelemetry-context-1.51.0.jar;C:\Users\abhij\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.51.0\opentelemetry-exporter-logging-1.51.0.jar;C:\Users\abhij\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.51.0\opentelemetry-sdk-common-1.51.0.jar;C:\Users\abhij\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.51.0\opentelemetry-sdk-extension-autoconfigure-spi-1.51.0.jar;C:\Users\abhij\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.51.0\opentelemetry-sdk-extension-autoconfigure-1.51.0.jar;C:\Users\abhij\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.51.0\opentelemetry-sdk-trace-1.51.0.jar;C:\Users\abhij\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.51.0\opentelemetry-sdk-1.51.0.jar;C:\Users\abhij\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.51.0\opentelemetry-sdk-metrics-1.51.0.jar;C:\Users\abhij\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.51.0\opentelemetry-sdk-logs-1.51.0.jar;C:\Users\abhij\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-os\4.34.0\selenium-os-4.34.0.jar;C:\Users\abhij\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.34.0\selenium-safari-driver-4.34.0.jar;C:\Users\abhij\.m2\repository\org\seleniumhq\selenium\selenium-support\4.34.0\selenium-support-4.34.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\cucumber-plugin\7.20.1\cucumber-plugin-7.20.1.jar;C:\Users\abhij\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\abhij\.m2\repository\io\cucumber\cucumber-picocontainer\7.20.1\cucumber-picocontainer-7.20.1.jar;C:\Users\abhij\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\abhij\.m2\repository\io\cucumber\cucumber-java\7.20.1\cucumber-java-7.20.1.jar;C:\Users\abhij\.m2\repository\io\cucumber\cucumber-junit\7.17.0\cucumber-junit-7.17.0.jar;C:\Users\abhij\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\abhij\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\abhij\.m2\repository\org\apache\logging\log4j\log4j-core\2.25.1\log4j-core-2.25.1.jar;C:\Users\abhij\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.1\log4j-api-2.25.1.jar;C:\Users\abhij\.m2\repository\org\apache\poi\poi\5.4.1\poi-5.4.1.jar;C:\Users\abhij\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;C:\Users\abhij\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\abhij\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\abhij\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\abhij\.m2\repository\io\cucumber\cucumber-testng\7.17.0\cucumber-testng-7.17.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\cucumber-core\7.17.0\cucumber-core-7.17.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\cucumber-gherkin\7.17.0\cucumber-gherkin-7.17.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.17.0\cucumber-gherkin-messages-7.17.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\datatable\7.17.0\datatable-7.17.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\docstring\7.17.0\docstring-7.17.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\abhij\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\abhij\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\abhij\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\abhij\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\abhij\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\abhij\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\abhij\.m2\repository\org\apache\poi\poi-ooxml\5.4.1\poi-ooxml-5.4.1.jar;C:\Users\abhij\.m2\repository\org\apache\poi\poi-ooxml-lite\5.4.1\poi-ooxml-lite-5.4.1.jar;C:\Users\abhij\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\abhij\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\abhij\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\abhij\.m2\repository\commons-io\commons-io\2.19.0\commons-io-2.19.0.jar;C:\Users\abhij\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\abhij\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\abhij\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\abhij\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\abhij\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\abhij\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\abhij\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\abhij\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\abhij\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\abhij\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\abhij\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\abhij\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\abhij\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\abhij\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\abhij\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\abhij\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\abhij\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\abhij\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\abhij\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\abhij\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\abhij\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\abhij\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\abhij\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\abhij\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\abhij\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\abhij\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\abhij\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\abhij\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\abhij\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\abhij\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\abhij\AppData\Local\Temp\surefire5208906382526943182\surefirebooter-20251010141851127_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\abhij\AppData\Local\Temp\surefire6381130170595298758\surefirebooter-20251012130635103_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.1+11"/>
@@ -60,210 +60,65 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Validate if user can mark Interview passed for a candidate in the second round of interview, then reject the candidate from Interview passed stage and validate the candidate history&quot;, &quot;Add new Candidate and validate its behaviour&quot;](1)" classname="testRunner.TestNGTestRunner" time="80.455">
+  <testcase name="runScenario[&quot;User Validates adding a New Candidate and deleting the newly added candidate&quot;, &quot;Add new Candidate and validate its behaviour&quot;](1)" classname="testRunner.TestNGTestRunner" time="25.092">
+    <failure message="Cannot invoke &quot;java.util.Map.keySet()&quot; because &quot;this.candidate_fields&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Map.keySet()" because "this.candidate_fields" is null
+	at stepDefinition.Candidate_test.validate_candidate_details_screen_fields(Candidate_test.java:288)
+	at ✽.Validate if details in the screen are as per the form filled(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:112)
+]]></failure>
     <system-out><![CDATA[
-@Candidates_Suite @Recruitement_Regression @Flow_Sanity @trail22
-Scenario: Validate if user can mark Interview passed for a candidate in the second round of interview, then reject the candidate from Interview passed stage and validate the candidate history # src/test/java/features/AddCandidates.feature:411
+@Candidates_Suite @Recruitement_Regression @trail22
+Scenario: User Validates adding a New Candidate and deleting the newly added candidate            # src/test/java/features/AddCandidates.feature:126
 SPI file found? true
-  Given User Logs in with Credentials and Navigates to Recruitment Section                                                                                                                      # stepDefinition.AddVacancytest.user_logs_in_with_credentials_and_navigates_to_recruitment_section()
+  Given User Logs in with Credentials and Navigates to Recruitment Section                        # stepDefinition.AddVacancytest.user_logs_in_with_credentials_and_navigates_to_recruitment_section()
 No step text captured yet — skipping screenshot logic.
-  When User Navigates to Add Candidate form                                                                                                                                                     # stepDefinition.Candidate_test.navigateto_add_candidateform()
+  When User Navigates to Add Candidate form                                                       # stepDefinition.Candidate_test.navigateto_add_candidateform()
 No step text captured yet — skipping screenshot logic.
-  Then User fill all Mandatory fields for user with first name as "Angella"                                                                                                                     # stepDefinition.Candidate_test.mandatory_fieldsfill_candidateform(java.lang.String)
+  Then User fill all Mandatory fields for user with first name as "Michael"                       # stepDefinition.Candidate_test.mandatory_fieldsfill_candidateform(java.lang.String)
 No step text captured yet — skipping screenshot logic.
-  And User fill all Non-Mandatory fields for user with first name as "Angella"                                                                                                                  # stepDefinition.Candidate_test.non_mandatory_fieldsfill_candidateform(java.lang.String)
+  And User fill all Non-Mandatory fields for user with first name as "Michael"                    # stepDefinition.Candidate_test.non_mandatory_fieldsfill_candidateform(java.lang.String)
 No step text captured yet — skipping screenshot logic.
-  And Saves the Add Candidate form                                                                                                                                                              # stepDefinition.Candidate_test.save_candidateform()
+  And Saves the Add Candidate form                                                                # stepDefinition.Candidate_test.save_the_form()
 No step text captured yet — skipping screenshot logic.
-  And Validate if Candidate details screen is visible                                                                                                                                           # stepDefinition.Candidate_test.validate_candidate_details_screen()
+  And Validate if Candidate details screen is visible                                             # stepDefinition.Candidate_test.validate_candidate_details_screen()
 Current Step from PicoContainer: Validate if Candidate details screen is visible
 Current Step: Validate if Candidate details screen is visible
 Validation Step? true
 Current Step: Validate if Candidate details screen is visible
 
-    Embedding Screenshot: Validate if Candidate details screen is visible [image/png 129248 bytes]
+    Embedding Screenshot: Validate if Candidate details screen is visible [image/png 137823 bytes]
 
-  And Validate if the status is "Status: Application Initiated"                                                                                                                                 # stepDefinition.Candidate_test.validate_status_candidate_details_screen(java.lang.String)
+  And Validate if the status is "Status: Application Initiated"                                   # stepDefinition.Candidate_test.validate_status_candidate_details_screen(java.lang.String)
 Current Step from PicoContainer: Validate if the status is Status: Application Initiated
 Current Step: Validate if the status is Status: Application Initiated
 Validation Step? true
 Current Step: Validate if the status is Status: Application Initiated
 
-    Embedding Screenshot: Validate if the status is Status: Application Initiated [image/png 141594 bytes]
+    Embedding Screenshot: Validate if the status is Status: Application Initiated [image/png 137823 bytes]
 
-  And "Shortlist" the Candidate                                                                                                                                                                 # stepDefinition.Candidate_test.reject_candidate(java.lang.String)
-No step text captured yet — skipping screenshot logic.
-  And Validate if Candidate details screen is visible                                                                                                                                           # stepDefinition.Candidate_test.validate_candidate_details_screen()
-Current Step from PicoContainer: Validate if Candidate details screen is visible
-Current Step: Validate if Candidate details screen is visible
+  And Validate if details in the screen are as per the form filled                                # stepDefinition.Candidate_test.validate_candidate_details_screen_fields()
+      java.lang.NullPointerException: Cannot invoke "java.util.Map.keySet()" because "this.candidate_fields" is null
+	at stepDefinition.Candidate_test.validate_candidate_details_screen_fields(Candidate_test.java:288)
+	at ✽.Validate if details in the screen are as per the form filled(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:112)
+
+Current Step from PicoContainer: Validate if details in the screen are as per the form filled
+Current Step: Validate if details in the screen are as per the form filled
 Validation Step? true
-Current Step: Validate if Candidate details screen is visible
+Current Step: Validate if details in the screen are as per the form filled
 
-    Embedding Screenshot: Validate if Candidate details screen is visible [image/png 129261 bytes]
+    Embedding Screenshot: Validate if details in the screen are as per the form filled [image/png 138252 bytes]
 
-  And Validate if the status is "Status: Shortlisted"                                                                                                                                           # stepDefinition.Candidate_test.validate_status_candidate_details_screen(java.lang.String)
-Current Step from PicoContainer: Validate if the status is Status: Shortlisted
-Current Step: Validate if the status is Status: Shortlisted
-Validation Step? true
-Current Step: Validate if the status is Status: Shortlisted
-
-    Embedding Screenshot: Validate if the status is Status: Shortlisted [image/png 129201 bytes]
-
-  And "Schedule Interview" the Candidate                                                                                                                                                        # stepDefinition.Candidate_test.reject_candidate(java.lang.String)
-No step text captured yet — skipping screenshot logic.
-  And Validate if Candidate details screen is visible                                                                                                                                           # stepDefinition.Candidate_test.validate_candidate_details_screen()
-Current Step from PicoContainer: Validate if Candidate details screen is visible
-Current Step: Validate if Candidate details screen is visible
-Validation Step? true
-Current Step: Validate if Candidate details screen is visible
-
-    Embedding Screenshot: Validate if Candidate details screen is visible [image/png 129261 bytes]
-
-  And Validate if the status is "Status: Interview Scheduled"                                                                                                                                   # stepDefinition.Candidate_test.validate_status_candidate_details_screen(java.lang.String)
-Current Step from PicoContainer: Validate if the status is Status: Interview Scheduled
-Current Step: Validate if the status is Status: Interview Scheduled
-Validation Step? true
-Current Step: Validate if the status is Status: Interview Scheduled
-
-    Embedding Screenshot: Validate if the status is Status: Interview Scheduled [image/png 145795 bytes]
-
-  And "Mark Interview Passed" the Candidate                                                                                                                                                     # stepDefinition.Candidate_test.reject_candidate(java.lang.String)
-No step text captured yet — skipping screenshot logic.
-  And Validate if Candidate details screen is visible                                                                                                                                           # stepDefinition.Candidate_test.validate_candidate_details_screen()
-Current Step from PicoContainer: Validate if Candidate details screen is visible
-Current Step: Validate if Candidate details screen is visible
-Validation Step? true
-Current Step: Validate if Candidate details screen is visible
-
-    Embedding Screenshot: Validate if Candidate details screen is visible [image/png 129259 bytes]
-
-  And Validate if the status is "Status: Interview Passed"                                                                                                                                      # stepDefinition.Candidate_test.validate_status_candidate_details_screen(java.lang.String)
-Current Step from PicoContainer: Validate if the status is Status: Interview Passed
-Current Step: Validate if the status is Status: Interview Passed
-Validation Step? true
-Current Step: Validate if the status is Status: Interview Passed
-
-    Embedding Screenshot: Validate if the status is Status: Interview Passed [image/png 129203 bytes]
-
-  And Schedule another Interview for the Candidate                                                                                                                                              # stepDefinition.Candidate_test.schedule_interview()
-No step text captured yet — skipping screenshot logic.
-  And Validate if Candidate details screen is visible                                                                                                                                           # stepDefinition.Candidate_test.validate_candidate_details_screen()
-Current Step from PicoContainer: Validate if Candidate details screen is visible
-Current Step: Validate if Candidate details screen is visible
-Validation Step? true
-Current Step: Validate if Candidate details screen is visible
-
-    Embedding Screenshot: Validate if Candidate details screen is visible [image/png 129255 bytes]
-
-  And Validate if the status is "Status: Interview Scheduled"                                                                                                                                   # stepDefinition.Candidate_test.validate_status_candidate_details_screen(java.lang.String)
-Current Step from PicoContainer: Validate if the status is Status: Interview Scheduled
-Current Step: Validate if the status is Status: Interview Scheduled
-Validation Step? true
-Current Step: Validate if the status is Status: Interview Scheduled
-
-    Embedding Screenshot: Validate if the status is Status: Interview Scheduled [image/png 129210 bytes]
-
-  And "Mark Interview Passed" the Candidate                                                                                                                                                     # stepDefinition.Candidate_test.reject_candidate(java.lang.String)
-No step text captured yet — skipping screenshot logic.
-  And Validate if Candidate details screen is visible                                                                                                                                           # stepDefinition.Candidate_test.validate_candidate_details_screen()
-Current Step from PicoContainer: Validate if Candidate details screen is visible
-Current Step: Validate if Candidate details screen is visible
-Validation Step? true
-Current Step: Validate if Candidate details screen is visible
-
-    Embedding Screenshot: Validate if Candidate details screen is visible [image/png 129252 bytes]
-
-  And Validate if the status is "Status: Interview Passed"                                                                                                                                      # stepDefinition.Candidate_test.validate_status_candidate_details_screen(java.lang.String)
-Current Step from PicoContainer: Validate if the status is Status: Interview Passed
-Current Step: Validate if the status is Status: Interview Passed
-Validation Step? true
-Current Step: Validate if the status is Status: Interview Passed
-
-    Embedding Screenshot: Validate if the status is Status: Interview Passed [image/png 129216 bytes]
-
-  And Validate the Candidate History for "Second Round Interview Passed" candidate                                                                                                              # stepDefinition.Candidate_test.candidate_history_validation(java.lang.String)
-Current Step from PicoContainer: Validate the Candidate History for Second Round Interview Passed candidate
-Current Step: Validate the Candidate History for Second Round Interview Passed candidate
-Validation Step? true
-Current Step: Validate the Candidate History for Second Round Interview Passed candidate
-
-    Embedding Screenshot: Validate the Candidate History for Second Round Interview Passed candidate [image/png 179587 bytes]
-
-  And Navigate to Candidates section                                                                                                                                                            # stepDefinition.AddVacancytest.navigateto_Candidates_section()
-No step text captured yet — skipping screenshot logic.
-  And Check if candidate name appears in Candidate filter                                                                                                                                       # stepDefinition.Candidate_test.candidate_filter_validation()
-Current Step from PicoContainer: Check if candidate name appears in Candidate filter
-Current Step: Check if candidate name appears in Candidate filter
-Validation Step? true
-Current Step: Check if candidate name appears in Candidate filter
-
-    Embedding Screenshot: Check if candidate name appears in Candidate filter [image/png 145708 bytes]
-
-  And Filter Candidate list by newly added candidate name                                                                                                                                       # stepDefinition.Candidate_test.filterby_candidatename()
-No step text captured yet — skipping screenshot logic.
-  And Check if the status of the candidate is "Interview Passed"                                                                                                                                # stepDefinition.Candidate_test.validate_candidate_status_in_table(java.lang.String)
-Current Step from PicoContainer: Check if the status of the candidate is Interview Passed
-Current Step: Check if the status of the candidate is Interview Passed
-Validation Step? true
-Current Step: Check if the status of the candidate is Interview Passed
-
-    Embedding Screenshot: Check if the status of the candidate is Interview Passed [image/png 146219 bytes]
-
-  And User clicks view icon                                                                                                                                                                     # stepDefinition.Candidate_test.view_filtered_candidate()
-No step text captured yet — skipping screenshot logic.
-  And "Reject" the Candidate                                                                                                                                                                    # stepDefinition.Candidate_test.reject_candidate(java.lang.String)
-No step text captured yet — skipping screenshot logic.
-  And Validate if Candidate details screen is visible                                                                                                                                           # stepDefinition.Candidate_test.validate_candidate_details_screen()
-Current Step from PicoContainer: Validate if Candidate details screen is visible
-Current Step: Validate if Candidate details screen is visible
-Validation Step? true
-Current Step: Validate if Candidate details screen is visible
-
-    Embedding Screenshot: Validate if Candidate details screen is visible [image/png 129232 bytes]
-
-  And Validate if the status is "Status: Rejected"                                                                                                                                              # stepDefinition.Candidate_test.validate_status_candidate_details_screen(java.lang.String)
-Current Step from PicoContainer: Validate if the status is Status: Rejected
-Current Step: Validate if the status is Status: Rejected
-Validation Step? true
-Current Step: Validate if the status is Status: Rejected
-
-    Embedding Screenshot: Validate if the status is Status: Rejected [image/png 129188 bytes]
-
-  And Validate the Candidate History for "Rejected" candidate                                                                                                                                   # stepDefinition.Candidate_test.candidate_history_validation(java.lang.String)
-Current Step from PicoContainer: Validate the Candidate History for Rejected candidate
-Current Step: Validate the Candidate History for Rejected candidate
-Validation Step? true
-Current Step: Validate the Candidate History for Rejected candidate
-
-    Embedding Screenshot: Validate the Candidate History for Rejected candidate [image/png 186857 bytes]
-
-  And Navigate to Candidates section                                                                                                                                                            # stepDefinition.AddVacancytest.navigateto_Candidates_section()
-No step text captured yet — skipping screenshot logic.
-  And Check if candidate name appears in Candidate filter                                                                                                                                       # stepDefinition.Candidate_test.candidate_filter_validation()
-Current Step from PicoContainer: Check if candidate name appears in Candidate filter
-Current Step: Check if candidate name appears in Candidate filter
-Validation Step? true
-Current Step: Check if candidate name appears in Candidate filter
-
-    Embedding Screenshot: Check if candidate name appears in Candidate filter [image/png 145697 bytes]
-
-  And Filter Candidate list by newly added candidate name                                                                                                                                       # stepDefinition.Candidate_test.filterby_candidatename()
-No step text captured yet — skipping screenshot logic.
-  And Check if the status of the candidate is "Rejected"                                                                                                                                        # stepDefinition.Candidate_test.validate_candidate_status_in_table(java.lang.String)
-Current Step from PicoContainer: Check if the status of the candidate is Rejected
-Current Step: Check if the status of the candidate is Rejected
-Validation Step? true
-Current Step: Check if the status of the candidate is Rejected
-
-    Embedding Screenshot: Check if the status of the candidate is Rejected [image/png 146051 bytes]
-
-  And Delete the Newly added candidate                                                                                                                                                          # stepDefinition.Candidate_test.delete_filtered_candidate()
-No step text captured yet — skipping screenshot logic.
+  And Validate the Candidate History for the newly added candidate in Application Initiated stage # stepDefinition.Candidate_test.candidate_history_from_initiated_stage()
+  And Navigate to Candidates section                                                              # stepDefinition.AddVacancytest.navigateto_Candidates_section()
+  And Check if candidate name appears in Candidate filter                                         # stepDefinition.Candidate_test.candidate_filter_validation()
+  And Filter Candidate list by newly added candidate name                                         # stepDefinition.Candidate_test.filterby_candidatename()
+  And Validate if the newly added candidate is displayed in Candidate list table                  # stepDefinition.Candidate_test.validate_candidatelist_table()
+  And Delete the Newly added candidate                                                            # stepDefinition.Candidate_test.delete_filtered_candidate()
+  And Check if Newly added candidate name no longer appears in Candidate filter                   # stepDefinition.Candidate_test.candidate_removal_filter_validation()
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Oct 10, 2025 2:18:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Oct 12, 2025 1:06:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 141, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 141
 ]]></system-err>
   </testcase>
