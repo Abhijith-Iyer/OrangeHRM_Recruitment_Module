@@ -1,1 +1,1 @@
-file:src/test/java/features/AddCandidates.feature:527
+file:src/test/java/features/AddCandidates.feature:126

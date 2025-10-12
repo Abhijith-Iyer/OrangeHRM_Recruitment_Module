@@ -88,7 +88,7 @@ public class CandidatePage extends BasePage {
 	public WebElement canceldeleteops;
 	@FindBy(xpath ="//div[@role='document']")
 	public WebElement confirm_delete_popup;
-	@FindBy(xpath ="(//div/span)[3]")
+	@FindBy(xpath ="//div/span[text()[contains(.,'Records Found')]]")
 	public WebElement numberoffilterrecords;
 	//*************Candidate_view_elements*******///////////
 	@FindBy (xpath="//div[contains(@class, 'status')]/p")

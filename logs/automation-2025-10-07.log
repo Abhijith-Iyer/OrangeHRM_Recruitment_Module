@@ -1,0 +1,590 @@
+09:32:07.661 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:32:07.670 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:32:10.936 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:32:10.936 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:32:10.943 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:32:10.943 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:32:10.950 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:32:10.968 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:32:10.968 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:32:17.576 [main] INFO  - Logging in and Navigating to Recruitment
+09:32:23.791 [main] INFO  - Successfully navigated to Recruitment
+09:32:28.138 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:32:28.138 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:32:28.143 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:32:28.143 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:32:28.143 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:32:28.154 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:32:28.154 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:32:31.424 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:32:31.426 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:32:31.426 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:32:31.428 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:32:31.430 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:32:31.444 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:32:31.444 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:32:42.207 [main] INFO  - Logging in and Navigating to Recruitment
+09:32:48.338 [main] INFO  - Successfully navigated to Recruitment
+09:32:52.643 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:32:52.643 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:32:52.643 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:32:52.645 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:32:52.645 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:32:52.656 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:32:52.656 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:32:55.908 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:32:55.910 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:32:55.910 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:32:55.911 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:32:55.911 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:32:55.911 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:32:55.911 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:33:04.135 [main] INFO  - Logging in and Navigating to Recruitment
+09:33:10.625 [main] INFO  - Successfully navigated to Recruitment
+09:33:15.030 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:33:15.031 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:33:15.031 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:33:15.032 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:33:15.032 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:33:15.044 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:33:15.044 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:33:18.357 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:33:18.357 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:33:18.357 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:33:18.357 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:33:18.357 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:33:18.368 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:33:18.368 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:33:26.227 [main] INFO  - Logging in and Navigating to Recruitment
+09:33:32.329 [main] INFO  - Successfully navigated to Recruitment
+09:33:36.634 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:33:36.634 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:33:36.634 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:33:36.637 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:33:36.637 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:33:36.645 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:33:36.645 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:33:39.876 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:33:39.876 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:33:39.876 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:33:39.876 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:33:39.888 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:33:39.888 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:33:39.888 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:33:50.458 [main] INFO  - Logging in and Navigating to Recruitment
+09:33:56.796 [main] INFO  - Successfully navigated to Recruitment
+09:34:01.332 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:34:01.332 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:34:01.332 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:34:01.332 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:34:01.332 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:34:01.342 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:34:01.345 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:34:04.710 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:34:04.712 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:34:04.712 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:34:04.714 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:34:04.714 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:34:04.728 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:34:04.728 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:34:27.804 [main] INFO  - Logging in and Navigating to Recruitment
+09:34:34.564 [main] INFO  - Successfully navigated to Recruitment
+09:34:39.364 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:34:39.364 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:34:39.364 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:34:39.364 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:34:39.364 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:34:39.377 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:34:39.377 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:34:42.743 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:34:42.747 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:34:42.749 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:34:42.750 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:34:42.752 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:34:42.781 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:34:42.783 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:34:51.705 [main] INFO  - Logging in and Navigating to Recruitment
+09:34:59.110 [main] INFO  - Successfully navigated to Recruitment
+09:35:03.961 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:35:03.964 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:35:03.964 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:35:03.964 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:35:03.964 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:35:03.977 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:35:03.977 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:35:07.286 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:35:07.286 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:35:07.286 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:35:07.286 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:35:07.286 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:35:07.286 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:35:07.286 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:35:15.140 [main] INFO  - Logging in and Navigating to Recruitment
+09:35:21.762 [main] INFO  - Successfully navigated to Recruitment
+09:35:26.598 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:35:26.604 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:35:26.604 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:35:26.604 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:35:26.606 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:35:26.616 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:35:26.616 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:35:29.914 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:35:29.914 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:35:29.916 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:35:29.916 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:35:29.918 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:35:29.927 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:35:29.927 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:35:41.719 [main] INFO  - Logging in and Navigating to Recruitment
+09:35:48.616 [main] INFO  - Successfully navigated to Recruitment
+09:35:53.873 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:35:53.873 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:35:53.875 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:35:53.876 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:35:53.878 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:35:53.893 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:35:53.893 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:35:57.375 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:35:57.375 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:35:57.377 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:35:57.377 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:35:57.379 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:35:57.433 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:35:57.433 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:36:08.511 [main] INFO  - Logging in and Navigating to Recruitment
+09:36:16.605 [main] INFO  - Successfully navigated to Recruitment
+09:36:22.008 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:36:22.008 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:36:22.010 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:36:22.012 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:36:22.012 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:36:22.030 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:36:22.030 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:36:25.326 [main] INFO  - Checking if error message is displayed...
+09:36:45.385 [main] INFO  - Error message not found in DOM.
+09:36:54.901 [main] INFO  - Logging in and Navigating to Recruitment
+09:37:01.817 [main] INFO  - Successfully navigated to Recruitment
+09:37:06.774 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:37:06.774 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:37:06.779 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:37:06.779 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:37:06.779 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:37:06.791 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:37:06.791 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:37:10.052 [main] INFO  - Checking if error message is displayed...
+09:37:30.111 [main] INFO  - Error message not found in DOM.
+09:37:39.424 [main] INFO  - Logging in and Navigating to Recruitment
+09:37:46.255 [main] INFO  - Successfully navigated to Recruitment
+09:37:51.032 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:37:51.032 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:37:51.032 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:37:51.034 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:37:51.034 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:37:51.046 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:37:51.046 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:37:54.267 [main] INFO  - Checking if error message is displayed...
+09:38:03.890 [main] INFO  - Logging in and Navigating to Recruitment
+09:38:11.595 [main] INFO  - Successfully navigated to Recruitment
+09:38:16.144 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:38:16.144 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:38:16.144 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:38:16.144 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:38:16.144 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:38:16.152 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:38:16.152 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:38:19.330 [main] INFO  - Checking if error message is displayed...
+09:38:30.111 [main] INFO  - Logging in and Navigating to Recruitment
+09:38:37.452 [main] INFO  - Successfully navigated to Recruitment
+09:38:43.173 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:38:43.173 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:38:43.175 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:38:43.175 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:38:43.177 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:38:43.190 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:38:43.190 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:38:46.406 [main] INFO  - Checking if error message is displayed...
+09:39:09.034 [main] INFO  - Logging in and Navigating to Recruitment
+09:39:16.084 [main] INFO  - Successfully navigated to Recruitment
+09:39:20.704 [main] INFO  - Saving the form
+09:39:26.089 [main] INFO  - Starting to check error messages
+09:39:26.120 [main] INFO  - Error Message displayed for Field1...
+09:39:26.147 [main] INFO  - Error Message displayed for Field2...
+09:39:26.179 [main] INFO  - Error Message displayed for Field3...
+09:39:26.382 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:39:26.382 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:39:26.382 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:39:26.382 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:39:26.384 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:39:26.390 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:39:26.390 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:39:26.413 [main] TRACE - Resolving type for handle stcellstylexfid70c7type
+09:39:26.427 [main] TRACE - Resolving type for handle stnumfmtid76fbtype
+09:39:26.443 [main] TRACE - Resolving type for handle ctworkbookpr03a5type
+09:39:27.310 [main] INFO  - Starting to check error messages
+09:39:33.341 [main] INFO  - Error Message displayed for Field1...
+09:39:37.033 [main] INFO  - Error Message displayed for Field2...
+09:39:43.347 [main] INFO  - Error Message displayed for Field3...
+09:40:27.099 [main] INFO  - Logging in and Navigating to Recruitment
+09:40:35.119 [main] INFO  - Successfully navigated to Recruitment
+09:40:39.915 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:40:39.915 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:40:39.917 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:40:39.917 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:40:39.917 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:40:39.933 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:40:39.933 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:40:40.833 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:40:40.835 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:40:40.835 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:40:40.837 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:40:40.837 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:40:40.848 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:40:40.848 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:40:43.229 [main] INFO  - Saving the form
+09:40:48.793 [main] INFO  - User has been auto navigated to Candidate details screen
+09:40:49.134 [main] INFO  - Checking the current status...
+09:40:49.174 [main] INFO  - Status is as expected...
+09:40:55.738 [main] INFO  - User has been auto navigated to Candidate details screen
+09:40:56.153 [main] INFO  - Checking the current status...
+09:40:56.206 [main] INFO  - Status is as expected...
+09:41:07.639 [main] INFO  - User has been auto navigated to Candidate details screen
+09:41:08.067 [main] INFO  - Checking the current status...
+09:41:08.120 [main] INFO  - Status is as expected...
+09:41:08.618 [main] INFO  - Validating if the history log for addition of candidate
+09:41:08.705 [main] INFO  - Checking Candidate History log for: Interview Scheduled
+09:41:53.783 [main] INFO  - Logging in and Navigating to Recruitment
+09:42:01.016 [main] INFO  - Successfully navigated to Recruitment
+09:42:05.559 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:42:05.559 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:42:05.559 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:42:05.559 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:42:05.559 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:42:05.567 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:42:05.567 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:42:06.425 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:42:06.427 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:42:06.427 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:42:06.427 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:42:06.429 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:42:06.433 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:42:06.433 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:42:09.014 [main] INFO  - Saving the form
+09:42:14.620 [main] INFO  - User has been auto navigated to Candidate details screen
+09:42:15.003 [main] INFO  - Checking the current status...
+09:42:15.071 [main] INFO  - Status is as expected...
+09:42:21.585 [main] INFO  - User has been auto navigated to Candidate details screen
+09:42:21.898 [main] INFO  - Checking the current status...
+09:42:21.954 [main] INFO  - Status is as expected...
+09:42:33.509 [main] INFO  - User has been auto navigated to Candidate details screen
+09:42:33.836 [main] INFO  - Checking the current status...
+09:42:33.865 [main] INFO  - Status is as expected...
+09:42:40.366 [main] INFO  - User has been auto navigated to Candidate details screen
+09:42:40.750 [main] INFO  - Checking the current status...
+09:42:40.793 [main] INFO  - Status is as expected...
+09:42:52.730 [main] INFO  - User has been auto navigated to Candidate details screen
+09:42:53.051 [main] INFO  - Checking the current status...
+09:42:53.091 [main] INFO  - Status is as expected...
+09:42:53.661 [main] INFO  - Validating if the history log for addition of candidate
+09:42:53.805 [main] INFO  - Checking Candidate History log for: Second Interview Scheduled
+09:43:36.375 [main] INFO  - Logging in and Navigating to Recruitment
+09:43:43.456 [main] INFO  - Successfully navigated to Recruitment
+09:43:48.152 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:43:48.152 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:43:48.155 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:43:48.155 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:43:48.156 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:43:48.162 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:43:48.162 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:43:48.998 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:43:48.998 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:43:48.998 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:43:48.998 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:43:48.998 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:43:49.005 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:43:49.005 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:43:51.175 [main] INFO  - Saving the form
+09:43:56.805 [main] INFO  - User has been auto navigated to Candidate details screen
+09:43:57.120 [main] INFO  - Checking the current status...
+09:43:57.188 [main] INFO  - Status is as expected...
+09:44:04.154 [main] INFO  - User has been auto navigated to Candidate details screen
+09:44:04.557 [main] INFO  - Checking the current status...
+09:44:04.616 [main] INFO  - Status is as expected...
+09:44:16.720 [main] INFO  - User has been auto navigated to Candidate details screen
+09:44:17.019 [main] INFO  - Checking the current status...
+09:44:17.058 [main] INFO  - Status is as expected...
+09:44:23.736 [main] INFO  - User has been auto navigated to Candidate details screen
+09:44:24.184 [main] INFO  - Checking the current status...
+09:44:24.218 [main] INFO  - Status is as expected...
+09:44:36.287 [main] INFO  - User has been auto navigated to Candidate details screen
+09:44:36.640 [main] INFO  - Checking the current status...
+09:44:36.715 [main] INFO  - Status is as expected...
+09:44:43.346 [main] INFO  - User has been auto navigated to Candidate details screen
+09:44:43.894 [main] INFO  - Checking the current status...
+09:44:43.929 [main] INFO  - Status is as expected...
+09:44:50.425 [main] INFO  - User has been auto navigated to Candidate details screen
+09:44:50.717 [main] INFO  - Checking the current status...
+09:44:50.759 [main] INFO  - Status is as expected...
+09:44:57.347 [main] INFO  - User has been auto navigated to Candidate details screen
+09:44:57.715 [main] INFO  - Checking the current status...
+09:44:57.756 [main] INFO  - Status is as expected...
+09:44:58.355 [main] INFO  - Validating if the history log for addition of candidate
+09:44:58.494 [main] INFO  - Checking Candidate History log for: Offer Declined
+09:45:07.058 [main] INFO  - Logging in and Navigating to Recruitment
+09:45:15.147 [main] INFO  - Successfully navigated to Recruitment
+09:45:19.937 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:45:19.937 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:45:19.939 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:45:19.939 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:45:19.939 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:45:19.949 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:45:19.949 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:45:21.089 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+09:45:21.089 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+09:45:21.089 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+09:45:21.089 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+09:45:21.089 [main] DEBUG - Parsing relationship: /_rels/.rels
+09:45:21.099 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+09:45:21.099 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+09:45:22.536 [main] INFO  - Saving the form
+09:45:28.286 [main] INFO  - User has been auto navigated to Candidate details screen
+09:45:28.579 [main] INFO  - Checking the current status...
+09:45:28.619 [main] INFO  - Status is as expected...
+09:45:35.356 [main] INFO  - User has been auto navigated to Candidate details screen
+09:45:35.670 [main] INFO  - Checking the current status...
+09:45:35.705 [main] INFO  - Status is as expected...
+09:45:47.293 [main] INFO  - User has been auto navigated to Candidate details screen
+09:45:47.603 [main] INFO  - Checking the current status...
+09:45:47.654 [main] INFO  - Status is as expected...
+09:45:54.301 [main] INFO  - User has been auto navigated to Candidate details screen
+09:45:54.769 [main] INFO  - Checking the current status...
+09:45:54.799 [main] INFO  - Status is as expected...
+09:46:06.326 [main] INFO  - User has been auto navigated to Candidate details screen
+09:46:06.667 [main] INFO  - Checking the current status...
+09:46:06.731 [main] INFO  - Status is as expected...
+09:46:13.259 [main] INFO  - User has been auto navigated to Candidate details screen
+09:46:13.577 [main] INFO  - Checking the current status...
+09:46:13.610 [main] INFO  - Status is as expected...
+09:46:20.265 [main] INFO  - User has been auto navigated to Candidate details screen
+09:46:20.634 [main] INFO  - Checking the current status...
+09:46:20.674 [main] INFO  - Status is as expected...
+09:46:27.154 [main] INFO  - User has been auto navigated to Candidate details screen
+09:46:27.452 [main] INFO  - Checking the current status...
+09:46:27.502 [main] INFO  - Status is as expected...
+09:46:27.978 [main] INFO  - Validating if the history log for addition of candidate
+09:46:28.114 [main] INFO  - Checking Candidate History log for: Hired
+11:06:18.416 [main] INFO  - Logging in and Navigating to Recruitment
+11:06:24.459 [main] INFO  - Successfully navigated to Recruitment
+11:06:28.962 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+11:06:28.974 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+11:06:28.974 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+11:06:28.974 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+11:06:28.974 [main] DEBUG - Parsing relationship: /_rels/.rels
+11:06:29.237 [main] TRACE - Loading type system org.apache.poi.schemas.ooxml.system.ooxml
+11:06:29.244 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+11:06:29.246 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+11:06:29.248 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+11:06:29.248 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+11:06:29.248 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+11:06:29.259 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+11:06:29.259 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+11:06:29.275 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+11:06:29.275 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLLANG
+11:06:29.275 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+11:06:29.275 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+11:06:29.275 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+11:06:29.275 [main] TRACE - Reading unresolved handles for type system org.apache.poi.schemas.ooxml.system.ooxml
+11:06:29.354 [main] TRACE - Finished loading type system org.apache.poi.schemas.ooxml.system.ooxml
+11:06:29.354 [main] TRACE - Resolving type for handle themefd26doctype
+11:06:29.436 [main] TRACE - Resolving type for handle stylesheet5d8bdoctype
+11:06:29.438 [main] TRACE - Resolving type for handle ctstylesheet4257type
+11:06:29.449 [main] TRACE - Resolving type for handle ctfonts6623type
+11:06:29.449 [main] TRACE - Resolving type for handle ctfont14d8type
+11:06:29.465 [main] TRACE - Resolving type for handle ctfills2c6ftype
+11:06:29.465 [main] TRACE - Resolving type for handle ctfill550ctype
+11:06:29.465 [main] TRACE - Resolving type for handle ctborders0d66type
+11:06:29.483 [main] TRACE - Resolving type for handle ctborderf935type
+11:06:29.492 [main] TRACE - Resolving type for handle ctcellxfs1322type
+11:06:29.497 [main] TRACE - Resolving type for handle ctxf97f7type
+11:06:29.501 [main] TRACE - Resolving type for handle ctcellstylexfsa81ftype
+11:06:29.505 [main] TRACE - Resolving type for handle ctdxfsb26atype
+11:06:29.509 [main] TRACE - Resolving type for handle cttablestyles872ftype
+11:06:29.514 [main] TRACE - Resolving type for handle sstf81fdoctype
+11:06:29.517 [main] TRACE - Resolving type for handle ctsst44f3type
+11:06:29.535 [main] TRACE - Resolving type for handle ctrsta472type
+11:06:29.593 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+11:06:29.593 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+11:06:29.595 [main] TRACE - Resolving type for handle workbookec17doctype
+11:06:29.595 [main] TRACE - Resolving type for handle ctworkbook83c3type
+11:06:29.595 [main] TRACE - Resolving type for handle ctsheets49fdtype
+11:06:29.611 [main] TRACE - Resolving type for handle ctsheet4dbetype
+11:06:29.611 [main] TRACE - Resolving type for handle strelationshipid1e94type
+11:06:29.621 [main] TRACE - Resolving type for handle worksheetf539doctype
+11:06:29.627 [main] TRACE - Resolving type for handle ctworksheet530dtype
+11:06:29.630 [main] TRACE - Resolving type for handle ctcols627ctype
+11:06:29.644 [main] TRACE - Resolving type for handle ctcola95ftype
+11:06:29.674 [main] TRACE - Resolving type for handle ctsheetdata8408type
+11:06:29.674 [main] TRACE - Resolving type for handle ctrowdd39type
+11:06:29.674 [main] TRACE - Resolving type for handle ctcell842btype
+11:06:29.690 [main] TRACE - Resolving type for handle stcellrefe4e0type
+11:06:29.706 [main] TRACE - Resolving type for handle cthyperlinks6416type
+11:06:29.722 [main] TRACE - Resolving type for handle cthyperlink0c85type
+11:06:29.740 [main] TRACE - Resolving type for handle stxstringf179type
+11:06:29.754 [main] TRACE - Resolving type for handle stcelltypebf95type
+11:06:29.770 [main] TRACE - Resolving type for handle stcellstylexfid70c7type
+11:06:29.770 [main] TRACE - Resolving type for handle stnumfmtid76fbtype
+11:06:29.770 [main] TRACE - Resolving type for handle ctworkbookpr03a5type
+11:06:30.309 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+11:06:30.316 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+11:06:30.316 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+11:06:30.316 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+11:06:30.321 [main] DEBUG - Parsing relationship: /_rels/.rels
+11:06:30.340 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+11:06:30.340 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+11:06:31.220 [main] INFO  - Saving the form
+11:06:36.697 [main] INFO  - User has been auto navigated to Candidate details screen
+11:06:36.900 [main] INFO  - Checking the current status...
+11:06:36.930 [main] INFO  - Status is as expected...
+11:06:43.412 [main] INFO  - User has been auto navigated to Candidate details screen
+11:06:43.597 [main] INFO  - Checking the current status...
+11:06:43.629 [main] INFO  - Status is as expected...
+11:06:52.030 [main] INFO  - User has been auto navigated to Candidate details screen
+11:06:52.244 [main] INFO  - Checking the current status...
+11:06:52.263 [main] INFO  - Status is as expected...
+11:06:57.704 [main] INFO  - User has been auto navigated to Candidate details screen
+11:06:57.914 [main] INFO  - Checking the current status...
+11:06:57.936 [main] INFO  - Status is as expected...
+11:07:05.613 [main] INFO  - User has been auto navigated to Candidate details screen
+11:07:05.808 [main] INFO  - Checking the current status...
+11:07:05.828 [main] INFO  - Status is as expected...
+11:07:12.084 [main] INFO  - User has been auto navigated to Candidate details screen
+11:07:12.307 [main] INFO  - Checking the current status...
+11:07:12.336 [main] INFO  - Status is as expected...
+11:07:17.874 [main] INFO  - User has been auto navigated to Candidate details screen
+11:07:18.091 [main] INFO  - Checking the current status...
+11:07:18.116 [main] INFO  - Status is as expected...
+11:07:24.035 [main] INFO  - User has been auto navigated to Candidate details screen
+11:07:24.260 [main] INFO  - Checking the current status...
+11:07:24.275 [main] INFO  - Status is as expected...
+11:07:24.811 [main] INFO  - Validating if the history log for addition of candidate
+11:07:24.857 [main] INFO  - Checking Candidate History log for: Hired
+22:19:09.472 [main] INFO  - Logging in and Navigating to Recruitment
+22:19:16.335 [main] INFO  - Successfully navigated to Recruitment
+22:19:21.724 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+22:19:21.726 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+22:19:21.739 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+22:19:21.742 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+22:19:21.746 [main] DEBUG - Parsing relationship: /_rels/.rels
+22:19:22.264 [main] TRACE - Loading type system org.apache.poi.schemas.ooxml.system.ooxml
+22:19:22.271 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+22:19:22.271 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+22:19:22.271 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+22:19:22.271 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+22:19:22.281 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+22:19:22.302 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+22:19:22.302 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+22:19:22.328 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+22:19:22.330 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLLANG
+22:19:22.330 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+22:19:22.330 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+22:19:22.334 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+22:19:22.334 [main] TRACE - Reading unresolved handles for type system org.apache.poi.schemas.ooxml.system.ooxml
+22:19:22.480 [main] TRACE - Finished loading type system org.apache.poi.schemas.ooxml.system.ooxml
+22:19:22.484 [main] TRACE - Resolving type for handle themefd26doctype
+22:19:22.645 [main] TRACE - Resolving type for handle stylesheet5d8bdoctype
+22:19:22.664 [main] TRACE - Resolving type for handle ctstylesheet4257type
+22:19:22.671 [main] TRACE - Resolving type for handle ctfonts6623type
+22:19:22.682 [main] TRACE - Resolving type for handle ctfont14d8type
+22:19:22.702 [main] TRACE - Resolving type for handle ctfills2c6ftype
+22:19:22.706 [main] TRACE - Resolving type for handle ctfill550ctype
+22:19:22.715 [main] TRACE - Resolving type for handle ctborders0d66type
+22:19:22.715 [main] TRACE - Resolving type for handle ctborderf935type
+22:19:22.729 [main] TRACE - Resolving type for handle ctcellxfs1322type
+22:19:22.729 [main] TRACE - Resolving type for handle ctxf97f7type
+22:19:22.729 [main] TRACE - Resolving type for handle ctcellstylexfsa81ftype
+22:19:22.745 [main] TRACE - Resolving type for handle ctdxfsb26atype
+22:19:22.749 [main] TRACE - Resolving type for handle cttablestyles872ftype
+22:19:22.749 [main] TRACE - Resolving type for handle sstf81fdoctype
+22:19:22.777 [main] TRACE - Resolving type for handle ctsst44f3type
+22:19:22.793 [main] TRACE - Resolving type for handle ctrsta472type
+22:19:22.882 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+22:19:22.882 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+22:19:22.891 [main] TRACE - Resolving type for handle workbookec17doctype
+22:19:22.900 [main] TRACE - Resolving type for handle ctworkbook83c3type
+22:19:22.916 [main] TRACE - Resolving type for handle ctsheets49fdtype
+22:19:22.924 [main] TRACE - Resolving type for handle ctsheet4dbetype
+22:19:22.928 [main] TRACE - Resolving type for handle strelationshipid1e94type
+22:19:22.928 [main] TRACE - Resolving type for handle worksheetf539doctype
+22:19:22.949 [main] TRACE - Resolving type for handle ctworksheet530dtype
+22:19:22.975 [main] TRACE - Resolving type for handle ctcols627ctype
+22:19:22.985 [main] TRACE - Resolving type for handle ctcola95ftype
+22:19:23.034 [main] TRACE - Resolving type for handle ctsheetdata8408type
+22:19:23.034 [main] TRACE - Resolving type for handle ctrowdd39type
+22:19:23.049 [main] TRACE - Resolving type for handle ctcell842btype
+22:19:23.064 [main] TRACE - Resolving type for handle stcellrefe4e0type
+22:19:23.118 [main] TRACE - Resolving type for handle cthyperlinks6416type
+22:19:23.122 [main] TRACE - Resolving type for handle cthyperlink0c85type
+22:19:23.159 [main] TRACE - Resolving type for handle stxstringf179type
+22:19:23.175 [main] TRACE - Resolving type for handle stcelltypebf95type
+22:19:23.207 [main] TRACE - Resolving type for handle stcellstylexfid70c7type
+22:19:23.213 [main] TRACE - Resolving type for handle stnumfmtid76fbtype
+22:19:23.220 [main] TRACE - Resolving type for handle ctworkbookpr03a5type
+22:19:24.237 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+22:19:24.240 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+22:19:24.243 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+22:19:24.243 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+22:19:24.243 [main] DEBUG - Parsing relationship: /_rels/.rels
+22:19:24.307 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+22:19:24.307 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+22:19:26.725 [main] INFO  - Saving the form
+22:19:32.425 [main] INFO  - User has been auto navigated to Candidate details screen
+22:19:32.832 [main] INFO  - Checking the current status...
+22:19:32.896 [main] INFO  - Status is as expected...
+22:19:39.901 [main] INFO  - User has been auto navigated to Candidate details screen
+22:19:40.368 [main] INFO  - Checking the current status...
+22:19:40.408 [main] INFO  - Status is as expected...
+22:19:53.286 [main] INFO  - User has been auto navigated to Candidate details screen
+22:19:53.709 [main] INFO  - Checking the current status...
+22:19:53.748 [main] INFO  - Status is as expected...
+22:20:02.166 [main] INFO  - User has been auto navigated to Candidate details screen
+22:20:02.546 [main] INFO  - Checking the current status...
+22:20:02.585 [main] INFO  - Status is as expected...
+22:20:14.842 [main] INFO  - User has been auto navigated to Candidate details screen
+22:20:15.261 [main] INFO  - Checking the current status...
+22:20:15.304 [main] INFO  - Status is as expected...
+22:20:21.924 [main] INFO  - User has been auto navigated to Candidate details screen
+22:20:22.407 [main] INFO  - Checking the current status...
+22:20:22.444 [main] INFO  - Status is as expected...
+22:20:29.400 [main] INFO  - User has been auto navigated to Candidate details screen
+22:20:29.773 [main] INFO  - Checking the current status...
+22:20:29.815 [main] INFO  - Status is as expected...
+22:20:37.062 [main] INFO  - User has been auto navigated to Candidate details screen
+22:20:37.502 [main] INFO  - Checking the current status...
+22:20:37.543 [main] INFO  - Status is as expected...
+22:20:38.073 [main] INFO  - Validating if the history log for addition of candidate
+22:20:38.167 [main] INFO  - Checking Candidate History log for: Hired
+22:20:38.170 [main] INFO  - Candidate History log forHired is displayed as expected
+22:20:38.480 [main] INFO  - Navigating to Candidates section
+22:20:45.152 [main] INFO  - Deleting the candidate...
+22:20:45.560 [main] INFO  - Delete operation over...
+22:22:08.408 [main] INFO  - Logging in and Navigating to Recruitment
+22:22:15.272 [main] INFO  - Successfully navigated to Recruitment
+22:22:20.222 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+22:22:20.235 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+22:22:20.239 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+22:22:20.239 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+22:22:20.246 [main] DEBUG - Parsing relationship: /_rels/.rels
+22:22:20.597 [main] TRACE - Loading type system org.apache.poi.schemas.ooxml.system.ooxml
+22:22:20.604 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+22:22:20.604 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+22:22:20.604 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+22:22:20.604 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+22:22:20.604 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+22:22:20.642 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+22:22:20.642 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+22:22:20.661 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+22:22:20.663 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLLANG
+22:22:20.663 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+22:22:20.669 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+22:22:20.671 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+22:22:20.671 [main] TRACE - Reading unresolved handles for type system org.apache.poi.schemas.ooxml.system.ooxml
+22:22:20.795 [main] TRACE - Finished loading type system org.apache.poi.schemas.ooxml.system.ooxml

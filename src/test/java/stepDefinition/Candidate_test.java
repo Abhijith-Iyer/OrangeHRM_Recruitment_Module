@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TimeZone;
 //import java.util.Properties;
 //import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
@@ -28,6 +29,7 @@ import pageObjects.DashboardPage;
 import pageObjects.LoginPage;
 //import pageObjects.VacancyformPage;
 import utilities.DataReader;
+import utilities.StepContext;
 
 public class Candidate_test extends Commons {
 	LoginPage lp;
@@ -40,6 +42,13 @@ public class Candidate_test extends Commons {
 	List<String> candidate_field_list = new ArrayList<>();
 	String fullName;
 	String interviewerName;
+	
+	 private final StepContext stepContext;
+
+	    public Candidate_test(StepContext stepContext) {
+	        this.stepContext = stepContext;
+	    }
+
 	//SoftAssert softAssert;
 	
 	//Properties p;
@@ -70,6 +79,13 @@ public class Candidate_test extends Commons {
 			Assert.fail();
 		}
 	}*/
+	public String getcurrentdateInGMT() {
+	    SimpleDateFormat df = new SimpleDateFormat("yyyy-dd-MM");
+	    df.setTimeZone(TimeZone.getTimeZone("GMT")); // Set timezone to GMT
+	    Date dt = new Date();
+	    return df.format(dt);
+	}
+
 	public String getcurrentdate() {
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-dd-MM");
 		Date dt = new Date();
@@ -85,7 +101,7 @@ public class Candidate_test extends Commons {
             adjusted = adjusted.plusMonths(1);
         }
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-dd-MM");
         return adjusted.format(formatter);
     }
 	public String getAdjustedDate2() {
@@ -97,7 +113,7 @@ public class Candidate_test extends Commons {
             adjusted = adjusted.plusMonths(1);
         }
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-dd-MM");
         return adjusted.format(formatter);
     }
 	public String getcandidatelogxpath(int i, int j) {
@@ -168,6 +184,7 @@ public class Candidate_test extends Commons {
 	}
 	@Then("Validate if the file gets loaded successfully for the file format: {string}")
 	public void validate_fileupload(String format) throws InterruptedException, IOException {
+		stepContext.setCurrentStep("Validate if the file gets loaded successfully for the file format: "+format);
 		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Resume_File_Paths_One");
 		for(int i=0;i<datamap.size();i++) {
 			if(format.equalsIgnoreCase(datamap.get(i).get("Format"))) {
@@ -192,6 +209,7 @@ public class Candidate_test extends Commons {
 	}
 	@Then("Validate if Candidate details screen is visible")
 	public void validate_candidate_details_screen() {
+		stepContext.setCurrentStep("Validate if Candidate details screen is visible");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		if(cp.candidate_details_screen.isDisplayed()) {
 			Commons.getLogger().info("User has been auto navigated to Candidate details screen");
@@ -204,6 +222,7 @@ public class Candidate_test extends Commons {
 	}
 	@Then("Validate if the status is {string}")
 	public void validate_status_candidate_details_screen(String status) {
+		stepContext.setCurrentStep("Validate if the status is "+status);
 		Commons.getLogger().info("Checking the current status...");
 		if(status.equalsIgnoreCase(cp.candidate_status_from_view.getText())) {
 			Commons.getLogger().info("Status is as expected...");
@@ -215,10 +234,11 @@ public class Candidate_test extends Commons {
 	}
 	@Then("Validate if details in the screen are as per the form filled")
 	public void validate_candidate_details_screen_fields() throws InterruptedException {
+		/*stepContext.setCurrentStep("Validate if details in the screen are as per the form filled");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		Thread.sleep(10000);
 		Map<String,String> candidate_fields_filled = new HashMap<String,String>();
-		/*for(int i =0; i<candidate_field_list.size();i++) {
+		for(int i =0; i<candidate_field_list.size();i++) {
 			String keyToCheck = candidate_field_list.get(i);
 			if(candidate.containsKey(keyToCheck) && candidate_fields.containsKey(keyToCheck)) {
 				if(keyToCheck.equals("DOA")) {
@@ -229,7 +249,7 @@ public class Candidate_test extends Commons {
 				}
 			}
 			//Commons.getLogger().info(keyToCheck+" "+"field is as per filled form");
-		}*/
+		}
 		for (String keyToCheck : candidate_field_list) {
 		    if (candidate.containsKey(keyToCheck) && candidate_fields.containsKey(keyToCheck)) {
 		        String value = keyToCheck.equals("DOA") ? getcurrentdate() : candidate.get(keyToCheck);
@@ -251,7 +271,33 @@ public class Candidate_test extends Commons {
 		else {
 			Commons.getLogger().info("Fields values didn't match the filled values");
 			Assert.fail();
-		}
+		}*/
+		 stepContext.setCurrentStep("Validate if details in the screen are as per the form filled");
+		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		    //Thread.sleep(10000);
+
+		    Map<String, String> candidate_fields_filled = new HashMap<>();
+
+		    for (String keyToCheck : candidate_field_list) {
+		        if (candidate.containsKey(keyToCheck) && candidate_fields.containsKey(keyToCheck)) {
+		            String value = keyToCheck.equals("DOA") ? getcurrentdate() : candidate.get(keyToCheck);
+		            candidate_fields_filled.put(keyToCheck, value);
+		        }
+		    }
+
+		    for (String key : candidate_fields.keySet()) {
+		        String expected = candidate_fields.get(key);
+		        String actual = candidate_fields_filled.get(key);
+
+		        if (!expected.equals(actual)) {
+		            Commons.getLogger().info("Mismatch in field: " + key +
+		                " | Expected: " + expected +
+		                " | Actual: " + actual);
+		            Assert.fail("Mismatch in field: " + key);
+		        }
+		    }
+
+		    Commons.getLogger().info("Fields values match the filled values");
 		
 	}
 	@Then("Navigate to Dashboard screen")
@@ -261,11 +307,13 @@ public class Candidate_test extends Commons {
 	}
 	@Then("Check if candidate to interview is dsiplayed and click on it")
 	public void click_on_candidate_interview() {
+		stepContext.setCurrentStep("Check if candidate to interview is dsiplayed and click on it");
 		if(dp.candidate_interview_link.isDisplayed()) dp.candidate_interview_link.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	@Then("Check if user can see the candidate in the list of Interview Scheduled candidates and delete the candidate")
 	public void validate_candidate_interview_filter() {
+		stepContext.setCurrentStep("Check if user can see the candidate in the list of Interview Scheduled candidates and delete the candidate");
 		Commons.scrolltolast();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		boolean iscandidatedisplayed = driver.findElement(By.xpath("//div[contains(text(),'"+candidate.get("Vacancy")+"')]/parent::div/following-sibling::div/div[contains(text(), '"+candidate.get("First Name")+"')]/parent::div/following-sibling::div/following-sibling::div/div[contains(text(), '"+getcurrentdate()+"')]/parent::div/following-sibling::div/div[contains(text(), 'Interview Scheduled')]")).isDisplayed();
@@ -278,14 +326,15 @@ public class Candidate_test extends Commons {
 		}
 		
 	}
-	@When("Saves the Add Candidate form")
-	public void save_candidateform() throws InterruptedException {
+	@Then("Saves the Add Candidate form")
+	public void save_the_form() throws InterruptedException {
 		 Commons.getLogger().info("Saving the form");
 		 cp.save_btn.click();
 		 Thread.sleep(5000);
 	}
 	@Then("Validate if Mandatory field error is displayed under all Mandatory fields of Add Candidate form")
 	public void mandatory_errorcheck_candidateform_allfields() {
+		stepContext.setCurrentStep("Validate if Mandatory field error is displayed under all Mandatory fields of Add Candidate form");
 		String Errormsg = "Required";
 		Commons.getLogger().info("Starting to check error messages");
 		for(int i=1;i<=3;i++) {
@@ -298,6 +347,36 @@ public class Candidate_test extends Commons {
 				Assert.fail();
 			}
 		}
+	}
+	@Then("Validate if Mandatory field error is displayed under all Mandatory fields in Schedule Interview screen")
+	public void mandatory_errorcheck_schedule_screen_allfields() {
+		stepContext.setCurrentStep("Validate if Mandatory field error is displayed under all Mandatory fields in Schedule Interview screen");
+		String Errormsg = "Required";
+		Commons.getLogger().info("Starting to check error messages");
+		for(int i=1;i<=3;i++) {
+			if(Errormsg.equalsIgnoreCase(driver.findElement(By.xpath("(//span[contains(@class, 'oxd-input-field-error-message')])["+i+"]")).getText())) {
+				
+				Commons.getLogger().info("Error Message displayed for Field" + i +"...");
+			}
+			else {
+				Commons.getLogger().info("Error message is not displayed or appropriate");
+				Assert.fail();
+			}
+		}
+	}
+	@Then("User fill all Mandatory fields in Schedule Interview screen")
+	public void mandatory_fieldsfill_schedulescreen() {
+		cp.interviewtitle_textbox.sendKeys(candidate.get("Vacancy")+" Interview");
+		cp.Interviewer1.sendKeys("Ra");
+		Commons.waittillvisible(cp.first_search_option, 2000);
+		cp.first_search_option.click();
+		cp.calendar_textbox.sendKeys(getAdjustedDate());
+	}
+	@Then("Navigate to Schedule Interview Screen and clicks on save button")
+	public void navigate_to_schedule_interview_screen() {
+		driver.findElement(By.xpath("//button[normalize-space()='Schedule Interview']")).click();
+		Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'Schedule Interview')]]")), 10000);
+		cp.save_btn.click();
 	}
 	@Then("User fill all Mandatory fields for user with first name as {string}")
 	public void mandatory_fieldsfill_candidateform(String first_name) throws IOException {
@@ -333,6 +412,7 @@ public class Candidate_test extends Commons {
 	}
 	@Then("Check if candidate name appears in Candidate filter")
 	public void candidate_filter_validation() throws IOException {
+		stepContext.setCurrentStep("Check if candidate name appears in Candidate filter");
 		String first_name = candidate.get("First Name");
 		cp.candidate_filter.sendKeys(first_name);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
@@ -376,6 +456,7 @@ public class Candidate_test extends Commons {
 		
 @Then("Validate the Candidate History for {string} candidate")
 public void candidate_history_validation(String status) {
+	stepContext.setCurrentStep("Validate the Candidate History for "+status+" candidate");
 	String hiringManager = cp.hiringmanger_name.getText().strip();
 	String expectedDesc;
 	String actualDesc = (getcandidatelogxpath(1,2)).trim().replaceAll("\\s+", " ");;
@@ -395,13 +476,19 @@ public void candidate_history_validation(String status) {
 		expectedDesc = hiringManager+" rejected "+fullName+" from the "+candidate.get("Vacancy");
 		break;
 	case "Interview Passed":
-		expectedDesc = hiringManager+" scheduled "+candidate.get("Vacancy")+" Interview on "+getAdjustedDate()+" with "+interviewerName+" for "+vacancy;
+		expectedDesc = hiringManager+" marked "+vacancy+" Interview as passed for "+vacancy;
 		break;
 	case "Interview Failed":
-		expectedDesc = hiringManager+" scheduled "+candidate.get("Vacancy")+" Interview on "+getAdjustedDate()+" with "+interviewerName+" for "+vacancy;
+		expectedDesc = hiringManager+" marked "+vacancy+" Interview as failed for "+vacancy;
 		break;
 	case "Second Interview Scheduled":
-		expectedDesc = hiringManager+" scheduled "+vacancy+" Interview on "+getAdjustedDate2()+" with "+interviewerName+" for "+vacancy;
+		expectedDesc = hiringManager+" scheduled "+vacancy+" Interview - Second Round on "+getAdjustedDate2()+" with "+interviewerName+" for "+vacancy;
+		break;
+	case "Second Round Interview Passed":
+		expectedDesc = hiringManager+" marked "+vacancy+" Interview - Second Round as passed for "+vacancy;
+		break;
+	case "Second Round Interview Failed":
+		expectedDesc = hiringManager+" marked "+vacancy+" Interview - Second Round as failed for "+vacancy;
 		break;
 	case "Job Offered":
 		expectedDesc = hiringManager+" offered the job for "+candidate.get("Vacancy");
@@ -420,7 +507,7 @@ public void candidate_history_validation(String status) {
 	expectedDesc.trim().replaceAll("\\s+", " ");
 	Commons.getLogger().info("Checking Candidate History log for: "+status);
 	try {
-		Assert.assertEquals(actualperformedDate, getcurrentdate());
+		Assert.assertEquals(actualperformedDate, getcurrentdateInGMT());
 		Assert.assertEquals(actualDesc, expectedDesc);
 		Commons.getLogger().info("Candidate History log for"+status+" is displayed as expected");
 		//Assert.assertTrue(true);
@@ -438,6 +525,7 @@ public void candidate_history_validation(String status) {
 
 	@Then("Validate the Candidate History for the newly added candidate in Application Initiated stage")
 	public void candidate_history_from_initiated_stage() {
+		stepContext.setCurrentStep("Validate the Candidate History for the newly added candidate in Application Initiated stage");
 		Commons.getLogger().info("Validating if the history log for addition of candidate");
 		String candidateAddDesc = cp.hiringmanger_name.getText()+" added "+fullName;
 		String candidateAssignDesc= cp.hiringmanger_name.getText()+" assigned the job vacancy "+candidate.get("Vacancy");
@@ -486,11 +574,13 @@ public void candidate_history_validation(String status) {
 	}
 	@Then("Check if Newly added candidate name no longer appears in Candidate filter")
 	public void candidate_removal_filter_validation() {
+		stepContext.setCurrentStep("Check if Newly added candidate name no longer appears in Candidate filter");
 		//String first_name = candidate.get("First Name");
 		//cp.candidate_filter.sendKeys(first_name);
 		Commons.waittillvisible(cp.search_btn, 5000);
 		cp.search_btn.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		Commons.waittillvisible( cp.numberoffilterrecords, 5000);
 			Commons.getLogger().info("Checking if candidate name is displayed in filter search...");
 			String numberofRecords = cp.numberoffilterrecords.getText();
 			if(numberofRecords.equalsIgnoreCase("No Records Found")) {
@@ -506,6 +596,7 @@ public void candidate_history_validation(String status) {
 	}
 	@Then("Check if the status of the candidate is {string}")
 	public void validate_candidate_status_in_table(String status) {
+		stepContext.setCurrentStep("Check if the status of the candidate is "+status);
 		Commons.scrolltolast();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		if(driver.findElement(By.xpath("(//div[@role='row'])[2]/div/following-sibling::div/following-sibling::div/div[contains(text(), '"+fullName+"')]")).isDisplayed()) {
@@ -538,9 +629,10 @@ public void candidate_history_validation(String status) {
 			driver.findElement(By.xpath("//button[normalize-space()='"+action+"']")).click();
 			Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'"+action+"')]]")), 10000);
 			cp.interviewtitle_textbox.sendKeys(candidate.get("Vacancy")+" Interview");
-			cp.Interviewer1.sendKeys("Rahul");
-			Commons.waitandclick(cp.first_search_option, 2000);
-			interviewerName = cp.Interviewer1.getText();
+			cp.Interviewer1.sendKeys("Ra");
+			Commons.waittillvisible(cp.first_search_option, 2000);
+			interviewerName = cp.first_search_option.getText();
+			cp.first_search_option.click();
 			cp.calendar_textbox.sendKeys(getAdjustedDate());
 			cp.clock_icon.click();
 			for(int i=0;i<9;i++) {
@@ -588,7 +680,7 @@ public void candidate_history_validation(String status) {
 		driver.findElement(By.xpath("//button[normalize-space()='Schedule Interview']")).click();
 		Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'Schedule Interview')]]")), 10000);
 		cp.interviewtitle_textbox.sendKeys(candidate.get("Vacancy")+" Interview - Second Round");
-		cp.Interviewer1.sendKeys("Rahul");
+		cp.Interviewer1.sendKeys("Ra");
 		Commons.waitandclick(cp.first_search_option, 2000);
 		cp.calendar_textbox.sendKeys(getAdjustedDate2());
 		cp.clock_icon.click();
@@ -623,6 +715,7 @@ public void candidate_history_validation(String status) {
 	}
 	@Then("Clears each of the Mandatory fields to check if Mandatory error is thrown again for the respective Add Candidate form field")
 	public void mandatory_errorcheck_candidateform_indvidual_field() throws IOException, InterruptedException {
+		stepContext.setCurrentStep("Clears each of the Mandatory fields to check if Mandatory error is thrown again for the respective Add Candidate form field");
 		String Errormsg = "Required";
 		//vfp = new VacancyformPage(Commons.getDriver());
 		Commons.getLogger().info("Starting to check error messages");
@@ -667,10 +760,63 @@ public void candidate_history_validation(String status) {
 				break;
 			}
 	}
+	
 
+	}
+	@Then("Clears each of the Mandatory fields to check if Mandatory error is thrown again for the respective Schedule Interview screen fields")
+	public void mandatory_errorcheck_schedulescreen_indvidual_field() throws IOException, InterruptedException {
+		stepContext.setCurrentStep("Clears each of the Mandatory fields to check if Mandatory error is thrown again for the respective Schedule Interview screen fields");
+		String Errormsg = "Required";
+		//vfp = new VacancyformPage(Commons.getDriver());
+		Commons.getLogger().info("Starting to check error messages");
+		for(int i=1;i<=3;i++) {
+			switch (i) {
+			case 1:
+				Commons.clearWebField(cp.interviewtitle_textbox);
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+				if(Errormsg.equalsIgnoreCase(cp.field_errormsg.getText())) {
+					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
+					cp.interviewtitle_textbox.sendKeys("test");
+				}
+				else {
+					Commons.getLogger().info("Error message is not displayed or appropriate");
+					Assert.fail();
+				}
+				break;
+			case 2:
+				Commons.clearWebField(cp.Interviewer1);
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+				cp.save_btn.click();
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+				if(Errormsg.equalsIgnoreCase(cp.field_errormsg.getText())) {
+					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
+					cp.Interviewer1.sendKeys("Ra");
+					Commons.waittillvisible(cp.first_search_option, 2000);
+					cp.first_search_option.click();
+				}
+				else {
+					Commons.getLogger().info("Error message is not displayed or appropriate");
+					Assert.fail();
+				}
+				break;
+			case 3:
+				Commons.clearWebField(cp.calendar_textbox);
+				cp.save_btn.click();
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+				if(Errormsg.equalsIgnoreCase(cp.field_errormsg.getText())) {
+					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
+				}
+				else {
+					Commons.getLogger().info("Error message is not displayed or appropriate");
+					Assert.fail();
+				}
+				break;
+			}
+	}
 	}
 	@Then("User enters Email of format: {string} and validates if error message is displayed if the entered email is invalid")
 	public void enter_differentemails(String format) throws IOException, InterruptedException {
+		stepContext.setCurrentStep("User enters Email of format: " +format+ " and validates if error message is displayed if the entered email is invalid");
 		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Email_IDs");
 		for(int i=0;i<datamap.size();i++) {
 			if(format.equalsIgnoreCase(datamap.get(i).get("Format Type"))) {
@@ -692,6 +838,39 @@ public void candidate_history_validation(String status) {
 					Commons.getLogger().info("Checking if error message is displayed...");
 					boolean ismsgdisplayed = cp.field_errormsg.getText().equalsIgnoreCase("Expected format: admin@example.com");
 					Assert.assertEquals(true, ismsgdisplayed);
+				}
+			}
+		}
+	}
+	@Then("User enters Contact Number of format: {string} and validates if error message is displayed if the entered Contact Number is invalid")
+	public void enter_differentcontactnums(String format) throws IOException, InterruptedException {
+		stepContext.setCurrentStep("User enters Contact Number of format: " +format+ " and validates if error message is displayed if the entered Contact Number is invalid");
+		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Contact_Numbers");
+		for(int i=0;i<datamap.size();i++) {
+			if(format.equalsIgnoreCase(datamap.get(i).get("Format Type"))) {
+				cp.contactnumber_textbox.sendKeys(datamap.get(i).get("Contact Number"));
+				Thread.sleep(3000);
+				if("Valid".equals(datamap.get(i).get("Validity"))) {
+					try {
+					Commons.getLogger().info("Checking if error message is displayed...");
+					boolean ismsgdisplayed = cp.field_errormsg.isDisplayed();
+					Assert.assertEquals(false, ismsgdisplayed);
+					}
+					catch(NoSuchElementException e) {
+					    Commons.getLogger().info("Error message not found in DOM.");
+					    Assert.assertTrue(true);
+					}
+
+				}
+				else {
+					Commons.getLogger().info("Checking if error message is displayed...");
+					String expectedMessage = ("Allows numbers and only + - / ( )").trim();
+					String actualMessage = cp.field_errormsg.getText().trim();
+					//boolean ismsgdisplayed = cp.field_errormsg.getText().equalsIgnoreCase("Allows numbers and only + - / ()");
+					Commons.getLogger().info("Expected Message: " + expectedMessage);
+					Commons.getLogger().info("Actual Message from UI: " + actualMessage);
+					Assert.assertEquals(expectedMessage,actualMessage);
+					//Assert.assertEquals(true, ismsgdisplayed);
 				}
 			}
 		}

@@ -1,6 +1,6 @@
 Feature: Add new Candidate and validate its behaviour 
 
-@trail @Candidates_Suite @Recruitement_Suite
+@Candidates_Suite @Recruitement_Regression
 Scenario Outline: Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -15,7 +15,7 @@ Examples:
            |TXT|
            |DOC|
           
-@Candidates_Suite @Recruitement_Suite
+@Candidates_Suite @Recruitement_Regression
 Scenario Outline: Validate if user gets appropriate error message when uploading an invalid file in Resume field 
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -30,7 +30,27 @@ Examples:
            |PDF        |
            |JPG        |
 
-@Candidates_Suite @Recruitement_Suite
+@Candidates_Suite @Recruitement_Regression @smoke
+Scenario Outline: Validate if user gets appropriate error message if an invalid Contact Number is entered
+Given User Logs in with Credentials and Navigates to Recruitment Section
+When User Navigates to Add Candidate form
+Then User enters Contact Number of format: "<format_type>" and validates if error message is displayed if the entered Contact Number is invalid
+Examples:
+           |format_type|
+           |contact_num_1     |
+           |contact_num_2     |
+           |contact_num_3     |
+           |contact_num_4     |
+           |contact_num_5     |
+           |contact_num_6     |
+           |contact_num_7     |
+           |contact_num_8     |
+           |contact_num_9     |
+           |contact_num_10    |
+           |contact_num_11    |
+           |contact_num_12    |
+
+@Candidates_Suite @Recruitement_Regression
 Scenario Outline: Validate if user gets appropriate error message when entering email in invalid format
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -45,7 +65,7 @@ Examples:
            |email_5     |
            |email_6     |
 
-@Candidates_Suite @Recruitement_Suite
+@Candidates_Suite @Recruitement_Regression
 Scenario: Validate if user gets appropriate error message when Mandaotry fields are not filled
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -57,8 +77,31 @@ Examples:
            |first_name|
            |Walter|
 
-@Candidates_Suite @Recruitement_Suite
-Scenario: User Validates adding a New Candidate and deleting thenewly added candidate
+@Candidates_Suite @Recruitement_Regression
+Scenario: Validate if user gets appropriate error message when Mandaotry fields are not filled in Schedule Interview screen
+Given User Logs in with Credentials and Navigates to Recruitment Section
+When User Navigates to Add Candidate form
+Then User fill all Mandatory fields for user with first name as "<first_name>"
+And User fill all Non-Mandatory fields for user with first name as "<first_name>"
+And Saves the Add Candidate form
+And Validate if Candidate details screen is visible
+And "Shortlist" the Candidate
+And Validate if Candidate details screen is visible
+And Navigate to Schedule Interview Screen and clicks on save button
+And Validate if Mandatory field error is displayed under all Mandatory fields in Schedule Interview screen
+And User fill all Mandatory fields in Schedule Interview screen
+And Clears each of the Mandatory fields to check if Mandatory error is thrown again for the respective Schedule Interview screen fields
+And Navigate to Candidates section
+And Check if candidate name appears in Candidate filter
+And Filter Candidate list by newly added candidate name
+And Check if the status of the candidate is "Shortlisted"
+And Delete the Newly added candidate
+Examples:
+           |first_name|
+           |Michael|
+
+@Candidates_Suite @Recruitement_Regression @trail22
+Scenario: User Validates adding a New Candidate and deleting the newly added candidate
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
@@ -66,7 +109,7 @@ And User fill all Non-Mandatory fields for user with first name as "<first_name>
 And Saves the Add Candidate form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
-#And Validate if details in the screen are as per the form filled
+And Validate if details in the screen are as per the form filled
 And Validate the Candidate History for the newly added candidate in Application Initiated stage
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
@@ -82,7 +125,7 @@ Examples:
            |first_name|
            |Michael|
 
-@Candidates_Suite @Recruitement_Suite
+@Candidates_Suite @Recruitement_Regression @Flow_Sanity1
 Scenario: Validate candidate rejection from Application Initiated stage and Candidate History
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -104,7 +147,7 @@ Examples:
            |first_name|
            |Dwight|
 
-@Candidates_Suite @test1 @Recruitement_Suite
+@Candidates_Suite @test1 @Recruitement_Regression @Flow_Sanity1
 Scenario: Validate if user can Shortlist a candidate, reject the candidate from shortlisted stage and validate the candidate History
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -135,7 +178,7 @@ Examples:
            |first_name|
            |James|
 
-@Candidates_Suite @Recruitement_Suite
+@Candidates_Suite @Recruitement_Regression @Flow_Sanity
 Scenario: Validate if user can Schedule Interview for a candidate, reject the candidate from Interview Scheduled stage and validate the candidate History
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -167,9 +210,9 @@ And Check if the status of the candidate is "Rejected"
 And Delete the Newly added candidate
 Examples:
            |first_name|
-           |Michael|
+           |Stanley|
 
-@Candidates_Suite @Recruitement_Suite        
+@Candidates_Suite @Recruitement_Regression @Flow_Sanity1       
 Scenario: Validate the candidate to interview feature in Dashboard screen
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -191,7 +234,7 @@ Examples:
            |first_name|
            |Andrew|
 
-@Candidates_Suite @Recruitement_Suite
+@Candidates_Suite @Recruitement_Regression @Flow_Sanity
 Scenario: Validate if user can mark Interview failed for a candidate, reject the candidate from Interview Failed stage and validate the candidate history
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -226,9 +269,9 @@ And Check if the status of the candidate is "Rejected"
 And Delete the Newly added candidate
 Examples:
            |first_name|
-           |Andrew|
+           |Meredith|
 
-@Candidates_Suite @Recruitement_Suite
+@Candidates_Suite @Recruitement_Regression @Flow_Sanity
 Scenario: Validate if user can mark Interview Passed for a candidate, reject the candidate from Interview Passed stage and validate the candidate history
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -264,7 +307,7 @@ And Delete the Newly added candidate
 Examples:
            |first_name|
            |Pamela|
-@Candidates_Suite @Recruitement_Suite
+@Candidates_Suite @Recruitement_Regression @Flow_Sanity
 Scenario: Validate if user can Schedule another Interview for the candidate from Interview Passed stage, again reject the candidate from Interview Scheduled stage and validate the candidate History
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -277,6 +320,7 @@ And "Shortlist" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Shortlisted"
 And "Schedule Interview" the Candidate
+And Saves the Add Candidate form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Interview Scheduled"
 And "Mark Interview Passed" the Candidate
@@ -304,7 +348,7 @@ Examples:
            |first_name|
            |Kelly|
 
-@Candidates_Suite @Recruitement_Suite
+@Candidates_Suite @Recruitement_Regression @Flow_Sanity
 Scenario: Validate if user can mark Interview failed for a candidate in the second round of interview, then reject the candidate from Interview Failed stage and validate the candidate history
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -328,7 +372,7 @@ And Validate if the status is "Status: Interview Scheduled"
 And "Mark Interview Failed" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Interview Failed"
-And Validate the Candidate History for "Interview Failed" candidate
+And Validate the Candidate History for "Second Round Interview Failed" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -345,9 +389,9 @@ And Check if the status of the candidate is "Rejected"
 And Delete the Newly added candidate
 Examples:
            |first_name|
-           |Kelly|
+           |Oscar|
            
-@Candidates_Suite @Recruitement_Suite          
+@Candidates_Suite @Recruitement_Regression @Flow_Sanity     
 Scenario: Validate if user can mark Interview passed for a candidate in the second round of interview, then reject the candidate from Interview passed stage and validate the candidate history
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -371,7 +415,7 @@ And Validate if the status is "Status: Interview Scheduled"
 And "Mark Interview Passed" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Interview Passed"
-And Validate the Candidate History for "Interview Passed" candidate
+And Validate the Candidate History for "Second Round Interview Passed" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
@@ -390,7 +434,7 @@ Examples:
            |first_name|
            |Angella|
            
-@Candidates_Suite @Recruitement_Suite           
+@Candidates_Suite @Recruitement_Regression @Flow_Sanity1         
 Scenario: Validate if user can Offer job for candidate who passed second round of interview, then reject the candidate from Job Offered stage and validate the candidate history
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -436,7 +480,7 @@ Examples:
            |first_name|
            |Ryan|
            
-@Candidates_Suite @Recruitement_Suite           
+@Candidates_Suite @Recruitement_Regression @Flow_Sanity1      
 Scenario: Validate if user can Decline Job Offer for candidate who was offered the Job, then reject the candidate from Offer Declined stage and validate the candidate history
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -483,9 +527,9 @@ And Check if the status of the candidate is "Rejected"
 And Delete the Newly added candidate
 Examples:
            |first_name|
-           |Ryan|
+           |Toby|
            
-@Candidates_Suite @Recruitement_Suite @test       
+@Candidates_Suite @Recruitement_Regression @Flow_Sanity1       
 Scenario: Validate if user can Hire the candidate who was offered the Job and validate the candidate history
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form

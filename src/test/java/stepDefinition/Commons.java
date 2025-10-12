@@ -109,15 +109,23 @@ public static WebDriver initilizeBrowser() throws IOException
 		        driver=null;
 			}
 		}
-	 driver.manage().deleteAllCookies(); 
+	/* driver.manage().deleteAllCookies(); 
 	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	 driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+	 driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));*/
+	if (driver != null) {
+	    driver.manage().deleteAllCookies();
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20)); // Slightly increased
+	} else {
+	    throw new RuntimeException("Browser initialization failed: " + browser);
+	}
 	 
 	 return driver;
 	 
 }
 
 public static WebDriver getDriver() {
+	//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		return driver;
 	}
 

@@ -1,9 +1,12 @@
 package stepDefinition;
 
+import java.time.Duration;
 import java.util.Properties;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -38,18 +41,33 @@ public class AddVacancytest extends Commons {
 	    dp = new DashboardPage(Commons.getDriver());
 	    Thread.sleep(3000);
 	    p = getProperties();
-	    Commons.waittillvisible(lp.username, 5000);
+	    /*Commons.waittillvisible(lp.username, 5000);
 	    Commons.sendkeys(lp.username, p.getProperty("username"));
 	    Commons.sendkeys(lp.password, p.getProperty("password"));
 	    lp.loginbtn.click();
 	    Thread.sleep(3000);
 	    //Commons.waitandclick(dp.recruitment, 30);
 	    dp.recruitment.click();
-	    Thread.sleep(3000);
+	    Thread.sleep(3000);*/
+	    WebDriverWait wait = new WebDriverWait(Commons.getDriver(), Duration.ofSeconds(15));
+
+        // Wait for username field and login
+        wait.until(ExpectedConditions.visibilityOf(lp.username));
+        lp.username.sendKeys(p.getProperty("username"));
+        lp.password.sendKeys(p.getProperty("password"));
+        lp.loginbtn.click();
+
+        // Wait for recruitment tab to be clickable
+        wait.until(ExpectedConditions.elementToBeClickable(dp.recruitment));
+        dp.recruitment.click();
+
+        Commons.getLogger().info("Successfully navigated to Recruitment");
+
 		}
 		catch(Exception e) {
-			Commons.getLogger().info("Navigation to recruitment failed...");
-			Assert.fail();
+			Commons.getLogger().error("Navigation to recruitment failed: " + e.getMessage());
+			Commons.getLogger().info("Page Source:\n" + driver.getPageSource());
+	        Assert.fail("Recruitment navigation failed");
 		}
 	}
 	@When("Clicks on Vacancy")
