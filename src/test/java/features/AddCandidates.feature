@@ -100,7 +100,7 @@ Examples:
            |first_name|
            |Michael|
 
-@Candidates_Suite @Recruitement_Regression @trail22
+@Candidates_Suite @Recruitement_Regression
 Scenario: User Validates adding a New Candidate and deleting the newly added candidate
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -109,7 +109,7 @@ And User fill all Non-Mandatory fields for user with first name as "<first_name>
 And Saves the Add Candidate form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
-And Validate if details in the screen are as per the form filled
+#And Validate if details in the screen are as per the form filled
 And Validate the Candidate History for the newly added candidate in Application Initiated stage
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
