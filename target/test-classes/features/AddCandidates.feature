@@ -65,11 +65,79 @@ Examples:
            |email_5     |
            |email_6     |
 
+@Candidates_Suite @Recruitement_Regression @trail30
+Scenario Outline: Validate if user can enter a date in date of Application field and gets appropriate error message only if the date is a future date
+Given User Logs in with Credentials and Navigates to Recruitment Section
+When User Navigates to Add Candidate form
+Then User enters Date of format: "<date_type>" and validates if error message is displayed for future date only
+Examples:
+           |date_type|
+           |Present    |
+           |Past       |
+           |Future     |
+           
+           
+@Candidates_Suite @Recruitement_Regression
+Scenario Outline: Validate if user can enter date of format: "<format_type>" in date of Application field and gets appropriate error message only if the format is invalid
+Given User Logs in with Credentials and Navigates to Recruitment Section
+When User Navigates to Add Candidate form
+Then User enters Date of format: "<format_type>" and validates if error message is displayed if the entered date is invalid
+
+Examples:
+           |format_type|
+           |yyyy-dd-mm |
+           |mm-dd-yyyy |
+#this one is a bug           |yyyy-mm-dd |
+           |yyyy/dd/mm |
+           |mm/dd/yyyy |
+           |yyyy/mm/dd |
+           |dd/mm/yyyy |
+           |mm-yyyy-dd |
+           |dd-yyyy-mm |
+           |mm/yyyy/dd |
+           |dd/yyyy/mm |
+           |ddmmyyyy   |
+           |yyyyddmm   |
+           |mmddyyyy   |
+           |yyyymmdd   |
+           |ddyyyymm   |
+           |mmyyyydd   |
+           |dd-mm-yyyy |
+
+@trail20       
+Scenario Outline: Validate if user can enter  date of format: "<format_type>" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid
+Given User Logs in with Credentials and Navigates to Recruitment Section
+When User filter Candidate list by "Shortlisted" Candidates
+And User clicks view icon
+And Validate if Candidate details screen is visible
+And Navigate to Schedule Interview Screen
+Then User enters Date of format: "<format_type>" and validates if error message is displayed if the entered date is invalid
+Examples:
+           |format_type|
+           |yyyy-dd-mm |
+           |mm-dd-yyyy |
+#this one is a bug           |yyyy-mm-dd |
+           |yyyy/dd/mm |
+           |mm/dd/yyyy |
+           |yyyy/mm/dd |
+           |dd/mm/yyyy |
+           |mm-yyyy-dd |
+           |dd-yyyy-mm |
+           |mm/yyyy/dd |
+           |dd/yyyy/mm |
+           |ddmmyyyy   |
+           |yyyyddmm   |
+           |mmddyyyy   |
+           |yyyymmdd   |
+           |ddyyyymm   |
+           |mmyyyydd   |
+           |dd-mm-yyyy |
+      
 @Candidates_Suite @Recruitement_Regression
 Scenario: Validate if user gets appropriate error message when Mandaotry fields are not filled
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
-And Saves the Add Candidate form
+And User Saves the form
 Then Validate if Mandatory field error is displayed under all Mandatory fields of Add Candidate form
 And User fill all Mandatory fields for user with first name as "<first_name>"
 And Clears each of the Mandatory fields to check if Mandatory error is thrown again for the respective Add Candidate form field
@@ -83,11 +151,12 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And "Shortlist" the Candidate
 And Validate if Candidate details screen is visible
-And Navigate to Schedule Interview Screen and clicks on save button
+And Navigate to Schedule Interview Screen
+And User Saves the form
 And Validate if Mandatory field error is displayed under all Mandatory fields in Schedule Interview screen
 And User fill all Mandatory fields in Schedule Interview screen
 And Clears each of the Mandatory fields to check if Mandatory error is thrown again for the respective Schedule Interview screen fields
@@ -106,7 +175,7 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
 #And Validate if details in the screen are as per the form filled
@@ -131,7 +200,7 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
 And "Reject" the Candidate
@@ -153,7 +222,7 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
 And "Shortlist" the Candidate
@@ -184,7 +253,7 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
 And "Shortlist" the Candidate
@@ -218,7 +287,7 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
 And "Shortlist" the Candidate
@@ -240,7 +309,7 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
 And "Shortlist" the Candidate
@@ -277,7 +346,7 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
 And "Shortlist" the Candidate
@@ -313,14 +382,14 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
 And "Shortlist" the Candidate
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Shortlisted"
 And "Schedule Interview" the Candidate
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Interview Scheduled"
 And "Mark Interview Passed" the Candidate
@@ -354,7 +423,7 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
 And "Shortlist" the Candidate
@@ -397,7 +466,7 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
 And "Shortlist" the Candidate
@@ -440,7 +509,7 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
 And "Shortlist" the Candidate
@@ -486,7 +555,7 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
 And "Shortlist" the Candidate
@@ -535,7 +604,7 @@ Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
 Then User fill all Mandatory fields for user with first name as "<first_name>"
 And User fill all Non-Mandatory fields for user with first name as "<first_name>"
-And Saves the Add Candidate form
+And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
 And "Shortlist" the Candidate

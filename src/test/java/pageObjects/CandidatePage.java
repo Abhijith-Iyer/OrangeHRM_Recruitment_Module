@@ -69,6 +69,10 @@ public class CandidatePage extends BasePage {
 	
 	//*************Filter_elements*******///////////
 	//div[@role='listbox']/div //div[@role='listbox']/div/span
+	@FindBy(xpath="//label[contains(text(), 'Status')]/parent::div/following-sibling::div/div/div/div/following-sibling::div")
+	public WebElement status_dropdown;
+	@FindBy(xpath="//div[@role='listbox']/div")
+	public List<WebElement> dropdown_elements;
 	@FindBy(xpath="//label[contains(text(), 'Candidate Name')]/parent::div/following-sibling::div/div/div/input")
 	public WebElement candidate_filter;
 	@FindBy (xpath="//button[@type='submit']")

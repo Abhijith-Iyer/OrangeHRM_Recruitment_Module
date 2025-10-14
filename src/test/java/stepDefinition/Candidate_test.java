@@ -94,9 +94,9 @@ public class Candidate_test extends Commons {
 	}
 	public String getAdjustedDate() {
         LocalDate today = LocalDate.now();
-        LocalDate adjusted = today.plusDays(2);
+        LocalDate adjusted = today.plusDays(1);
 
-        // If the month has changed after adding 2 days
+        // If the month has changed after adding 1 days
         if (adjusted.getMonthValue() != today.getMonthValue()) {
             adjusted = adjusted.plusMonths(1);
         }
@@ -111,6 +111,17 @@ public class Candidate_test extends Commons {
         // If the month has changed after adding 3 days
         if (adjusted.getMonthValue() != today.getMonthValue()) {
             adjusted = adjusted.plusMonths(1);
+        }
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-dd-MM");
+        return adjusted.format(formatter);
+    }
+	public String getAdjustedDate3() {
+        LocalDate today = LocalDate.now();
+        LocalDate adjusted = today.minusDays(1);
+
+        if (adjusted.getMonthValue() != today.getMonthValue()) {
+            adjusted = adjusted.minusMonths(1);
         }
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-dd-MM");
@@ -166,6 +177,15 @@ public class Candidate_test extends Commons {
 		fullName = candidate.get("First Name")+" "+candidate.get("Middle Name")+" "+candidate.get("Last Name");
 		
 	}
+	@When("User filter Candidate list by {string} Candidates")
+	public void filter_candidate_list_by_status(String status) {
+		Commons.waitandclick(cp.status_dropdown, 3000);
+		//Commons.waittillvisible(cp.dropdown_elements.get(1), 2000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), '"+status+"')]")).click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		cp.search_btn.click();
+	}
 	@When("User Navigates to Add Candidate form")
 	public void navigateto_add_candidateform() throws InterruptedException {
 		Commons.waitandclick(cp.addbtn, 3000);
@@ -219,6 +239,57 @@ public class Candidate_test extends Commons {
 			Assert.fail();
 		}
 		
+	}
+	@Then("User enters Date of format: {string} and validates if error message is displayed for future date only")
+	public void validate_doa_future_date_error(String dateType) {
+		stepContext.setCurrentStep("Validate if error message is displayed for future date only");
+		String expectedMessage = ("Should be the current date or a previous date").trim();
+		switch(dateType) {
+		case "Present":
+			Commons.clearWebField(cp.calendar_textbox);
+			cp.calendar_textbox.sendKeys(getcurrentdate());
+			cp.notes_textbox.click();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+			try {
+				Commons.getLogger().info("Checking if error message is displayed...");
+				boolean ismsgdisplayed = cp.field_errormsg.isDisplayed();
+				Assert.assertEquals(false, ismsgdisplayed);
+			}
+			catch(NoSuchElementException e) {
+			    Commons.getLogger().info("Error message not found in DOM.");
+			    Assert.assertTrue(true);
+			}
+			break;
+		case "Past":
+			Commons.clearWebField(cp.calendar_textbox);
+			cp.calendar_textbox.sendKeys(getAdjustedDate3());
+			cp.notes_textbox.click();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+			try {
+				Commons.getLogger().info("Checking if error message is displayed...");
+				boolean ismsgdisplayed = cp.field_errormsg.isDisplayed();
+				Assert.assertEquals(false, ismsgdisplayed);
+			}
+			catch(NoSuchElementException e) {
+			    Commons.getLogger().info("Error message not found in DOM.");
+			    Assert.assertTrue(true);
+			}
+			break;
+		case "Future":
+			Commons.clearWebField(cp.calendar_textbox);
+			cp.calendar_textbox.sendKeys(getAdjustedDate());
+			cp.notes_textbox.click();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+			Commons.getLogger().info("Checking if error message is displayed...");
+			String actualMessage = cp.field_errormsg.getText().trim();
+			Commons.getLogger().info("Expected Message: " + expectedMessage);
+			Commons.getLogger().info("Actual Message from UI: " + actualMessage);
+			Assert.assertEquals(expectedMessage,actualMessage);
+			break;
+		default:
+	    	Commons.getLogger().info("Issue in finding the correct date type");
+			break;
+		}
 	}
 	@Then("Validate if the status is {string}")
 	public void validate_status_candidate_details_screen(String status) {
@@ -326,11 +397,11 @@ public class Candidate_test extends Commons {
 		}
 		
 	}
-	@Then("Saves the Add Candidate form")
+	@Then("User Saves the form")
 	public void save_the_form() throws InterruptedException {
 		 Commons.getLogger().info("Saving the form");
 		 cp.save_btn.click();
-		 Thread.sleep(5000);
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	@Then("Validate if Mandatory field error is displayed under all Mandatory fields of Add Candidate form")
 	public void mandatory_errorcheck_candidateform_allfields() {
@@ -372,11 +443,11 @@ public class Candidate_test extends Commons {
 		cp.first_search_option.click();
 		cp.calendar_textbox.sendKeys(getAdjustedDate());
 	}
-	@Then("Navigate to Schedule Interview Screen and clicks on save button")
+	@Then("Navigate to Schedule Interview Screen")
 	public void navigate_to_schedule_interview_screen() {
 		driver.findElement(By.xpath("//button[normalize-space()='Schedule Interview']")).click();
 		Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'Schedule Interview')]]")), 10000);
-		cp.save_btn.click();
+		//cp.save_btn.click();
 	}
 	@Then("User fill all Mandatory fields for user with first name as {string}")
 	public void mandatory_fieldsfill_candidateform(String first_name) throws IOException {
@@ -875,6 +946,77 @@ public void candidate_history_validation(String status) {
 			}
 		}
 	}
+	@Then("User enters Date of format: {string} and validates if error message is displayed if the entered date is invalid")
+	public void validate_date_format_error(String format) throws IOException, InterruptedException {
+		stepContext.setCurrentStep("User enters Contact Number of format: " +format+ " and validates if error message is displayed if the entered Contact Number is invalid");
+		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Date_Formats");
+		
+		for(int i=0;i<datamap.size();i++) {
+			if(format.trim().equalsIgnoreCase(datamap.get(i).get("Format Type"))) {
+				Commons.clearWebField(cp.calendar_textbox);
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+				cp.calendar_textbox.sendKeys(datamap.get(i).get("Date"));
+				cp.notes_textbox.click();
+				Thread.sleep(3000);
+				if("Valid".equals(datamap.get(i).get("Validity"))) {
+					try {
+					Commons.getLogger().info("Checking if error message is displayed...");
+					boolean ismsgdisplayed = cp.field_errormsg.isDisplayed();
+					Assert.assertEquals(false, ismsgdisplayed);
+					}
+					catch(NoSuchElementException e) {
+					    Commons.getLogger().info("Error message not found in DOM.");
+					    Assert.assertTrue(true);
+					}
+
+				}
+				else {
+					Commons.getLogger().info("Checking if error message is displayed...");
+					String expectedMessage = ("Should be a valid date in yyyy-dd-mm format").trim();
+					String actualMessage = cp.field_errormsg.getText().trim();
+					//boolean ismsgdisplayed = cp.field_errormsg.getText().equalsIgnoreCase("Allows numbers and only + - / ()");
+					Commons.getLogger().info("Expected Message: " + expectedMessage);
+					Commons.getLogger().info("Actual Message from UI: " + actualMessage);
+					Assert.assertEquals(expectedMessage,actualMessage);
+					//Assert.assertEquals(true, ismsgdisplayed);
+				}
+			}
+		}
+	}
+	/*@Then("User validates error message for different invalid date formats entered in Date field")
+	public void validate_date_format_error_schedule_interview_screeen() throws IOException, InterruptedException {
+		stepContext.setCurrentStep("User validates error message for different invalid date formats entered in Date field");
+		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Date_Formats");
+		for(int i=0;i<datamap.size();i++) {
+			cp.calendar_textbox.sendKeys(datamap.get(i).get("Date"));
+			cp.notes_textbox.click();
+			Thread.sleep(3000);
+			if("Valid".equals(datamap.get(i).get("Validity"))) {
+				try {
+				Commons.getLogger().info("Checking if error message is displayed...");
+				boolean ismsgdisplayed = cp.field_errormsg.isDisplayed();
+				Assert.assertEquals(false, ismsgdisplayed);
+				}
+				catch(NoSuchElementException e) {
+				    Commons.getLogger().info("Error message not found in DOM.");
+				    Assert.assertTrue(true);
+				}
+
+			}
+			else {
+				Commons.getLogger().info("Checking if error message is displayed for the format: "+datamap.get(i).get("Format Type"));
+				String expectedMessage = ("Should be a valid date in yyyy-dd-mm format").trim();
+				String actualMessage = cp.field_errormsg.getText().trim();
+				
+				Commons.getLogger().info("Expected Message: " + expectedMessage);
+				Commons.getLogger().info("Actual Message from UI: " + actualMessage);
+				Assert.assertEquals(expectedMessage,actualMessage);
+				//Assert.assertEquals(true, ismsgdisplayed);
+			}
+			Commons.clearWebField(cp.calendar_textbox);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		}
+		}*/
 	@Then("Validate if user gets appropriate error message for uploading a {string} file")
 	public void validate_fileupload_error(String format) throws IOException {
 		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Resume_File_Paths_Two");
