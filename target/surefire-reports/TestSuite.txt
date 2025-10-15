@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 30.60 s <<< FAILURE! -- in TestSuite
-testRunner.TestNGTestRunner.runScenario["User Validates adding a New Candidate and deleting the newly added candidate", "Add new Candidate and validate its behaviour"](1) -- Time elapsed: 24.93 s <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "java.util.Map.keySet()" because "this.candidate_fields" is null
-	at stepDefinition.Candidate_test.validate_candidate_details_screen_fields(Candidate_test.java:288)
-	at ✽.Validate if details in the screen are as per the form filled(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:112)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.41 s -- in TestSuite

@@ -95,6 +95,8 @@ public class CandidatePage extends BasePage {
 	@FindBy(xpath ="//div/span[text()[contains(.,'Records Found')]]")
 	public WebElement numberoffilterrecords;
 	//*************Candidate_view_elements*******///////////
+	@FindBy (xpath ="//span[contains(@class, 'oxd-switch-input oxd-switch')]")
+	public WebElement edit_switch;
 	@FindBy (xpath="//div[contains(@class, 'status')]/p")
 	public WebElement candidate_status_from_view;
 	@FindBy (xpath="//div/h6[text()='Candidate History']")
@@ -106,6 +108,8 @@ public class CandidatePage extends BasePage {
 	public WebElement candidate_details_screen;
 	@FindBy (xpath="(//div/p)[3]")
 	public WebElement hiringmanger_name;
+	@FindBy (xpath="(//div/p)[2]")
+	public WebElement vacancy_name;
 	@FindBy (xpath="//button[normalize-space()='Reject']")
 	public WebElement reject_btn;
 	@FindBy (xpath="//button[normalize-space()='Shortlist']")

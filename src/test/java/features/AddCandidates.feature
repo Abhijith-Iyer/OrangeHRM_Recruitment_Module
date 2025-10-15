@@ -65,7 +65,7 @@ Examples:
            |email_5     |
            |email_6     |
 
-@Candidates_Suite @Recruitement_Regression @trail30
+@Candidates_Suite @Recruitement_Regression
 Scenario Outline: Validate if user can enter a date in date of Application field and gets appropriate error message only if the date is a future date
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User Navigates to Add Candidate form
@@ -104,7 +104,7 @@ Examples:
            |mmyyyydd   |
            |dd-mm-yyyy |
 
-@trail20       
+@Candidates_Suite @Recruitement_Regression       
 Scenario Outline: Validate if user can enter  date of format: "<format_type>" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid
 Given User Logs in with Credentials and Navigates to Recruitment Section
 When User filter Candidate list by "Shortlisted" Candidates
@@ -178,16 +178,14 @@ And User fill all Non-Mandatory fields for user with first name as "<first_name>
 And User Saves the form
 And Validate if Candidate details screen is visible
 And Validate if the status is "Status: Application Initiated"
-#And Validate if details in the screen are as per the form filled
-And Validate the Candidate History for the newly added candidate in Application Initiated stage
+And Capture the data from the screen
+And Validate if details in the screen are as per the form filled
+And Validate the Candidate History for "Added" candidate
+And Validate the Candidate History for "Application Initiated" candidate
 And Navigate to Candidates section
 And Check if candidate name appears in Candidate filter
 And Filter Candidate list by newly added candidate name
 And Validate if the newly added candidate is displayed in Candidate list table
-#And User clicks view icon
-#And Validate if Candidate details screen is visible
-#And Navigate to Candidates section
-#And Filter Candidate list by newly added candidate name
 And Delete the Newly added candidate
 And Check if Newly added candidate name no longer appears in Candidate filter
 Examples:

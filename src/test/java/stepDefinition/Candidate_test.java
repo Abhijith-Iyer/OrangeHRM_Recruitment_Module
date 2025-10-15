@@ -42,6 +42,8 @@ public class Candidate_test extends Commons {
 	List<String> candidate_field_list = new ArrayList<>();
 	String fullName;
 	String interviewerName;
+	String newVacancyName;
+	String oldVacancyName;
 	
 	 private final StepContext stepContext;
 
@@ -146,23 +148,32 @@ public class Candidate_test extends Commons {
 		}
 		//return xpath;
 	}
+	@Then("Capture the data from the screen")
 	public void getcandidatefields() {
+		//stepContext.setCurrentStep("Capture the data from the screen");
 		//candidate_fields = new Map<String,WebElement>();
-		candidate_fields.put("First Name", cp.firstname_textbox.getText());
-		candidate_fields.put("Middle Name",cp.middlename_textbox.getText());
-		candidate_fields.put("Last Name",cp.lastname_textbox.getText());
-		candidate_fields.put("Email ID",cp.email_textbox.getText());
-		candidate_fields.put("Contact Number",cp.contactnumber_textbox.getText());
-		candidate_fields.put("Vacancy",cp.vacancy_dropdown.getText());
-		candidate_fields.put("DOA",cp.calendar_textbox.getText());
-		candidate_fields.put("Keywords",cp.keywords_textbox.getText());
-		candidate_fields.put("Notes",cp.notes_textbox.getText());
+		cp.edit_switch.click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		candidate_fields = new HashMap<>();
+		    candidate_fields.put("First Name", cp.firstname_textbox != null ? cp.firstname_textbox.getAttribute("value") : "");
+		    candidate_fields.put("Middle Name", cp.middlename_textbox != null ? cp.middlename_textbox.getAttribute("value") : "");
+		    candidate_fields.put("Last Name", cp.lastname_textbox != null ? cp.lastname_textbox.getAttribute("value") : "");
+		    candidate_fields.put("Email ID", cp.email_textbox != null ? cp.email_textbox.getAttribute("value") : "");
+		    candidate_fields.put("Contact Number", cp.contactnumber_textbox != null ? cp.contactnumber_textbox.getAttribute("value") : "");
+		    Commons.getLogger().info("Contact Number captured: [" + cp.contactnumber_textbox.getAttribute("value") + "]");
+		    candidate_fields.put("Vacancy", cp.vacancy_dropdown != null ? cp.vacancy_dropdown.getText() : "");
+		    candidate_fields.put("DOA", cp.calendar_textbox != null ? cp.calendar_textbox.getAttribute("value") : "");
+		    candidate_fields.put("Keywords", cp.keywords_textbox != null ? cp.keywords_textbox.getAttribute("value") : "");
+		    candidate_fields.put("Notes", cp.notes_textbox != null ? cp.notes_textbox.getAttribute("value") : "");
+		    Commons.getLogger().info("Candidate Fields Map: " + candidate_fields);
 		
-		for (String key : candidate_fields.keySet()) {
-		    candidate_field_list.add(key);
-		}
+		 candidate_field_list.clear();
+		 candidate_field_list.addAll(candidate_fields.keySet());
 
-		
+		for (String key : candidate_fields.keySet()) {
+		    //candidate_field_list.add(key);
+			 Commons.getLogger().info("Key in candidate_fields: [" + key + "]");
+		}
 	}
 	public void getrownumber(String first_name) throws IOException {
 		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Candidate_List");
@@ -346,19 +357,29 @@ public class Candidate_test extends Commons {
 		 stepContext.setCurrentStep("Validate if details in the screen are as per the form filled");
 		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		    //Thread.sleep(10000);
+		    getcandidatefields();
 
 		    Map<String, String> candidate_fields_filled = new HashMap<>();
 
 		    for (String keyToCheck : candidate_field_list) {
 		        if (candidate.containsKey(keyToCheck) && candidate_fields.containsKey(keyToCheck)) {
-		            String value = keyToCheck.equals("DOA") ? getcurrentdate() : candidate.get(keyToCheck);
+		            String value = candidate.get(keyToCheck);
 		            candidate_fields_filled.put(keyToCheck, value);
 		        }
 		    }
+		    
+		    candidate_fields_filled.put("DOA", getcurrentdate());
 
 		    for (String key : candidate_fields.keySet()) {
-		        String expected = candidate_fields.get(key);
-		        String actual = candidate_fields_filled.get(key);
+		        String actual = candidate_fields.get(key);
+		        String expected = candidate_fields_filled.get(key);
+		        if (key.equals("Contact Number")) {
+		            actual = actual != null ? actual.replaceAll("\\D", "").trim() : "";
+		            expected = expected != null ? expected.replaceAll("\\D", "").trim() : "";
+		        } else {
+		            actual = actual != null ? actual.trim() : "";
+		            expected = expected != null ? expected.trim() : "";
+		        }
 
 		        if (!expected.equals(actual)) {
 		            Commons.getLogger().info("Mismatch in field: " + key +
@@ -530,45 +551,62 @@ public void candidate_history_validation(String status) {
 	stepContext.setCurrentStep("Validate the Candidate History for "+status+" candidate");
 	String hiringManager = cp.hiringmanger_name.getText().strip();
 	String expectedDesc;
-	String actualDesc = (getcandidatelogxpath(1,2)).trim().replaceAll("\\s+", " ");;
-	String actualperformedDate = getcandidatelogxpath(1,1);
-	String vacancy = candidate.get("Vacancy");
+	String actualDesc;
+	String actualperformedDate;
+	if(status.equalsIgnoreCase("Added") || status.equalsIgnoreCase("Removed")) {
+		actualDesc = (getcandidatelogxpath(2,2)).trim().replaceAll("\\s+", " ");;
+		actualperformedDate = getcandidatelogxpath(2,1);
+	}
+	else {
+	actualDesc = (getcandidatelogxpath(1,2)).trim().replaceAll("\\s+", " ");;
+	actualperformedDate = getcandidatelogxpath(1,1);
+	}
+	newVacancyName = cp.vacancy_name.getText();
 	Commons.getLogger().info("Validating if the history log for addition of candidate");
 	Commons.scrolltoelement(cp.candidate_history_section);
 	Commons.waittillvisible(cp.candidate_history_section, 3000);
 	switch(status) {
+	case "Added":
+		expectedDesc = hiringManager+" added "+fullName;
+		break;
+	case "Removed":
+		expectedDesc = hiringManager+" removed "+fullName+" from the "+oldVacancyName;
+		break;
+	case "Application Initiated":
+		expectedDesc = hiringManager+" assigned the job vacancy "+newVacancyName;
+		break;
 	case "Shortlisted":
-		expectedDesc = status+" for "+vacancy+" by "+hiringManager;
+		expectedDesc = status+" for "+newVacancyName+" by "+hiringManager;
 		break;
 	case "Interview Scheduled":
-		expectedDesc = hiringManager+" scheduled "+vacancy+" Interview on "+getAdjustedDate()+" with "+interviewerName+" for "+vacancy;
+		expectedDesc = hiringManager+" scheduled "+newVacancyName+" Interview on "+getAdjustedDate()+" with "+interviewerName+" for "+newVacancyName;
 		break;
 	case "Rejected":
-		expectedDesc = hiringManager+" rejected "+fullName+" from the "+candidate.get("Vacancy");
+		expectedDesc = hiringManager+" rejected "+fullName+" from the "+newVacancyName;
 		break;
 	case "Interview Passed":
-		expectedDesc = hiringManager+" marked "+vacancy+" Interview as passed for "+vacancy;
+		expectedDesc = hiringManager+" marked "+newVacancyName+" Interview as passed for "+newVacancyName;
 		break;
 	case "Interview Failed":
-		expectedDesc = hiringManager+" marked "+vacancy+" Interview as failed for "+vacancy;
+		expectedDesc = hiringManager+" marked "+newVacancyName+" Interview as failed for "+newVacancyName;
 		break;
 	case "Second Interview Scheduled":
-		expectedDesc = hiringManager+" scheduled "+vacancy+" Interview - Second Round on "+getAdjustedDate2()+" with "+interviewerName+" for "+vacancy;
+		expectedDesc = hiringManager+" scheduled "+newVacancyName+" Interview - Second Round on "+getAdjustedDate2()+" with "+interviewerName+" for "+newVacancyName;
 		break;
 	case "Second Round Interview Passed":
-		expectedDesc = hiringManager+" marked "+vacancy+" Interview - Second Round as passed for "+vacancy;
+		expectedDesc = hiringManager+" marked "+newVacancyName+" Interview - Second Round as passed for "+newVacancyName;
 		break;
 	case "Second Round Interview Failed":
-		expectedDesc = hiringManager+" marked "+vacancy+" Interview - Second Round as failed for "+vacancy;
+		expectedDesc = hiringManager+" marked "+newVacancyName+" Interview - Second Round as failed for "+newVacancyName;
 		break;
 	case "Job Offered":
-		expectedDesc = hiringManager+" offered the job for "+candidate.get("Vacancy");
+		expectedDesc = hiringManager+" offered the job for "+newVacancyName;
 		break;
 	case "Offer Declined":
-		expectedDesc = hiringManager+" marked the offer as declined for "+candidate.get("Vacancy");
+		expectedDesc = hiringManager+" marked the offer as declined for "+newVacancyName;
 		break;
 	case "Hired":
-		expectedDesc = hiringManager+" hired "+fullName+" for "+candidate.get("Vacancy");
+		expectedDesc = hiringManager+" hired "+fullName+" for "+newVacancyName;
 		break;
     default:
     	expectedDesc = null;
@@ -594,7 +632,7 @@ public void candidate_history_validation(String status) {
 	}
 }
 
-	@Then("Validate the Candidate History for the newly added candidate in Application Initiated stage")
+	/*@Then("Validate the Candidate History for the newly added candidate in Application Initiated stage")
 	public void candidate_history_from_initiated_stage() {
 		stepContext.setCurrentStep("Validate the Candidate History for the newly added candidate in Application Initiated stage");
 		Commons.getLogger().info("Validating if the history log for addition of candidate");
@@ -626,7 +664,7 @@ public void candidate_history_validation(String status) {
 			}
 			
 		}
-	}
+	}*/
 	@Then("Delete the Newly added candidate")
 	public void delete_filtered_candidate() {
 		Commons.getLogger().info("Deleting the candidate...");
