@@ -214,7 +214,7 @@ Examples:
       | first_name |
       | Dwight     |
 
-  @Candidates_Suite @test1 @Recruitement_Regression @Flow_Sanity1
+  @Candidates_Suite @test1 @Recruitement_Regression @Flow_Sanity2
   Scenario Outline: Validate if user can Shortlist a candidate, reject the candidate from shortlisted stage and validate the candidate History
     Given User Logs in with Credentials and Navigates to Recruitment Section
     When User Navigates to Add Candidate form
