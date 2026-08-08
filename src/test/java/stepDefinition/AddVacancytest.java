@@ -28,7 +28,7 @@ public class AddVacancytest extends Commons {
 	VacanciesPage vp;
 	VacancyformPage vfp;
 	String temp;
-	String vacancyname = "Test Automation Genius";
+	String vacancyName = "Test Automation Genius";
 
 
 	@Given("User Logs in with Credentials and Navigates to Recruitment Section")
@@ -55,7 +55,7 @@ public class AddVacancytest extends Commons {
         wait.until(ExpectedConditions.visibilityOf(lp.username));
         lp.username.sendKeys(p.getProperty("username"));
         lp.password.sendKeys(p.getProperty("password"));
-        lp.loginbtn.click();
+        lp.loginButton.click();
 
         // Wait for recruitment tab to be clickable
         wait.until(ExpectedConditions.elementToBeClickable(dp.recruitment));
@@ -83,7 +83,7 @@ public class AddVacancytest extends Commons {
 	public void navigateto_vacancyform() throws InterruptedException {
 		Commons.getLogger().info("Navigating to Vacancy form");
 	    vp = new VacanciesPage(Commons.getDriver());
-	    Commons.forceclick(vp.addbtn);
+	    Commons.forceclick(vp.addButton);
 	    Thread.sleep(3000);
 	}
 	@When("Fills the Job Vacancy form for {string} position with Hiring Manager as {string}")
@@ -92,15 +92,15 @@ public class AddVacancytest extends Commons {
 	   try {
 	    Commons.getLogger().info("Starting to fill the form...");
 	    vfp = new VacancyformPage(Commons.getDriver());
-	    //Commons.forcesendkeys(vfp.vacancyname, "Test Automation Genius" );
-	    Commons.sendkeys(vfp.vacancyname, vacancyname);
-	    vfp.jobtitledrpdwn.click();
+	    //Commons.forcesendkeys(vfp.vacancyName, "Test Automation Genius" );
+	    Commons.sendkeys(vfp.vacancyName, vacancyName);
+	    vfp.jobTitleDropdown.click();
 	    driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), '"+jobtlt+"')]")).click();
-	    Commons.sendkeys(vfp.vacancydesc, "Candidate should be automation genius");
-	    Commons.sendkeys(vfp.HMinputbox, HM);
+	    Commons.sendkeys(vfp.vacancyDescription, "Candidate should be automation genius");
+	    Commons.sendkeys(vfp.hmInputBox, HM);
 	    Thread.sleep(3000);
 	    driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), '"+HM+"')]")).click();
-	    Commons.sendkeys(vfp.posnumber, "5");
+	    Commons.sendkeys(vfp.positionNumber, "5");
 	   }
 	   catch(Exception e) {
 		   Commons.getLogger().info("Failed to fill the form");
@@ -111,7 +111,7 @@ public class AddVacancytest extends Commons {
 	    // Write code here that turns the phrase above into concrete actions
 		 vfp = new VacancyformPage(Commons.getDriver());
 		 Commons.getLogger().info("Saving the form");
-		 vfp.savebtn.click();
+		 vfp.saveButton.click();
 		 Thread.sleep(3000);
 		 
 	}
@@ -137,10 +137,10 @@ public class AddVacancytest extends Commons {
 		Commons.scrolltoelement(driver.findElement(By.xpath("//div[contains(text(),'"+jobtlt+"')]")));
 		driver.findElement(By.xpath("//div[contains(text(),'"+jobtlt+"')]/parent::div/following-sibling::div/div[contains(text(),'"+HM+"')]/parent::div/following-sibling::div/following-sibling::div/div/button/i[contains(@class, 'trash')]")).click();
 		vp = new VacanciesPage(Commons.getDriver());
-		Commons.waitandclick(vp.confirmdeleteops, 3000); 
+		Commons.waitandclick(vp.confirmDeleteOps, 3000); 
 	}
 	@When("Capture an existing vacancy from the vacancy table")
-	public void capture_vacancyname() throws InterruptedException {
+	public void capture_vacancyName() throws InterruptedException {
 		Commons.getLogger().info("Capturing Vacancy name...");
 		//Commons.scrolltoelement(driver.findElement(By.xpath("(//div[@role='row'])[3]")));
 		Thread.sleep(3000);
@@ -151,8 +151,8 @@ public class AddVacancytest extends Commons {
 	public void enterduplicatevacancyinvacancyform() throws InterruptedException {
 		Commons.getLogger().info("Starting to fill the form...");
 	    vfp = new VacancyformPage(Commons.getDriver());
-	    //Commons.forcesendkeys(vfp.vacancyname, "Test Automation Genius" );
-	    Commons.sendkeys(vfp.vacancyname, temp);
+	    //Commons.forcesendkeys(vfp.vacancyName, "Test Automation Genius" );
+	    Commons.sendkeys(vfp.vacancyName, temp);
 	    Thread.sleep(3000);
 	}
 	@Then("Already exists error message should be displayed under the text box")
@@ -171,10 +171,10 @@ public class AddVacancytest extends Commons {
 	public void search_vacancy() throws InterruptedException {
 		Commons.getLogger().info("Search for vacancy started...");
 		vp = new VacanciesPage(Commons.getDriver());
-		vp.vacancydrpdwn.click();
-		driver.findElement(By.xpath("//div[@role='listbox']/div[@role='option']/span[contains(text(), '"+vacancyname+"')]")).click();
+		vp.vacancyDropdown.click();
+		driver.findElement(By.xpath("//div[@role='listbox']/div[@role='option']/span[contains(text(), '"+vacancyName+"')]")).click();
 		Thread.sleep(3000);
-		vp.searchbtn.click();
+		vp.searchButton.click();
 		Thread.sleep(3000);
 	}
 	@When("Click on Edit Icon for {string} position with Hiring Manager as {string}")
@@ -188,11 +188,12 @@ public class AddVacancytest extends Commons {
 		Commons.getLogger().info("Updating Job Title...");
 		vfp = new VacancyformPage(Commons.getDriver());
 		Thread.sleep(3000);
-		vfp.jobtitledrpdwn.click();
+		vfp.jobTitleDropdown.click();
 		driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), '"+jobtlt+"')]")).click();
 	}
 	@When("Navigate to Candidates section")
 	public void navigateto_Candidates_section() throws InterruptedException {
+		Thread.sleep(2000);
 		Commons.getLogger().info("Navigating to Candidates section");
 	    cp = new CandidatePage(Commons.getDriver());
 	    Commons.forceclick(cp.candidates);
@@ -201,7 +202,7 @@ public class AddVacancytest extends Commons {
 	@Then("Validate if the Job title is updated for the Vacancy to {string}")
 	public void confirm_vacancy_update(String jobtlt) {
 		
-		String actual_jobtlt=driver.findElement(By.xpath("//div[@role='cell']/div[contains(text(), '"+vacancyname+"')]/parent::div/following-sibling::div/div")).getText();
+		String actual_jobtlt=driver.findElement(By.xpath("//div[@role='cell']/div[contains(text(), '"+vacancyName+"')]/parent::div/following-sibling::div/div")).getText();
 		if(actual_jobtlt.equalsIgnoreCase(jobtlt)){
 			Commons.getLogger().info("Successfully Updated...");
 			Assert.assertTrue(true);
@@ -213,7 +214,7 @@ public class AddVacancytest extends Commons {
 	}
 	@Then("Check if the newly added vacancy is filtered and displayed in the vacancy table")
 	public void search_confirmation() {
-		if(driver.findElement(By.xpath("//div[@role='cell']//div[contains(text(),'"+vacancyname+"')]")).isDisplayed()) {
+		if(driver.findElement(By.xpath("//div[@role='cell']//div[contains(text(),'"+vacancyName+"')]")).isDisplayed()) {
 			Commons.getLogger().info("Search Successfull...");
 			Assert.assertTrue(true);
 		}
@@ -245,11 +246,11 @@ public class AddVacancytest extends Commons {
 		for(int i=1;i<=3;i++) {
 			switch (i) {
 			case 1:
-				Commons.clearWebField(vfp.vacancyname);
+				Commons.clearWebField(vfp.vacancyName);
 				//Thread.sleep(5000);
 				if(Errormsg.equalsIgnoreCase(driver.findElement(By.xpath("(//label[contains(@class, 'field-required')])["+i+"]/parent::div/following-sibling::span")).getText())) {
 					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
-					vfp.vacancyname.sendKeys(vacancyname);
+					vfp.vacancyName.sendKeys(vacancyName);
 				}
 				else {
 					Commons.getLogger().info("Error message is not displayed or appropriate");
@@ -257,13 +258,13 @@ public class AddVacancytest extends Commons {
 				}
 				break;
 			case 2:
-				//vfp.jobtitledrpdwn.clear();
-				vfp.jobtitledrpdwn.click();
+				//vfp.jobTitleDropdown.clear();
+				vfp.jobTitleDropdown.click();
 			    driver.findElement(By.xpath("(//div[@role='listbox']/div)[1]")).click();
 				//Thread.sleep(2000);
 				if(Errormsg.equalsIgnoreCase(driver.findElement(By.xpath("(//label[contains(@class, 'field-required')])["+i+"]/parent::div/following-sibling::span")).getText())) {
 					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
-					vfp.jobtitledrpdwn.click();
+					vfp.jobTitleDropdown.click();
 				    driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), 'QA Lead')]")).click();
 				}
 				else {
@@ -272,8 +273,8 @@ public class AddVacancytest extends Commons {
 				}
 				break;
 			case 3:
-				Commons.clearWebField(vfp.HMinputbox);
-				vfp.savebtn.click();
+				Commons.clearWebField(vfp.hmInputBox);
+				vfp.saveButton.click();
 				Thread.sleep(2000);
 				if(Errormsg.equalsIgnoreCase(driver.findElement(By.xpath("(//label[contains(@class, 'field-required')])["+i+"]/parent::div/following-sibling::span")).getText())) {
 					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
@@ -291,8 +292,8 @@ public class AddVacancytest extends Commons {
 	@Then("Validate if the vacancy name is displayed in the respective dropdown")
 	public void validate_vacancydropdown() {
 		cp = new CandidatePage(Commons.getDriver());
-		cp.vacancydrpdwn.click();
-		if(driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), '"+vacancyname+"')]")).isDisplayed()) {
+		cp.vacancyDropdown.click();
+		if(driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), '"+vacancyName+"')]")).isDisplayed()) {
 			Commons.getLogger().info("Newly added vacancy is displayed...");
 			Assert.assertTrue(true);
 		}

@@ -41,7 +41,10 @@ public class Commons {
          softAssert.assertAll();
      }*/
 
-public static WebDriver initilizeBrowser() throws IOException
+/**
+ * Initializes the browser (Chrome, Edge, Firefox) for local or remote execution based on configuration properties.
+ */
+public static WebDriver initializeBrowser() throws IOException
 {
 	p = getProperties();
     String executionEnv = p.getProperty("execution_env");
@@ -124,11 +127,17 @@ public static WebDriver initilizeBrowser() throws IOException
 	 
 }
 
+/**
+ * Returns the WebDriver instance.
+ */
 public static WebDriver getDriver() {
 	//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		return driver;
 	}
 
+/**
+ * Loads and returns the properties from the configuration file.
+ */
 public static Properties getProperties() throws IOException
 {		 
     FileReader file=new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\Configuration.properties");
@@ -137,44 +146,86 @@ public static Properties getProperties() throws IOException
 	return p;
 }
 
+/**
+ * Returns a Logger instance for logging purposes.
+ */
 public static Logger getLogger() 
 {		 
 	logger=LogManager.getLogger(); //Log4j
 	return logger;
 }
 
+/**
+ * Sends the specified value to the given WebElement.
+ */
 public static void sendkeys(WebElement element,String value) {
 	element.sendKeys(value);
 }
+
+/**
+ * Scrolls the page to bring the specified WebElement into view.
+ */
 public static void scrolltoelement(WebElement element) {
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	js.executeScript("arguments[0].scrollIntoView();", element);
 }
+
+/**
+ * Forces a click on the WebElement using JavaScript, bypassing any overlays.
+ */
 public static void forceclick(WebElement element) {
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	js.executeScript("arguments[0].click();", element);
 }
+
+/**
+ * Scrolls to the bottom of the page.
+ */
 public static void scrolltolast() {
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 }
+
+/**
+ * Scrolls to the top of the page.
+ */
+public static void scrolltotop() {
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+    js.executeScript("window.scrollTo(0, 0);");
+}
+
+/**
+ * Forces setting the value of the WebElement using JavaScript.
+ */
 public static void forcesendkeys(WebElement element, String val) {
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	js.executeScript("arguments[0].SetAttribute('value',"+val+")",element);
 }
+
+/**
+ * Waits for the specified WebElement to become visible within the given time.
+ */
 public static void waittillvisible(WebElement element, long i) {
 	wait = new WebDriverWait(driver,Duration.ofSeconds(i));
 	wait.until(ExpectedConditions.visibilityOf(element));
 }
 
+/**
+ * Waits for the WebElement to be visible and then clicks it.
+ */
 public static void waitandclick(WebElement element, long i) {
 	wait = new WebDriverWait(driver,Duration.ofSeconds(i));
 	wait.until(ExpectedConditions.visibilityOf(element));
 	element.click();
 }
+
+/**
+ * Clears the content of the WebElement by sending backspace keys.
+ */
 public static void clearWebField(WebElement element){
     while(!element.getAttribute("value").equals("")){
         element.sendKeys(Keys.BACK_SPACE);
     }
 }
 }
+

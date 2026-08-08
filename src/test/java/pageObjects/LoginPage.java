@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage{
 
+	// WebElement names updated to follow Java naming conventions (camelCase)
+
 	public LoginPage(WebDriver driver) {
 		super(driver);
 	}
@@ -18,5 +20,5 @@ public class LoginPage extends BasePage{
 	public WebElement password;
 	
 	@FindBy(xpath ="//button[@type ='submit']")
-	public WebElement loginbtn;
+	public WebElement loginButton;
 }

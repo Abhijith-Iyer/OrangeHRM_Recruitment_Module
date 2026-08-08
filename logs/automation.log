@@ -1,172 +1,447 @@
-14:53:41.867 [main] TRACE - Resolving type for handle ctcols627ctype
-14:53:41.886 [main] TRACE - Resolving type for handle ctcola95ftype
-14:53:41.905 [main] TRACE - Resolving type for handle ctsheetdata8408type
-14:53:41.907 [main] TRACE - Resolving type for handle ctrowdd39type
-14:53:41.911 [main] TRACE - Resolving type for handle ctcell842btype
-14:53:41.919 [main] TRACE - Resolving type for handle stcellrefe4e0type
-14:53:41.942 [main] TRACE - Resolving type for handle cthyperlinks6416type
-14:53:41.947 [main] TRACE - Resolving type for handle cthyperlink0c85type
-14:53:41.979 [main] TRACE - Resolving type for handle stxstringf179type
-14:53:41.979 [main] TRACE - Resolving type for handle stcelltypebf95type
-14:53:41.979 [main] TRACE - Resolving type for handle stcellstylexfid70c7type
-14:53:41.994 [main] TRACE - Resolving type for handle stnumfmtid76fbtype
-14:53:41.994 [main] TRACE - Resolving type for handle ctworkbookpr03a5type
-14:53:42.297 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
-14:53:42.298 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-14:53:42.298 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
-14:53:42.301 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
-14:53:42.303 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
-14:53:42.305 [main] DEBUG - Parsing relationship: /_rels/.rels
-14:53:42.305 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
-14:53:42.349 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-14:53:42.349 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-14:53:43.238 [main] INFO  - Saving the form
-14:53:48.083 [main] INFO  - User has been auto navigated to Candidate details screen
-14:53:48.334 [main] INFO  - Checking the current status...
-14:53:48.366 [main] INFO  - Status is as expected...
-14:53:48.813 [main] INFO  - Contact Number captured: [9086954]
-14:53:48.888 [main] INFO  - Candidate Fields Map: {Contact Number=9086954, Keywords=Ex-Manager at Dunder Mifflin, Vacancy=Payroll Administrator, DOA=2025-15-10, First Name=Michael, Email ID=mike@dundermifflin.com, Middle Name=Gary, Last Name=Scott, Notes=Managed Pay Roll at Parking lot before}
-14:53:48.888 [main] INFO  - Key in candidate_fields: [Contact Number]
-14:53:48.888 [main] INFO  - Key in candidate_fields: [Keywords]
-14:53:48.888 [main] INFO  - Key in candidate_fields: [Vacancy]
-14:53:48.888 [main] INFO  - Key in candidate_fields: [DOA]
-14:53:48.888 [main] INFO  - Key in candidate_fields: [First Name]
-14:53:48.888 [main] INFO  - Key in candidate_fields: [Email ID]
-14:53:48.888 [main] INFO  - Key in candidate_fields: [Middle Name]
-14:53:48.888 [main] INFO  - Key in candidate_fields: [Last Name]
-14:53:48.888 [main] INFO  - Key in candidate_fields: [Notes]
-14:53:49.087 [main] INFO  - Contact Number captured: [9086954]
-14:53:49.156 [main] INFO  - Candidate Fields Map: {Contact Number=9086954, Keywords=Ex-Manager at Dunder Mifflin, Vacancy=Payroll Administrator, DOA=2025-15-10, First Name=Michael, Email ID=mike@dundermifflin.com, Middle Name=Gary, Last Name=Scott, Notes=Managed Pay Roll at Parking lot before}
-14:53:49.156 [main] INFO  - Key in candidate_fields: [Contact Number]
-14:53:49.156 [main] INFO  - Key in candidate_fields: [Keywords]
-14:53:49.156 [main] INFO  - Key in candidate_fields: [Vacancy]
-14:53:49.156 [main] INFO  - Key in candidate_fields: [DOA]
-14:53:49.156 [main] INFO  - Key in candidate_fields: [First Name]
-14:53:49.156 [main] INFO  - Key in candidate_fields: [Email ID]
-14:53:49.156 [main] INFO  - Key in candidate_fields: [Middle Name]
-14:53:49.156 [main] INFO  - Key in candidate_fields: [Last Name]
-14:53:49.156 [main] INFO  - Key in candidate_fields: [Notes]
-14:53:49.156 [main] INFO  - Fields values match the filled values
-14:53:49.266 [main] INFO  - Validating if the history log for addition of candidate
-14:53:49.317 [main] INFO  - Checking Candidate History log for: Added
-14:53:49.320 [main] INFO  - Candidate History log forAdded is displayed as expected
-14:53:49.592 [main] INFO  - Validating if the history log for addition of candidate
-14:53:49.624 [main] INFO  - Checking Candidate History log for: Application Initiated
-14:53:49.624 [main] INFO  - Candidate History log forApplication Initiated is displayed as expected
-14:53:49.808 [main] INFO  - Navigating to Candidates section
-14:53:55.411 [main] INFO  - Candidate is visible in the table
-14:53:55.411 [main] INFO  - Deleting the candidate...
-14:53:55.614 [main] INFO  - Delete operation over...
-14:53:56.144 [main] INFO  - Checking if candidate name is displayed in filter search...
-14:53:56.188 [main] INFO  - Candidate name didn't appear in filter search
-15:00:41.573 [main] INFO  - Logging in and Navigating to Recruitment
-15:00:48.113 [main] INFO  - Successfully navigated to Recruitment
-15:00:52.362 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
-15:00:52.382 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-15:00:52.386 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
-15:00:52.390 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
-15:00:52.399 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
-15:00:52.400 [main] DEBUG - Parsing relationship: /_rels/.rels
-15:00:52.583 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
-15:00:52.643 [main] TRACE - Loading type system org.apache.poi.schemas.ooxml.system.ooxml
-15:00:52.647 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
-15:00:52.647 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
-15:00:52.647 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
-15:00:52.651 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
-15:00:52.653 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
-15:00:52.669 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
-15:00:52.672 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
-15:00:52.676 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
-15:00:52.679 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLLANG
-15:00:52.681 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
-15:00:52.681 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
-15:00:52.683 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
-15:00:52.685 [main] TRACE - Reading unresolved handles for type system org.apache.poi.schemas.ooxml.system.ooxml
-15:00:52.741 [main] TRACE - Finished loading type system org.apache.poi.schemas.ooxml.system.ooxml
-15:00:52.741 [main] TRACE - Resolving type for handle themefd26doctype
-15:00:52.806 [main] TRACE - Resolving type for handle stylesheet5d8bdoctype
-15:00:52.814 [main] TRACE - Resolving type for handle ctstylesheet4257type
-15:00:52.823 [main] TRACE - Resolving type for handle ctfonts6623type
-15:00:52.826 [main] TRACE - Resolving type for handle ctfont14d8type
-15:00:52.835 [main] TRACE - Resolving type for handle ctfills2c6ftype
-15:00:52.835 [main] TRACE - Resolving type for handle ctfill550ctype
-15:00:52.835 [main] TRACE - Resolving type for handle ctborders0d66type
-15:00:52.835 [main] TRACE - Resolving type for handle ctborderf935type
-15:00:52.835 [main] TRACE - Resolving type for handle ctcellxfs1322type
-15:00:52.852 [main] TRACE - Resolving type for handle ctxf97f7type
-15:00:52.852 [main] TRACE - Resolving type for handle ctcellstylexfsa81ftype
-15:00:52.852 [main] TRACE - Resolving type for handle ctdxfsb26atype
-15:00:52.852 [main] TRACE - Resolving type for handle cttablestyles872ftype
-15:00:52.852 [main] TRACE - Resolving type for handle sstf81fdoctype
-15:00:52.869 [main] TRACE - Resolving type for handle ctsst44f3type
-15:00:52.883 [main] TRACE - Resolving type for handle ctrsta472type
-15:00:52.930 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-15:00:52.930 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-15:00:52.930 [main] TRACE - Resolving type for handle workbookec17doctype
-15:00:52.935 [main] TRACE - Resolving type for handle ctworkbook83c3type
-15:00:52.945 [main] TRACE - Resolving type for handle ctsheets49fdtype
-15:00:52.946 [main] TRACE - Resolving type for handle ctsheet4dbetype
-15:00:52.946 [main] TRACE - Resolving type for handle strelationshipid1e94type
-15:00:52.952 [main] TRACE - Resolving type for handle worksheetf539doctype
-15:00:52.952 [main] TRACE - Resolving type for handle ctworksheet530dtype
-15:00:52.978 [main] TRACE - Resolving type for handle ctcols627ctype
-15:00:52.978 [main] TRACE - Resolving type for handle ctcola95ftype
-15:00:53.009 [main] TRACE - Resolving type for handle ctsheetdata8408type
-15:00:53.009 [main] TRACE - Resolving type for handle ctrowdd39type
-15:00:53.018 [main] TRACE - Resolving type for handle ctcell842btype
-15:00:53.025 [main] TRACE - Resolving type for handle stcellrefe4e0type
-15:00:53.043 [main] TRACE - Resolving type for handle cthyperlinks6416type
-15:00:53.043 [main] TRACE - Resolving type for handle cthyperlink0c85type
-15:00:53.088 [main] TRACE - Resolving type for handle stxstringf179type
-15:00:53.088 [main] TRACE - Resolving type for handle stcelltypebf95type
-15:00:53.088 [main] TRACE - Resolving type for handle stcellstylexfid70c7type
-15:00:53.105 [main] TRACE - Resolving type for handle stnumfmtid76fbtype
-15:00:53.105 [main] TRACE - Resolving type for handle ctworkbookpr03a5type
-15:00:53.436 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
-15:00:53.437 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-15:00:53.437 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
-15:00:53.437 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
-15:00:53.437 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
-15:00:53.437 [main] DEBUG - Parsing relationship: /_rels/.rels
-15:00:53.437 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
-15:00:53.467 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-15:00:53.467 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-15:00:54.200 [main] INFO  - Saving the form
-15:00:59.272 [main] INFO  - User has been auto navigated to Candidate details screen
-15:00:59.516 [main] INFO  - Checking the current status...
-15:00:59.550 [main] INFO  - Status is as expected...
-15:01:00.037 [main] INFO  - Contact Number captured: [9086954]
-15:01:00.135 [main] INFO  - Candidate Fields Map: {Contact Number=9086954, Keywords=Ex-Manager at Dunder Mifflin, Vacancy=Payroll Administrator, DOA=2025-15-10, First Name=Michael, Email ID=mike@dundermifflin.com, Middle Name=Gary, Last Name=Scott, Notes=Managed Pay Roll at Parking lot before}
-15:01:00.136 [main] INFO  - Key in candidate_fields: [Contact Number]
-15:01:00.136 [main] INFO  - Key in candidate_fields: [Keywords]
-15:01:00.136 [main] INFO  - Key in candidate_fields: [Vacancy]
-15:01:00.136 [main] INFO  - Key in candidate_fields: [DOA]
-15:01:00.136 [main] INFO  - Key in candidate_fields: [First Name]
-15:01:00.136 [main] INFO  - Key in candidate_fields: [Email ID]
-15:01:00.136 [main] INFO  - Key in candidate_fields: [Middle Name]
-15:01:00.137 [main] INFO  - Key in candidate_fields: [Last Name]
-15:01:00.137 [main] INFO  - Key in candidate_fields: [Notes]
-15:01:00.356 [main] INFO  - Contact Number captured: [9086954]
-15:01:00.419 [main] INFO  - Candidate Fields Map: {Contact Number=9086954, Keywords=Ex-Manager at Dunder Mifflin, Vacancy=Payroll Administrator, DOA=2025-15-10, First Name=Michael, Email ID=mike@dundermifflin.com, Middle Name=Gary, Last Name=Scott, Notes=Managed Pay Roll at Parking lot before}
-15:01:00.419 [main] INFO  - Key in candidate_fields: [Contact Number]
-15:01:00.419 [main] INFO  - Key in candidate_fields: [Keywords]
-15:01:00.420 [main] INFO  - Key in candidate_fields: [Vacancy]
-15:01:00.420 [main] INFO  - Key in candidate_fields: [DOA]
-15:01:00.420 [main] INFO  - Key in candidate_fields: [First Name]
-15:01:00.420 [main] INFO  - Key in candidate_fields: [Email ID]
-15:01:00.420 [main] INFO  - Key in candidate_fields: [Middle Name]
-15:01:00.420 [main] INFO  - Key in candidate_fields: [Last Name]
-15:01:00.420 [main] INFO  - Key in candidate_fields: [Notes]
-15:01:00.421 [main] INFO  - Fields values match the filled values
-15:01:00.744 [main] INFO  - Validating if the history log for addition of candidate
-15:01:00.809 [main] INFO  - Checking Candidate History log for: Added
-15:01:00.811 [main] INFO  - Candidate History log forAdded is displayed as expected
-15:01:01.073 [main] INFO  - Validating if the history log for addition of candidate
-15:01:01.110 [main] INFO  - Checking Candidate History log for: Application Initiated
-15:01:01.110 [main] INFO  - Candidate History log forApplication Initiated is displayed as expected
-15:01:01.289 [main] INFO  - Navigating to Candidates section
-15:01:06.942 [main] INFO  - Candidate is visible in the table
-15:01:06.947 [main] INFO  - Deleting the candidate...
-15:01:07.709 [main] INFO  - Delete operation over...
-15:01:08.185 [main] INFO  - Checking if candidate name is displayed in filter search...
-15:01:08.209 [main] INFO  - Candidate name didn't appear in filter search
+15:25:01.719 [main] INFO  - Navigating to Candidates section
+15:25:08.658 [main] INFO  - Deleting the candidate...
+15:25:09.817 [main] INFO  - Delete operation over...
+15:25:26.693 [main] INFO  - Logging in and Navigating to Recruitment
+15:25:38.208 [main] INFO  - Successfully navigated to Recruitment
+15:25:43.341 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:25:43.341 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:25:43.343 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:25:43.343 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:25:43.343 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:25:43.343 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:25:43.348 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:25:43.363 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:25:43.363 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:25:44.249 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:25:44.249 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:25:44.249 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:25:44.249 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:25:44.249 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:25:44.249 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:25:44.249 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:25:44.262 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:25:44.262 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:25:45.991 [main] INFO  - Saving the form
+15:25:51.592 [main] INFO  - User has been auto navigated to Candidate details screen
+15:25:51.881 [main] INFO  - Checking the current status...
+15:25:51.944 [main] INFO  - Status is as expected...
+15:25:58.952 [main] INFO  - User has been auto navigated to Candidate details screen
+15:25:59.239 [main] INFO  - Checking the current status...
+15:25:59.288 [main] INFO  - Status is as expected...
+15:26:05.668 [main] INFO  - Saving the form
+15:26:21.585 [main] INFO  - Logging in and Navigating to Recruitment
+15:26:28.408 [main] INFO  - Successfully navigated to Recruitment
+15:26:33.510 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:26:33.510 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:26:33.512 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:26:33.514 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:26:33.515 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:26:33.517 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:26:33.519 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:26:33.548 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:26:33.548 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:26:34.351 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:26:34.351 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:26:34.351 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:26:34.353 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:26:34.353 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:26:34.353 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:26:34.355 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:26:34.363 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:26:34.363 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:26:36.287 [main] INFO  - Saving the form
+15:26:42.352 [main] INFO  - User has been auto navigated to Candidate details screen
+15:26:42.644 [main] INFO  - Checking the current status...
+15:26:42.733 [main] INFO  - Status is as expected...
+15:26:49.715 [main] INFO  - User has been auto navigated to Candidate details screen
+15:26:50.038 [main] INFO  - Checking the current status...
+15:26:50.075 [main] INFO  - Status is as expected...
+15:27:00.588 [main] INFO  - User has been auto navigated to Candidate details screen
+15:27:00.868 [main] INFO  - Checking the current status...
+15:27:00.915 [main] INFO  - Status is as expected...
+15:27:07.688 [main] INFO  - User has been auto navigated to Candidate details screen
+15:27:07.972 [main] INFO  - Checking the current status...
+15:27:08.024 [main] INFO  - Status is as expected...
+15:27:18.951 [main] INFO  - User has been auto navigated to Candidate details screen
+15:27:19.234 [main] INFO  - Checking the current status...
+15:27:19.286 [main] INFO  - Status is as expected...
+15:27:26.819 [main] INFO  - User has been auto navigated to Candidate details screen
+15:27:27.102 [main] INFO  - Checking the current status...
+15:27:27.149 [main] INFO  - Status is as expected...
+15:27:27.561 [main] INFO  - Validating if the history log for addition of candidate
+15:27:27.642 [main] INFO  - Checking Candidate History log for: Second Round Interview Failed
+15:27:27.642 [main] INFO  - Candidate History log forSecond Round Interview Failed is displayed as expected
+15:27:29.939 [main] INFO  - Navigating to Candidates section
+15:27:36.557 [main] INFO  - Viewing the candidate...
+15:27:38.458 [main] INFO  - User has been navigated to Candidate details screen...
+15:27:45.514 [main] INFO  - User has been auto navigated to Candidate details screen
+15:27:45.810 [main] INFO  - Checking the current status...
+15:27:45.853 [main] INFO  - Status is as expected...
+15:27:46.279 [main] INFO  - Validating if the history log for addition of candidate
+15:27:46.381 [main] INFO  - Checking Candidate History log for: Rejected
+15:27:46.381 [main] INFO  - Candidate History log forRejected is displayed as expected
+15:27:48.702 [main] INFO  - Navigating to Candidates section
+15:27:55.143 [main] INFO  - Deleting the candidate...
+15:27:55.615 [main] INFO  - Delete operation over...
+15:28:10.878 [main] INFO  - Logging in and Navigating to Recruitment
+15:28:17.809 [main] INFO  - Successfully navigated to Recruitment
+15:28:22.440 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:22.444 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:28:22.444 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:28:22.444 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:28:22.444 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:28:22.444 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:28:22.446 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:28:22.469 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:28:22.469 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:28:23.128 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:23.129 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:28:23.129 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:28:23.130 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:28:23.130 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:28:23.130 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:28:23.133 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:28:23.141 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:28:23.141 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:28:24.624 [main] INFO  - Saving the form
+15:28:31.783 [main] INFO  - User has been auto navigated to Candidate details screen
+15:28:32.144 [main] INFO  - Checking the current status...
+15:28:32.206 [main] INFO  - Status is as expected...
+15:28:42.336 [main] INFO  - User has been auto navigated to Candidate details screen
+15:28:42.713 [main] INFO  - Checking the current status...
+15:28:42.752 [main] INFO  - Status is as expected...
+15:28:59.579 [main] INFO  - User has been auto navigated to Candidate details screen
+15:28:59.834 [main] INFO  - Checking the current status...
+15:28:59.876 [main] INFO  - Status is as expected...
+15:29:10.550 [main] INFO  - User has been auto navigated to Candidate details screen
+15:29:10.777 [main] INFO  - Checking the current status...
+15:29:10.826 [main] INFO  - Status is as expected...
+15:29:25.356 [main] INFO  - User has been auto navigated to Candidate details screen
+15:29:25.693 [main] INFO  - Checking the current status...
+15:29:25.742 [main] INFO  - Status is as expected...
+15:29:32.420 [main] INFO  - User has been auto navigated to Candidate details screen
+15:29:32.740 [main] INFO  - Checking the current status...
+15:29:32.776 [main] INFO  - Status is as expected...
+15:29:33.201 [main] INFO  - Validating if the history log for addition of candidate
+15:29:33.293 [main] INFO  - Checking Candidate History log for: Second Round Interview Passed
+15:29:33.293 [main] INFO  - Candidate History log forSecond Round Interview Passed is displayed as expected
+15:29:35.646 [main] INFO  - Navigating to Candidates section
+15:29:42.213 [main] INFO  - Viewing the candidate...
+15:29:44.615 [main] INFO  - User has been navigated to Candidate details screen...
+15:29:52.317 [main] INFO  - User has been auto navigated to Candidate details screen
+15:29:52.674 [main] INFO  - Checking the current status...
+15:29:52.744 [main] INFO  - Status is as expected...
+15:29:53.119 [main] INFO  - Validating if the history log for addition of candidate
+15:29:53.201 [main] INFO  - Checking Candidate History log for: Rejected
+15:29:53.201 [main] INFO  - Candidate History log forRejected is displayed as expected
+15:29:55.574 [main] INFO  - Navigating to Candidates section
+15:30:18.332 [main] INFO  - Logging in and Navigating to Recruitment
+15:30:25.080 [main] INFO  - Successfully navigated to Recruitment
+15:30:29.961 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:30:29.974 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:30:29.974 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:30:29.974 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:30:29.974 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:30:29.977 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:30:29.977 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:30:29.994 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:30:29.994 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:30:30.916 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:30:30.916 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:30:30.916 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:30:30.916 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:30:30.916 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:30:30.916 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:30:30.916 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:30:30.923 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:30:30.923 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:30:32.904 [main] INFO  - Saving the form
+15:30:39.405 [main] INFO  - User has been auto navigated to Candidate details screen
+15:30:39.737 [main] INFO  - Checking the current status...
+15:30:39.828 [main] INFO  - Status is as expected...
+15:30:46.655 [main] INFO  - User has been auto navigated to Candidate details screen
+15:30:46.939 [main] INFO  - Checking the current status...
+15:30:46.982 [main] INFO  - Status is as expected...
+15:30:57.707 [main] INFO  - User has been auto navigated to Candidate details screen
+15:30:57.980 [main] INFO  - Checking the current status...
+15:30:58.025 [main] INFO  - Status is as expected...
+15:31:04.443 [main] INFO  - User has been auto navigated to Candidate details screen
+15:31:04.760 [main] INFO  - Checking the current status...
+15:31:04.845 [main] INFO  - Status is as expected...
+15:31:15.291 [main] INFO  - User has been auto navigated to Candidate details screen
+15:31:15.588 [main] INFO  - Checking the current status...
+15:31:15.629 [main] INFO  - Status is as expected...
+15:31:22.495 [main] INFO  - User has been auto navigated to Candidate details screen
+15:31:22.860 [main] INFO  - Checking the current status...
+15:31:22.910 [main] INFO  - Status is as expected...
+15:31:29.078 [main] INFO  - User has been auto navigated to Candidate details screen
+15:31:29.419 [main] INFO  - Checking the current status...
+15:31:29.466 [main] INFO  - Status is as expected...
+15:31:29.967 [main] INFO  - Validating if the history log for addition of candidate
+15:31:30.057 [main] INFO  - Checking Candidate History log for: Job Offered
+15:31:30.057 [main] INFO  - Candidate History log forJob Offered is displayed as expected
+15:31:32.359 [main] INFO  - Navigating to Candidates section
+15:31:39.341 [main] INFO  - Viewing the candidate...
+15:31:40.994 [main] INFO  - User has been navigated to Candidate details screen...
+15:31:47.587 [main] INFO  - User has been auto navigated to Candidate details screen
+15:31:47.893 [main] INFO  - Checking the current status...
+15:31:47.931 [main] INFO  - Status is as expected...
+15:31:48.334 [main] INFO  - Validating if the history log for addition of candidate
+15:31:48.416 [main] INFO  - Checking Candidate History log for: Rejected
+15:31:48.416 [main] INFO  - Candidate History log forRejected is displayed as expected
+15:31:50.878 [main] INFO  - Navigating to Candidates section
+15:31:57.293 [main] INFO  - Deleting the candidate...
+15:31:57.747 [main] INFO  - Delete operation over...
+15:32:17.358 [main] INFO  - Logging in and Navigating to Recruitment
+15:32:24.280 [main] INFO  - Successfully navigated to Recruitment
+15:32:31.243 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:32:31.243 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:32:31.255 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:32:31.255 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:32:31.255 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:32:31.255 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:32:31.255 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:32:31.263 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:32:31.263 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:32:32.269 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:32:32.269 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:32:32.270 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:32:32.270 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:32:32.270 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:32:32.270 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:32:32.273 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:32:32.289 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:32:32.289 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:32:33.895 [main] INFO  - Saving the form
+15:32:41.643 [main] INFO  - User has been auto navigated to Candidate details screen
+15:32:41.996 [main] INFO  - Checking the current status...
+15:32:42.064 [main] INFO  - Status is as expected...
+15:32:52.712 [main] INFO  - User has been auto navigated to Candidate details screen
+15:32:53.197 [main] INFO  - Checking the current status...
+15:32:53.245 [main] INFO  - Status is as expected...
+15:33:04.376 [main] INFO  - User has been auto navigated to Candidate details screen
+15:33:04.738 [main] INFO  - Checking the current status...
+15:33:04.790 [main] INFO  - Status is as expected...
+15:33:11.817 [main] INFO  - User has been auto navigated to Candidate details screen
+15:33:12.100 [main] INFO  - Checking the current status...
+15:33:12.143 [main] INFO  - Status is as expected...
+15:33:23.325 [main] INFO  - User has been auto navigated to Candidate details screen
+15:33:23.596 [main] INFO  - Checking the current status...
+15:33:23.644 [main] INFO  - Status is as expected...
+15:33:30.803 [main] INFO  - User has been auto navigated to Candidate details screen
+15:33:31.154 [main] INFO  - Checking the current status...
+15:33:31.195 [main] INFO  - Status is as expected...
+15:33:39.013 [main] INFO  - User has been auto navigated to Candidate details screen
+15:33:39.347 [main] INFO  - Checking the current status...
+15:33:39.424 [main] INFO  - Status is as expected...
+15:33:46.180 [main] INFO  - User has been auto navigated to Candidate details screen
+15:33:46.476 [main] INFO  - Checking the current status...
+15:33:46.519 [main] INFO  - Status is as expected...
+15:33:46.946 [main] INFO  - Validating if the history log for addition of candidate
+15:33:47.037 [main] INFO  - Checking Candidate History log for: Offer Declined
+15:33:47.037 [main] INFO  - Candidate History log forOffer Declined is displayed as expected
+15:33:49.358 [main] INFO  - Navigating to Candidates section
+15:33:56.025 [main] INFO  - Viewing the candidate...
+15:33:57.874 [main] INFO  - User has been navigated to Candidate details screen...
+15:34:05.145 [main] INFO  - User has been auto navigated to Candidate details screen
+15:34:05.517 [main] INFO  - Checking the current status...
+15:34:05.562 [main] INFO  - Status is as expected...
+15:34:05.973 [main] INFO  - Validating if the history log for addition of candidate
+15:34:06.054 [main] INFO  - Checking Candidate History log for: Rejected
+15:34:06.054 [main] INFO  - Candidate History log forRejected is displayed as expected
+15:34:08.433 [main] INFO  - Navigating to Candidates section
+15:34:14.988 [main] INFO  - Deleting the candidate...
+15:34:15.999 [main] INFO  - Delete operation over...
+15:34:31.715 [main] INFO  - Logging in and Navigating to Recruitment
+15:34:38.419 [main] INFO  - Successfully navigated to Recruitment
+15:34:43.574 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:34:43.574 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:34:43.574 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:34:43.574 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:34:43.574 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:34:43.576 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:34:43.576 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:34:43.584 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:34:43.584 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:34:44.488 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:34:44.490 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:34:44.490 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:34:44.490 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:34:44.490 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:34:44.490 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:34:44.490 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:34:44.501 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:34:44.501 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:34:46.812 [main] INFO  - Saving the form
+15:34:54.095 [main] INFO  - User has been auto navigated to Candidate details screen
+15:34:54.404 [main] INFO  - Checking the current status...
+15:34:54.475 [main] INFO  - Status is as expected...
+15:35:01.184 [main] INFO  - User has been auto navigated to Candidate details screen
+15:35:01.536 [main] INFO  - Checking the current status...
+15:35:01.575 [main] INFO  - Status is as expected...
+15:35:12.259 [main] INFO  - User has been auto navigated to Candidate details screen
+15:35:12.529 [main] INFO  - Checking the current status...
+15:35:12.578 [main] INFO  - Status is as expected...
+15:35:19.197 [main] INFO  - User has been auto navigated to Candidate details screen
+15:35:19.524 [main] INFO  - Checking the current status...
+15:35:19.574 [main] INFO  - Status is as expected...
+15:35:30.223 [main] INFO  - User has been auto navigated to Candidate details screen
+15:35:30.518 [main] INFO  - Checking the current status...
+15:35:30.569 [main] INFO  - Status is as expected...
+15:35:37.873 [main] INFO  - User has been auto navigated to Candidate details screen
+15:35:38.358 [main] INFO  - Checking the current status...
+15:35:38.456 [main] INFO  - Status is as expected...
+15:35:45.156 [main] INFO  - User has been auto navigated to Candidate details screen
+15:35:45.468 [main] INFO  - Checking the current status...
+15:35:45.515 [main] INFO  - Status is as expected...
+15:35:52.401 [main] INFO  - User has been auto navigated to Candidate details screen
+15:35:52.728 [main] INFO  - Checking the current status...
+15:35:52.772 [main] INFO  - Status is as expected...
+15:35:53.229 [main] INFO  - Validating if the history log for addition of candidate
+15:35:53.318 [main] INFO  - Checking Candidate History log for: Hired
+15:35:53.318 [main] INFO  - Candidate History log forHired is displayed as expected
+15:35:55.654 [main] INFO  - Navigating to Candidates section
+15:36:02.543 [main] INFO  - Deleting the candidate...
+15:36:02.999 [main] INFO  - Delete operation over...
+15:36:19.347 [main] INFO  - Logging in and Navigating to Recruitment
+15:36:27.708 [main] INFO  - Successfully navigated to Recruitment
+15:36:32.772 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:36:32.774 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:36:32.774 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:36:32.774 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:36:32.774 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:36:32.774 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:36:32.774 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:36:32.787 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:36:32.787 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:36:33.396 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:36:33.396 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:36:33.396 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:36:33.396 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:36:33.396 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:36:33.400 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:36:33.400 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:36:33.416 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:36:33.416 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:36:35.261 [main] INFO  - Saving the form
+15:36:41.606 [main] INFO  - User has been auto navigated to Candidate details screen
+15:36:41.987 [main] INFO  - Checking the current status...
+15:36:42.054 [main] INFO  - Status is as expected...
+15:36:50.360 [main] INFO  - User has been auto navigated to Candidate details screen
+15:36:50.725 [main] INFO  - Checking the current status...
+15:36:50.776 [main] INFO  - Status is as expected...
+15:36:51.213 [main] INFO  - Validating if the history log for addition of candidate
+15:36:51.354 [main] INFO  - Checking Candidate History log for: Shortlisted
+15:36:51.354 [main] INFO  - Candidate History log forShortlisted is displayed as expected
+15:36:51.981 [main] INFO  - Editing the Job vacancy for the application
+15:36:57.531 [main] INFO  - Checking the current status...
+15:36:57.600 [main] INFO  - Status is as expected...
+15:36:57.990 [main] INFO  - Validating if the history log for addition of candidate
+15:36:58.073 [main] INFO  - Checking Candidate History log for: Removed
+15:36:58.073 [main] INFO  - Candidate History log forRemoved is displayed as expected
+15:36:58.431 [main] INFO  - Validating if the history log for addition of candidate
+15:36:58.504 [main] INFO  - Checking Candidate History log for: Reassigned
+15:36:58.504 [main] INFO  - Candidate History log forReassigned is displayed as expected
+15:37:00.707 [main] INFO  - Navigating to Candidates section
+15:37:07.597 [main] INFO  - Deleting the candidate...
+15:37:08.061 [main] INFO  - Delete operation over...
+15:38:09.295 [main] INFO  - Logging in and Navigating to Recruitment
+15:38:15.711 [main] INFO  - Successfully navigated to Recruitment
+15:38:20.815 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:38:20.815 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:38:20.815 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:38:20.820 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:38:20.820 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:38:20.823 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:38:20.824 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:38:20.838 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:38:20.838 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:38:21.800 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:38:21.800 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:38:21.800 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet3.xml.rels
+15:38:21.800 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+15:38:21.800 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+15:38:21.800 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:38:21.800 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:38:21.819 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:38:21.819 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:38:23.995 [main] INFO  - Saving the form
+15:38:30.792 [main] INFO  - User has been auto navigated to Candidate details screen
+15:38:31.149 [main] INFO  - Checking the current status...
+15:38:31.214 [main] INFO  - Status is as expected...
+15:38:37.803 [main] INFO  - User has been auto navigated to Candidate details screen
+15:38:38.092 [main] INFO  - Checking the current status...
+15:38:38.136 [main] INFO  - Status is as expected...
+15:38:52.129 [main] INFO  - User has been auto navigated to Candidate details screen
+15:39:02.814 [main] INFO  - User has been auto navigated to Candidate details screen
+15:39:03.224 [main] INFO  - Checking the current status...
+15:39:03.268 [main] INFO  - Status is as expected...
+15:39:11.067 [main] INFO  - User has been auto navigated to Candidate details screen
+15:39:11.427 [main] INFO  - Checking the current status...
+15:39:11.483 [main] INFO  - Status is as expected...
+15:39:36.192 [main] INFO  - Logging in and Navigating to Recruitment
+15:39:42.533 [main] INFO  - Successfully navigated to Recruitment
+15:39:42.533 [main] INFO  - Navigating to Vacancy section
+15:39:47.594 [main] INFO  - Navigating to Vacancy form
+15:39:51.191 [main] INFO  - Starting to fill the form...
+15:39:54.837 [main] INFO  - Saving the form
+15:39:57.906 [main] INFO  - Navigating back to vacancy list...
+15:40:01.605 [main] INFO  - Checking for the added vacancy...
+15:40:04.658 [main] INFO  - Performing Delete...
+15:40:11.293 [main] INFO  - Logging in and Navigating to Recruitment
+15:40:17.301 [main] INFO  - Successfully navigated to Recruitment
+15:40:17.302 [main] INFO  - Navigating to Vacancy section
+15:40:21.343 [main] INFO  - Capturing Vacancy name...
+15:40:24.415 [main] INFO  - Navigating to Vacancy form
+15:40:28.814 [main] INFO  - Starting to fill the form...
+15:40:31.979 [main] INFO  - Test success
+15:40:37.580 [main] INFO  - Logging in and Navigating to Recruitment
+15:40:43.469 [main] INFO  - Successfully navigated to Recruitment
+15:40:43.469 [main] INFO  - Navigating to Vacancy section
+15:40:47.645 [main] INFO  - Navigating to Vacancy form
+15:40:51.200 [main] INFO  - Starting to fill the form...
+15:40:54.794 [main] INFO  - Saving the form
+15:40:57.855 [main] INFO  - Navigating back to vacancy list...
+15:41:01.356 [main] INFO  - Search for vacancy started...
+15:41:07.704 [main] INFO  - Search Successfull...
+15:41:07.704 [main] INFO  - Performing Delete...
+15:41:13.403 [main] INFO  - Logging in and Navigating to Recruitment
+15:41:19.250 [main] INFO  - Successfully navigated to Recruitment
+15:41:19.251 [main] INFO  - Navigating to Vacancy section
+15:41:23.649 [main] INFO  - Navigating to Vacancy form
+15:41:27.272 [main] INFO  - Starting to fill the form...
+15:41:30.925 [main] INFO  - Saving the form
+15:41:33.993 [main] INFO  - Navigating back to vacancy list...
+15:41:37.450 [main] INFO  - Search for vacancy started...
+15:41:43.745 [main] INFO  - Performing Delete...
+15:41:44.350 [main] INFO  - Updating Job Title...
+15:41:47.553 [main] INFO  - Saving the form
+15:41:50.606 [main] INFO  - Navigating back to vacancy list...
+15:41:54.095 [main] INFO  - Search for vacancy started...
+15:42:00.413 [main] INFO  - Successfully Updated...
+15:42:00.413 [main] INFO  - Performing Delete...
+15:42:07.442 [main] INFO  - Logging in and Navigating to Recruitment
+15:42:13.344 [main] INFO  - Successfully navigated to Recruitment
+15:42:13.345 [main] INFO  - Navigating to Vacancy section
+15:42:17.448 [main] INFO  - Navigating to Vacancy form
+15:42:20.939 [main] INFO  - Saving the form
+15:42:24.024 [main] INFO  - Starting to check error messages
+15:42:24.040 [main] INFO  - Error Message displayed for Field1...
+15:42:24.067 [main] INFO  - Error Message displayed for Field2...
+15:42:24.101 [main] INFO  - Error Message displayed for Field3...
+15:42:24.101 [main] INFO  - Starting to fill the form...
+15:42:27.688 [main] INFO  - Starting to check error messages
+15:42:28.646 [main] INFO  - Error Message displayed for Field1...
+15:42:28.846 [main] INFO  - Error Message displayed for Field2...
+15:42:31.673 [main] INFO  - Error Message displayed for Field3...
+15:42:37.871 [main] INFO  - Logging in and Navigating to Recruitment
+15:42:43.858 [main] INFO  - Successfully navigated to Recruitment
+15:42:43.858 [main] INFO  - Navigating to Vacancy section
+15:42:48.255 [main] INFO  - Navigating to Vacancy form
+15:42:51.844 [main] INFO  - Starting to fill the form...
+15:42:55.379 [main] INFO  - Saving the form
+15:43:00.447 [main] INFO  - Navigating to Candidates section
+15:43:04.067 [main] INFO  - Newly added vacancy is displayed...
+15:43:04.068 [main] INFO  - Navigating to Vacancy section
+15:43:07.546 [main] INFO  - Search for vacancy started...
+15:43:13.881 [main] INFO  - Performing Delete...

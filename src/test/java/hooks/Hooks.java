@@ -41,8 +41,8 @@ public class Hooks extends Commons {
 		InputStream stream = ClassLoader.getSystemResourceAsStream("META-INF/services/io.cucumber.plugin.Plugin");
 	    System.out.println("SPI file found? " + (stream != null));
 		StepCaptureListener.reset();
-    	driver=Commons.initilizeBrowser();
-    	    	
+    	driver=Commons.initializeBrowser();
+
     	p=Commons.getProperties();
     	//driver.get(p.getProperty("appURL"));
     	//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -52,9 +52,9 @@ public class Hooks extends Commons {
     	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); // Set once
 
     	 driver.get(p.getProperty("appURL")); // After waits and maximize
-	
+
 	}
-		
+
 	/*@After
     public void afterScenario(Scenario scenario) {
         try {
@@ -67,17 +67,17 @@ public class Hooks extends Commons {
 
     @After
     public void tearDown() {
-        		
+
        driver.quit();
-       
+
     }
-    
+
     /*public String getCurrentStepText(Scenario scenario) {
         // Cucumber doesn't expose step text directly in hooks.
         // You can use custom formatters or third-party libraries like cucumber-extents or PicoContainer
         return null; // Placeholder unless you wire in step context
     }*/
-    
+
     public void captureScreenshot(Scenario scenario, String label) {
         try {
             TakesScreenshot ts = (TakesScreenshot) driver;
@@ -134,8 +134,7 @@ public class Hooks extends Commons {
         }
         	TakesScreenshot ts=(TakesScreenshot) driver;
         	byte[] screenshot=ts.getScreenshotAs(OutputType.BYTES);
-        	scenario.attach(screenshot, "image/png",scenario.getName());*/ 	            
-    	boolean isFailed = scenario.isFailed();
+        	scenario.attach(screenshot, "image/png",scenario.getName());*/
 
         // Get the latest step from your listener
         /*List<String> steps = null;
@@ -146,6 +145,7 @@ public class Hooks extends Commons {
 			e.printStackTrace();
 		}
         String currentStep = steps.isEmpty() ? "" : steps.get(steps.size() - 1);*/
+    	boolean isFailed = scenario.isFailed();
     	String currentStep = stepContext.getCurrentStep();
     	 if (currentStep == null || currentStep.trim().isEmpty()) {
     	        System.out.println("No step text captured yet — skipping screenshot logic.");
@@ -169,9 +169,11 @@ public class Hooks extends Commons {
             //ExtentCucumberAdapter.addTestStepScreenCaptureFromPath(saveScreenshotToFile(screenshot, currentStep));
             //captureScreenshot(scenario, "Step Screenshot");
         }
-      
+
         stepContext.setCurrentStep(null);
 
+
     }
-   
+
+
 }

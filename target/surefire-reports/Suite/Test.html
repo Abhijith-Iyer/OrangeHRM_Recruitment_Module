@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>80/12/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 15 15:00:35 IST 2025</td>
+<td>Started on:</td><td>Sun Apr 26 14:36:33 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>37 seconds (37803 ms)</td>
+<tr><td>Total time:</td><td>4022 seconds (4022381 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,539 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate candidate rejection from Application Initiated stage and Candidate History", "Add new Candidate and validate its behaviour"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//form/h6&quot;}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [63ef38b57055492e9653b178e0967394, findElement {using=xpath, value=//form/h6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56388}, goog:processID: 15220, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56388/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63ef38b57055492e9653b178e0967394
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy40.isDisplayed(Unknown Source)
+	at stepDefinition.Candidate_test.validate_candidateDetailsScreen(Candidate_test.java:248)
+	at ✽.Validate if Candidate details screen is visible(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:202)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1783217641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1783217641'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//form/h6&quot;}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [63ef38b57055492e9653b178e0967394, findElement {using=xpath, value=//form/h6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56388}, goog:processID: 15220, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56388/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63ef38b57055492e9653b178e0967394
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy40.isDisplayed(Unknown Source)
+	at stepDefinition.Candidate_test.validate_candidateDetailsScreen(Candidate_test.java:248)
+	at ✽.Validate if Candidate details screen is visible(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:202)
+</pre></div></td>
+<td>42</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if the Application returns to Application Initiated state from Interview Scheduled state after modifying Job Vacancy field", "Add new Candidate and validate its behaviour"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.090
+  (Session info: chrome=147.0.7727.103)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26d8c449678fec85d708d00f23494b65, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64837}, goog:processID: 19628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64837/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26d8c449678fec85d708d00f23494b65
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at hooks.Hooks.setup(Hooks.java:54)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1751363394", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1751363394'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.090
+  (Session info: chrome=147.0.7727.103)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26d8c449678fec85d708d00f23494b65, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64837}, goog:processID: 19628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64837/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26d8c449678fec85d708d00f23494b65
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at hooks.Hooks.setup(Hooks.java:54)
+</pre></div></td>
+<td>23</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can Schedule Interview for a candidate, reject the candidate from Interview Scheduled stage and validate the candidate History", "Add new Candidate and validate its behaviour"</td>
+<td><div><pre>org.junit.ComparisonFailure: expected:&lt;...r Interview on 2026-[04-27] with Ranga Akunuri ...&gt; but was:&lt;...r Interview on 2026-[27-04] with Ranga Akunuri ...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinition.Candidate_test.candidate_history_validation(Candidate_test.java:626)
+	at ✽.Validate the Candidate History for &quot;Interview Scheduled&quot; candidate(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:263)
+</pre></div><a href='#' onClick='toggleBox("stack-trace383738429", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace383738429'><pre>org.junit.ComparisonFailure: expected:&lt;...r Interview on 2026-[04-27] with Ranga Akunuri ...&gt; but was:&lt;...r Interview on 2026-[27-04] with Ranga Akunuri ...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinition.Candidate_test.candidate_history_validation(Candidate_test.java:626)
+	at ✽.Validate the Candidate History for &quot;Interview Scheduled&quot; candidate(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:263)
+</pre></div></td>
+<td>55</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "ddmmyyyy" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 14.733
+  (Session info: chrome=147.0.7727.103)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29362aef9349dc66051b2090feb6e3cf, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54298}, goog:processID: 7756, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54298/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29362aef9349dc66051b2090feb6e3cf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at hooks.Hooks.setup(Hooks.java:54)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1454825586", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1454825586'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 14.733
+  (Session info: chrome=147.0.7727.103)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29362aef9349dc66051b2090feb6e3cf, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54298}, goog:processID: 7756, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54298/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29362aef9349dc66051b2090feb6e3cf
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at hooks.Hooks.setup(Hooks.java:54)
+</pre></div></td>
+<td>22</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if the Application returns to Application Initiated state from Interview Passed state after modifying Job Vacancy field", "Add new Candidate and validate its behaviour"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@role=&apos;row&apos;])[2]/div/following-sibling::div/following-sibling::div/div[contains(text(), &apos;Toby Alex Flenderson&apos;)]&quot;}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b513386f8ef404625c37269a1a4da806, findElement {using=xpath, value=(//div[@role=&apos;row&apos;])[2]/div/following-sibling::div/following-sibling::div/div[contains(text(), &apos;Toby Alex Flenderson&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51172}, goog:processID: 17824, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51172/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b513386f8ef404625c37269a1a4da806
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at stepDefinition.Candidate_test.validate_candidate_status_in_table(Candidate_test.java:720)
+	at ✽.Check if the status of the candidate is &quot;Job Offered&quot;(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:751)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1112718806", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1112718806'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@role=&apos;row&apos;])[2]/div/following-sibling::div/following-sibling::div/div[contains(text(), &apos;Toby Alex Flenderson&apos;)]&quot;}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b513386f8ef404625c37269a1a4da806, findElement {using=xpath, value=(//div[@role=&apos;row&apos;])[2]/div/following-sibling::div/following-sibling::div/div[contains(text(), &apos;Toby Alex Flenderson&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51172}, goog:processID: 17824, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51172/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b513386f8ef404625c37269a1a4da806
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at stepDefinition.Candidate_test.validate_candidate_status_in_table(Candidate_test.java:720)
+	at ✽.Check if the status of the candidate is &quot;Job Offered&quot;(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:751)
+</pre></div></td>
+<td>82</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "mm-dd-yyyy" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Schedule Interview&apos;]&quot;}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [17581302845219f06961b913264dceca, findElement {using=xpath, value=//button[normalize-space()=&apos;Schedule Interview&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52329}, goog:processID: 9636, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52329/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 17581302845219f06961b913264dceca
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at stepDefinition.Candidate_test.navigate_to_schedule_interview_screen(Candidate_test.java:472)
+	at ✽.Navigate to Schedule Interview Screen(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:113)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace884863194", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace884863194'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Schedule Interview&apos;]&quot;}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [17581302845219f06961b913264dceca, findElement {using=xpath, value=//button[normalize-space()=&apos;Schedule Interview&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52329}, goog:processID: 9636, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52329/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 17581302845219f06961b913264dceca
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at stepDefinition.Candidate_test.navigate_to_schedule_interview_screen(Candidate_test.java:472)
+	at ✽.Navigate to Schedule Interview Screen(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:113)
+</pre></div></td>
+<td>35</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter a date in date of Application field and gets appropriate error message only if the date is a future date", "Add new Candidate and validate its behaviour"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.340
+  (Session info: chrome=147.0.7727.103)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d4827e484ec3e206fdaf32e81565093, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62317}, goog:processID: 12616, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62317/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d4827e484ec3e206fdaf32e81565093
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at hooks.Hooks.setup(Hooks.java:54)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1322738140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1322738140'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.340
+  (Session info: chrome=147.0.7727.103)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d4827e484ec3e206fdaf32e81565093, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62317}, goog:processID: 12616, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62317/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d4827e484ec3e206fdaf32e81565093
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at hooks.Hooks.setup(Hooks.java:54)
+</pre></div></td>
+<td>21</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can mark Interview passed for a candidate in the second round of interview, then reject the candidate from Interview passed stage and validate the candidate history", "Add new Candidate and validate its behaviour"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@role=&apos;listbox&apos;]/div/span&quot;}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76bbc0cbaea922e541cfedcd16f01805, findElement {using=xpath, value=//div[@role=&apos;listbox&apos;]/div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56001}, goog:processID: 24924, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56001/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76bbc0cbaea922e541cfedcd16f01805
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy40.isDisplayed(Unknown Source)
+	at stepDefinition.Candidate_test.candidateFilter_validation(Candidate_test.java:514)
+	at ✽.Check if candidate name appears in Candidate filter(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:497)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace316668756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace316668756'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@role=&apos;listbox&apos;]/div/span&quot;}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76bbc0cbaea922e541cfedcd16f01805, findElement {using=xpath, value=//div[@role=&apos;listbox&apos;]/div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56001}, goog:processID: 24924, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56001/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76bbc0cbaea922e541cfedcd16f01805
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy40.isDisplayed(Unknown Source)
+	at stepDefinition.Candidate_test.candidateFilter_validation(Candidate_test.java:514)
+	at ✽.Check if candidate name appears in Candidate filter(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:497)
+</pre></div></td>
+<td>127</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if the Application returns to Application Initiated state from Interview Passed state after modifying Job Vacancy field", "Add new Candidate and validate its behaviour"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.323
+  (Session info: chrome=147.0.7727.103)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e04e14306548704b2f90f4a179de5ab, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53969}, goog:processID: 10396, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53969/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e04e14306548704b2f90f4a179de5ab
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at hooks.Hooks.setup(Hooks.java:54)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1245076603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1245076603'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.323
+  (Session info: chrome=147.0.7727.103)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e04e14306548704b2f90f4a179de5ab, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53969}, goog:processID: 10396, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53969/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e04e14306548704b2f90f4a179de5ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at hooks.Hooks.setup(Hooks.java:54)
+</pre></div></td>
+<td>22</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can Schedule another Interview for the candidate from Interview Passed stage, again reject the candidate from Interview Scheduled stage and validate the candidate History", "Add new Candidate and validate its behaviour"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-v-10d463b7=&quot;&quot; type=&quot;submit&quot; class=&quot;oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space&quot;&gt;...&lt;/button&gt; is not clickable at point (1402, 579). Other element would receive the click: &lt;div data-v-d5bfe35b=&quot;&quot; class=&quot;oxd-form-loader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=147.0.7727.103)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e9b96d994c5867698bda405c14e47bab, clickElement {id=f.3406BDA259849A57B242BBA32F768260.d.993AD5D84B6AE4E656BE3BA16FCEEC23.e.261}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51422}, goog:processID: 11768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51422/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e9b96d994c5867698bda405c14e47bab)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Session ID: e9b96d994c5867698bda405c14e47bab
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy40.click(Unknown Source)
+	at stepDefinition.Candidate_test.save_the_form(Candidate_test.java:427)
+	at ✽.User Saves the form(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:391)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1709143818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1709143818'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-v-10d463b7=&quot;&quot; type=&quot;submit&quot; class=&quot;oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space&quot;&gt;...&lt;/button&gt; is not clickable at point (1402, 579). Other element would receive the click: &lt;div data-v-d5bfe35b=&quot;&quot; class=&quot;oxd-form-loader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=147.0.7727.103)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e9b96d994c5867698bda405c14e47bab, clickElement {id=f.3406BDA259849A57B242BBA32F768260.d.993AD5D84B6AE4E656BE3BA16FCEEC23.e.261}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51422}, goog:processID: 11768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51422/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e9b96d994c5867698bda405c14e47bab)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Session ID: e9b96d994c5867698bda405c14e47bab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy40.click(Unknown Source)
+	at stepDefinition.Candidate_test.save_the_form(Candidate_test.java:427)
+	at ✽.User Saves the form(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:391)
+</pre></div></td>
+<td>57</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "yyyy/dd/mm" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td><div><pre>java.lang.AssertionError: Recruitment navigation failed
+	at org.junit.Assert.fail(Assert.java:89)
+	at stepDefinition.AddVacancytest.user_logs_in_with_credentials_and_navigates_to_recruitment_section(AddVacancytest.java:70)
+	at ✽.User Logs in with Credentials and Navigates to Recruitment Section(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:109)
+</pre></div><a href='#' onClick='toggleBox("stack-trace756496847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace756496847'><pre>java.lang.AssertionError: Recruitment navigation failed
+	at org.junit.Assert.fail(Assert.java:89)
+	at stepDefinition.AddVacancytest.user_logs_in_with_credentials_and_navigates_to_recruitment_section(AddVacancytest.java:70)
+	at ✽.User Logs in with Credentials and Navigates to Recruitment Section(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:109)
+</pre></div></td>
+<td>44</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when entering email in invalid format", "Add new Candidate and validate its behaviour"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.090
+  (Session info: chrome=147.0.7727.103)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6b24995315b00bb0b83ff00d89d9596, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62597}, goog:processID: 6772, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62597/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a6b24995315b00bb0b83ff00d89d9596
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at hooks.Hooks.setup(Hooks.java:54)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1832936189", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1832936189'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.090
+  (Session info: chrome=147.0.7727.103)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6b24995315b00bb0b83ff00d89d9596, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62597}, goog:processID: 6772, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62597/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a6b24995315b00bb0b83ff00d89d9596
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at hooks.Hooks.setup(Hooks.java:54)
+</pre></div></td>
+<td>21</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +609,405 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate whether user can edit a Vacancy detail", "Add a new Vacancy"</td>
+<td></td>
+<td>52</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>35</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter a date in date of Application field and gets appropriate error message only if the date is a future date", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>34</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>31</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
 <td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Validates adding a New Candidate and deleting the newly added candidate", "Add new Candidate and validate its behaviour"</td>
 <td></td>
+<td>50</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "dd/mm/yyyy" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>42</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "dd/yyyy/mm" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>33</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when uploading an invalid file in Resume field", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>29</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message if an invalid Contact Number is entered", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>48</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message if an invalid Contact Number is entered", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>28</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate whether user can search newly added vacancy using vacancy name", "Add a new Vacancy"</td>
+<td></td>
+<td>36</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "mmyyyydd" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>37</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate whether user can create duplicate vacancy", "Add a new Vacancy"</td>
+<td></td>
+<td>26</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>25</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "yyyymmdd" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>41</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when uploading an invalid file in Resume field", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>28</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "yyyy-dd-mm" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>34</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "dd-yyyy-mm" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>33</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can Hire the candidate who was offered the Job and validate the candidate history", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>107</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "mm/dd/yyyy" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>34</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message if an invalid Contact Number is entered", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>47</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can Decline Job Offer for candidate who was offered the Job, then reject the candidate from Offer Declined stage and validate the candidate history", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>137</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when uploading an invalid file in Resume field", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>28</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when entering email in invalid format", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>26</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can Shortlist a candidate, reject the candidate from shortlisted stage and validate the candidate History", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>75</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when entering email in invalid format", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>53</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message if an invalid Contact Number is entered", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>48</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message if an invalid Contact Number is entered", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>47</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "ddyyyymm" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>28</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when uploading an invalid file in Resume field", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>28</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "mm/yyyy/dd" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>30</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when Mandaotry fields are not filled", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>50</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "ddyyyymm" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>35</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when uploading an invalid file in Resume field", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>28</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "yyyyddmm" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>37</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can Offer job for candidate who passed second round of interview, then reject the candidate from Job Offered stage and validate the candidate history", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>115</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message if an invalid Contact Number is entered", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>41</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when entering email in invalid format", "Add new Candidate and validate its behaviour"</td>
+<td></td>
 <td>32</td>
-<td>testRunner.TestNGTestRunner@233795b6</td></tr>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "mmddyyyy" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>35</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "ddmmyyyy" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>34</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "dd/mm/yyyy" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>31</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "yyyyddmm" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>34</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate whether user gets Mandatory field error", "Add a new Vacancy"</td>
+<td></td>
+<td>30</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>29</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "dd-yyyy-mm" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>32</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "mmddyyyy" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>32</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "yyyy-dd-mm" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>45</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can mark Interview failed for a candidate in the second round of interview, then reject the candidate from Interview Failed stage and validate the candidate history", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>108</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "mm-yyyy-dd" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>36</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "mm-dd-yyyy" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>29</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if the Application returns to Application Initiated state from Shortlisted state after modifying Job Vacancy field", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>65</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message if an invalid Contact Number is entered", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>46</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "yyyy/dd/mm" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>31</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "yyyy/mm/dd" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>39</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when Mandaotry fields are not filled in Schedule Interview screen", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>68</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding and deleting of vacancy", "Add a new Vacancy"</td>
+<td></td>
+<td>48</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message if an invalid Contact Number is entered", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>28</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>35</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "mm/yyyy/dd" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>32</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can mark Interview Passed for a candidate, reject the candidate from Interview Passed stage and validate the candidate history", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>92</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message if an invalid Contact Number is entered", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>27</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message if an invalid Contact Number is entered", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>29</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "yyyymmdd" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>33</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate whether user can see newly added vacancy in Candidates section", "Add a new Vacancy"</td>
+<td></td>
+<td>43</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter a date in date of Application field and gets appropriate error message only if the date is a future date", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>33</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message if an invalid Contact Number is entered", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>30</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the candidate to interview feature in Dashboard screen", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>60</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "mmyyyydd" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>36</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "mm/dd/yyyy" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>31</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can mark Interview failed for a candidate, reject the candidate from Interview Failed stage and validate the candidate history", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>90</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message if an invalid Contact Number is entered", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>47</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "yyyy/mm/dd" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>32</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>32</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when entering email in invalid format", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>53</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when entering email in invalid format", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>29</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "dd-mm-yyyy" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>33</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "dd/yyyy/mm" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>36</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter  date of format: "dd-mm-yyyy" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>32</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user gets appropriate error message when uploading an invalid file in Resume field", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>30</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
+<tr>
+<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate if user can enter date of format: "mm-yyyy-dd" in date of Application field and gets appropriate error message only if the format is invalid", "Add new Candidate and validate its behaviour"</td>
+<td></td>
+<td>40</td>
+<td>testRunner.TestNGTestRunner@4d5d943d</td></tr>
 </table><p>
 </body>
 </html>

@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class CandidatePage extends BasePage {
 
+	// WebElement names updated to follow Java naming conventions (camelCase)
+
 	public CandidatePage(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
@@ -15,137 +17,141 @@ public class CandidatePage extends BasePage {
 	@FindBy(xpath ="//li/a[text() = 'Candidates']")
 	public WebElement candidates;
 	@FindBy(xpath ="(//div/div[contains(text(),'Select')])[2]")
-	public WebElement vacancydrpdwn;
+	public WebElement vacancyDropdown;
 	@FindBy(xpath ="//button[normalize-space()='Add']")
-	public WebElement addbtn;
+	public WebElement addButton;
 	@FindBy(xpath ="//input[@type='file']")
-	public WebElement resumeupload;
+	public WebElement resumeUpload;
 	@FindBy (xpath ="//div[contains(@class, 'oxd-file-input-div')]")
-	public WebElement uploadedfilename;
+	public WebElement uploadedFileName;
 	@FindBy (xpath ="//span[contains(@class, 'oxd-input-field-error-message')]")
-	public WebElement field_errormsg;
+	public WebElement fieldErrorMessage;
 	@FindBy (xpath="//input[@name='firstName']")
-	public WebElement firstname_textbox;
+	public WebElement firstNameTextbox;
 	@FindBy (xpath="//input[@name='middleName']")
-	public WebElement middlename_textbox;
+	public WebElement middleNameTextbox;
 	@FindBy (xpath="//input[@name='lastName']")
-	public WebElement lastname_textbox;
+	public WebElement lastNameTextbox;
 	@FindBy (xpath="//div[@class='oxd-select-text-input']")
-	public WebElement vacancy_dropdown;
+	public WebElement vacancyInputField;
 	@FindBy (xpath="//div[@role='listbox']/div/span")
-	public WebElement vacancy_list;  //div[@role='listbox']/div/span[contains(text(), '')]
+	public WebElement vacancyList;  //div[@role='listbox']/div/span[contains(text(), '')]
 	@FindBy (xpath="//label[contains(text(), 'Email')]/parent::div/following-sibling::div/input")
-	public WebElement email_textbox;
+	public WebElement emailTextbox;
 	@FindBy (xpath="//label[contains(text(), 'Contact Number')]/parent::div/following-sibling::div/input")
-	public WebElement contactnumber_textbox;
+	public WebElement contactNumberTextbox;
 	@FindBy (xpath="//label[contains(text(), 'Keywords')]/parent::div/following-sibling::div/input")
-	public WebElement keywords_textbox;
+	public WebElement keywordsTextbox;
 	@FindBy (xpath="//label[contains(text(), 'Date')]/parent::div/following-sibling::div/div/div/input")
-	public WebElement calendar_textbox;
+	public WebElement calendarTextbox;
 	@FindBy (xpath="//i[contains(@class, 'calendar')]")
-	public WebElement calendar_icon;
+	public WebElement calendarIcon;
 	@FindBy (xpath="//li[contains(@class, 'calendar-selector-month')]/div/p")
-	public WebElement calendar_current_month;
+	public WebElement calendarCurrentMonth;
 	@FindBy (xpath="//li[contains(@class, 'calendar-selector-month')]/div/i")
-	public WebElement calendar_month_dropdown;
+	public WebElement calendarMonthDropdown;
 	@FindBy (xpath="//ul[@role='menu']/li")
-	public List<WebElement> calendar_month_list;
+	public List<WebElement> calendarMonthList;
 	@FindBy (xpath="//li[contains(@class, 'calendar-selector-year')]/div/p")
-	public WebElement calendar_current_year;
+	public WebElement calendarCurrentYear;
 	@FindBy (xpath="//li[contains(@class, 'calendar-selector-year')]/div/i")
-	public WebElement calendar_year_dropdown;
+	public WebElement calendarYearDropdown;
 	@FindBy (xpath="//ul[@role='menu']/li")
-	public List<WebElement> calendar_year_list;
+	public List<WebElement> calendarYearList;
 	@FindBy (xpath="//div[contains(@class, 'calendar-dates-grid')]/div/div")
-	public List<WebElement> calendar_dates_list;
+	public List<WebElement> calendarDatesList;
 	@FindBy (xpath="//label[contains(text(), 'Notes')]/parent::div/following-sibling::div/textarea")
-	public WebElement notes_textbox;
+	public WebElement notesTextbox;
 	@FindBy (xpath="//input[@type=\"checkbox\"]/following-sibling::span/i")
-	public WebElement consent_checkbox;
+	public WebElement consentCheckbox;
 	@FindBy (xpath="//button[@type='submit']")
-	public WebElement save_btn;
+	public WebElement saveButton;
 	@FindBy (xpath="//button[normalize-space()='Cancel']")
-	public WebElement cancel_btn;
+	public WebElement cancelButton;
 	
 	//*************Filter_elements*******///////////
 	//div[@role='listbox']/div //div[@role='listbox']/div/span
 	@FindBy(xpath="//label[contains(text(), 'Status')]/parent::div/following-sibling::div/div/div/div/following-sibling::div")
-	public WebElement status_dropdown;
+	public WebElement statusDropdown;
 	@FindBy(xpath="//div[@role='listbox']/div")
-	public List<WebElement> dropdown_elements;
+	public List<WebElement> dropdownElements;
 	@FindBy(xpath="//label[contains(text(), 'Candidate Name')]/parent::div/following-sibling::div/div/div/input")
-	public WebElement candidate_filter;
+	public WebElement candidateFilter;
 	@FindBy (xpath="//button[@type='submit']")
-	public WebElement search_btn;
+	public WebElement searchButton;
 	@FindBy (xpath="//div[@role='listbox']/div/span")
-	public WebElement first_search_option;
+	public WebElement firstSearchOption;
 	@FindBy (xpath="//i[contains(@class, 'eye')]/parent::button")
-	public WebElement first_candidate_view;
+	public WebElement firstCandidateView;
 	@FindBy (xpath="//i[contains(@class, 'trash')]/parent::button")
-	public WebElement first_candidate_delete;
+	public WebElement firstCandidateDelete;
 	@FindBy (xpath="(//div[@role='row'])[2]/div/following-sibling::div/following-sibling::div/following-sibling::div/following-sibling::div/following-sibling::div/div")
-	public WebElement candidate_status_from_table;
+	public WebElement candidateStatusFromTable;
 	@FindBy(xpath = "//button[normalize-space()='Yes, Delete']")
-	public WebElement confirmdeleteops;
-	
+	public WebElement confirmDeleteOps;
+
 	@FindBy(xpath = "//button[normalize-space()='No, Cancel']")
-	public WebElement canceldeleteops;
+	public WebElement cancelDeleteOps;
 	@FindBy(xpath ="//div[@role='document']")
-	public WebElement confirm_delete_popup;
+	public WebElement confirmDeletePopup;
 	@FindBy(xpath ="//div/span[text()[contains(.,'Records Found')]]")
-	public WebElement numberoffilterrecords;
+	public WebElement numberOfFilterRecords;
 	//*************Candidate_view_elements*******///////////
 	@FindBy (xpath ="//span[contains(@class, 'oxd-switch-input oxd-switch')]")
-	public WebElement edit_switch;
+	public WebElement editSwitch;
 	@FindBy (xpath="//div[contains(@class, 'status')]/p")
-	public WebElement candidate_status_from_view;
+	public WebElement candidateStatusFromView;
 	@FindBy (xpath="//div/h6[text()='Candidate History']")
-	public WebElement candidate_history_section;
+	public WebElement candidateHistorySection;
 	@FindBy (xpath="//div[@class='oxd-table-body']/div")
-	public List<WebElement> candidate_history_records;
+	public List<WebElement> candidateHistoryRecords;
 	//((//div[@class='oxd-table-body']/div)[rowcount]/div/div/div)[1-3]
 	@FindBy (xpath="//form/h6")
-	public WebElement candidate_details_screen;
+	public WebElement candidateDetailsScreen;
 	@FindBy (xpath="(//div/p)[3]")
-	public WebElement hiringmanger_name;
+	public WebElement hiringManagerName;
 	@FindBy (xpath="(//div/p)[2]")
-	public WebElement vacancy_name;
+	public WebElement vacancyName;
 	@FindBy (xpath="//button[normalize-space()='Reject']")
-	public WebElement reject_btn;
+	public WebElement rejectButton;
 	@FindBy (xpath="//button[normalize-space()='Shortlist']")
-	public WebElement shortlist_btn;
+	public WebElement shortlistButton;
 	@FindBy (xpath="//h6[text()='Reject Candidate']")
-	public WebElement reject_screen;
+	public WebElement rejectScreen;
 	@FindBy (xpath="//label[normalize-space()='Interview Title']/parent::div/following-sibling::div/input")
-	public WebElement interviewtitle_textbox;
+	public WebElement interviewTitleTextbox;
 	@FindBy (xpath="//label[text()='Time']/parent::div/following-sibling::div/div/div/input")
-	public WebElement time_textbox;
+	public WebElement timeTextbox;
 	@FindBy(xpath="//input[contains(@class, 'time-hour-input-text')]")
-	public WebElement hour_textbox;
+	public WebElement hourTextbox;
 	@FindBy(xpath="//input[contains(@class, 'time-minute-input-text')]")
-	public WebElement minute_textbox;
+	public WebElement minuteTextbox;
 	@FindBy(xpath="//input[@name= 'am']")
-	public WebElement am_btn;
+	public WebElement amButton;
 	@FindBy(xpath="//input[@name= 'pm']")
-	public WebElement pm_btn;
+	public WebElement pmButton;
 	@FindBy(xpath="//i[contains(@class, 'clock')]")
-	public WebElement clock_icon;
+	public WebElement clockIcon;
 	@FindBy(xpath="//i[contains(@class, 'minute-input-up')]")
-	public WebElement minuteup_btn;
+	public WebElement minuteUpButton;
 	@FindBy(xpath="//i[contains(@class, 'minute-input-down')]")
-	public WebElement minutedown_btn;
+	public WebElement minuteDownButton;
 	@FindBy(xpath="//i[contains(@class, 'hour-input-up')]")
-	public WebElement hourup_btn;
+	public WebElement hourUpButton;
 	@FindBy(xpath="//i[contains(@class, 'hour-input-down')]")
-	public WebElement hourdown_btn;
+	public WebElement hourDownButton;
 	@FindBy(xpath="//button[normalize-space()='Add Another']")
-	public WebElement addinterviewer_btn;
+	public WebElement addInterviewerButton;
 	@FindBy(xpath="//div[contains(@class, 'interviewer-input')]/div/div/following-sibling::div/div/div/input")
-	public WebElement Interviewer1;
+	public WebElement interviewer1;
 	@FindBy(xpath="//button[normalize-space()='Mark Interview Passed']")
-	public WebElement markinterviewpass_btn;
+	public WebElement markInterviewPassButton;
 	@FindBy(xpath="//button[normalize-space()='Mark Interview Failed']")
-	public WebElement markinterviewfail_btn;
+	public WebElement markInterviewFailButton;
+	@FindBy(xpath="//p[text()[contains(.,'Confirmation Required')]]")
+	public WebElement editConfirmationPopup;
+	@FindBy(xpath="//button[normalize-space()='Yes, Confirm']")
+	public WebElement confirmEdit;
 	
 	
 

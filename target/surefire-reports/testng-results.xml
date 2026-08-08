@@ -1,27 +1,1289 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="92" passed="80" failed="12" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-15T15:00:35 IST" name="Suite" finished-at="2025-10-15T15:01:12 IST" duration-ms="37803">
+  <suite started-at="2026-04-26T14:36:33 IST" name="Suite" finished-at="2026-04-26T15:43:35 IST" duration-ms="4022381">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@233795b6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-10-15T15:00:35 IST" name="Test" finished-at="2025-10-15T15:01:12 IST" duration-ms="37803">
+    <test started-at="2026-04-26T14:36:33 IST" name="Test" finished-at="2026-04-26T15:43:35 IST" duration-ms="4022381">
       <class name="testRunner.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestNGTestRunner@233795b6]" started-at="2025-10-15T15:00:35 IST" name="setUpClass" finished-at="2025-10-15T15:00:36 IST" duration-ms="939" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:36:33 IST" name="setUpClass" finished-at="2026-04-26T14:36:34 IST" duration-ms="1555" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@57a5b03]]>
+                <![CDATA[org.testng.TestRunner@de95209]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@233795b6]" started-at="2025-10-15T15:00:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-15T15:01:08 IST" duration-ms="32557" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:36:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:37:10 IST" duration-ms="35594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:37:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:37:35 IST" duration-ms="25382" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:37:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:38:07 IST" duration-ms="31564" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:38:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:38:42 IST" duration-ms="35625" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:38:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:39:15 IST" duration-ms="32922" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:39:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:39:45 IST" duration-ms="29606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate user trying to upload different types of files with valid format in Resume field of Add Candidate form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:39:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:40:13 IST" duration-ms="28561" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when uploading an invalid file in Resume field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:40:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:40:42 IST" duration-ms="28974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when uploading an invalid file in Resume field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:40:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:41:12 IST" duration-ms="29084" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when uploading an invalid file in Resume field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:41:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:41:42 IST" duration-ms="30004" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when uploading an invalid file in Resume field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:41:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:42:10 IST" duration-ms="28661" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when uploading an invalid file in Resume field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:42:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:42:39 IST" duration-ms="28361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when uploading an invalid file in Resume field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:42:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:43:26 IST" duration-ms="47563" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message if an invalid Contact Number is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:43:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:44:15 IST" duration-ms="48423" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message if an invalid Contact Number is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:44:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:45:01 IST" duration-ms="46311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message if an invalid Contact Number is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:45:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:45:49 IST" duration-ms="47855" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message if an invalid Contact Number is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:45:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:46:16 IST" duration-ms="27372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message if an invalid Contact Number is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:46:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:46:44 IST" duration-ms="28264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message if an invalid Contact Number is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:46:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:47:33 IST" duration-ms="48380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message if an invalid Contact Number is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:47:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:48:20 IST" duration-ms="47268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message if an invalid Contact Number is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:48:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:49:02 IST" duration-ms="41910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message if an invalid Contact Number is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:49:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:49:31 IST" duration-ms="28984" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message if an invalid Contact Number is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:49:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:50:01 IST" duration-ms="30441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message if an invalid Contact Number is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:50:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:50:31 IST" duration-ms="29607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message if an invalid Contact Number is entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:50:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:51:24 IST" duration-ms="53404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when entering email in invalid format"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:51:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:52:18 IST" duration-ms="53471" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when entering email in invalid format"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:52:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:52:50 IST" duration-ms="32545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when entering email in invalid format"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:52:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:53:19 IST" duration-ms="29104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when entering email in invalid format"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:53:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:53:46 IST" duration-ms="26962" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when entering email in invalid format"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:53:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:54:08 IST" duration-ms="21334" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when entering email in invalid format"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 19.090
+  (Session info: chrome=147.0.7727.103)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6b24995315b00bb0b83ff00d89d9596, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62597}, goog:processID: 6772, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62597/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a6b24995315b00bb0b83ff00d89d9596]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.090
+  (Session info: chrome=147.0.7727.103)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6b24995315b00bb0b83ff00d89d9596, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62597}, goog:processID: 6772, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62597/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a6b24995315b00bb0b83ff00d89d9596
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+at hooks.Hooks.setup(Hooks.java:54)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:54:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:54:42 IST" duration-ms="33797" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter a date in date of Application field and gets appropriate error message only if the date is a future date"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:54:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:55:16 IST" duration-ms="34890" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter a date in date of Application field and gets appropriate error message only if the date is a future date"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:55:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:55:38 IST" duration-ms="21483" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter a date in date of Application field and gets appropriate error message only if the date is a future date"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 19.340
+  (Session info: chrome=147.0.7727.103)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d4827e484ec3e206fdaf32e81565093, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62317}, goog:processID: 12616, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62317/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d4827e484ec3e206fdaf32e81565093]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.340
+  (Session info: chrome=147.0.7727.103)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d4827e484ec3e206fdaf32e81565093, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62317}, goog:processID: 12616, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62317/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d4827e484ec3e206fdaf32e81565093
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+at hooks.Hooks.setup(Hooks.java:54)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:55:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:56:23 IST" duration-ms="45156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "yyyy-dd-mm" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:56:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:56:53 IST" duration-ms="29494" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "mm-dd-yyyy" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:56:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:57:24 IST" duration-ms="31834" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "yyyy/dd/mm" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:57:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:57:59 IST" duration-ms="34178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "mm/dd/yyyy" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:57:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:58:31 IST" duration-ms="32660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "yyyy/mm/dd" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:58:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:59:13 IST" duration-ms="42190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "dd/mm/yyyy" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:59:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T14:59:54 IST" duration-ms="40727" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "mm-yyyy-dd" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T14:59:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:00:26 IST" duration-ms="32204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "dd-yyyy-mm" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:00:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:00:57 IST" duration-ms="30489" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "mm/yyyy/dd" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:00:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:01:30 IST" duration-ms="33156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "dd/yyyy/mm" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:01:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:01:52 IST" duration-ms="22155" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "ddmmyyyy" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 14.733
+  (Session info: chrome=147.0.7727.103)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29362aef9349dc66051b2090feb6e3cf, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54298}, goog:processID: 7756, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54298/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29362aef9349dc66051b2090feb6e3cf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 14.733
+  (Session info: chrome=147.0.7727.103)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29362aef9349dc66051b2090feb6e3cf, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54298}, goog:processID: 7756, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54298/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29362aef9349dc66051b2090feb6e3cf
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+at hooks.Hooks.setup(Hooks.java:54)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:01:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:02:27 IST" duration-ms="34720" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "yyyyddmm" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:02:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:03:00 IST" duration-ms="32807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "mmddyyyy" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:03:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:03:33 IST" duration-ms="33032" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "yyyymmdd" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:03:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:04:01 IST" duration-ms="28575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "ddyyyymm" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:04:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:04:38 IST" duration-ms="36499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "mmyyyydd" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:04:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:05:12 IST" duration-ms="33730" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter date of format: "dd-mm-yyyy" in date of Application field and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:05:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:05:47 IST" duration-ms="34951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "yyyy-dd-mm" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:05:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:06:22 IST" duration-ms="35725" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "mm-dd-yyyy" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Schedule Interview']"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [17581302845219f06961b913264dceca, findElement {using=xpath, value=//button[normalize-space()='Schedule Interview']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52329}, goog:processID: 9636, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52329/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 17581302845219f06961b913264dceca]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Schedule Interview']"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [17581302845219f06961b913264dceca, findElement {using=xpath, value=//button[normalize-space()='Schedule Interview']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52329}, goog:processID: 9636, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52329/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 17581302845219f06961b913264dceca
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at stepDefinition.Candidate_test.navigate_to_schedule_interview_screen(Candidate_test.java:472)
+at ✽.Navigate to Schedule Interview Screen(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:113)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:06:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:07:07 IST" duration-ms="44919" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "yyyy/dd/mm" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Recruitment navigation failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Recruitment navigation failed
+at org.junit.Assert.fail(Assert.java:89)
+at stepDefinition.AddVacancytest.user_logs_in_with_credentials_and_navigates_to_recruitment_section(AddVacancytest.java:70)
+at ✽.User Logs in with Credentials and Navigates to Recruitment Section(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:07:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:07:39 IST" duration-ms="31550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "mm/dd/yyyy" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:07:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:08:18 IST" duration-ms="39452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "yyyy/mm/dd" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:08:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:08:49 IST" duration-ms="31083" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "dd/mm/yyyy" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:08:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:09:26 IST" duration-ms="36305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "mm-yyyy-dd" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:09:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:09:59 IST" duration-ms="33488" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "dd-yyyy-mm" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:09:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:10:31 IST" duration-ms="32267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "mm/yyyy/dd" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:11:08 IST" duration-ms="36570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "dd/yyyy/mm" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:11:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:11:43 IST" duration-ms="34786" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "ddmmyyyy" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:11:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:12:20 IST" duration-ms="37705" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "yyyyddmm" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:12:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:12:56 IST" duration-ms="35241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "mmddyyyy" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:12:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:13:37 IST" duration-ms="41461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "yyyymmdd" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:13:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:14:13 IST" duration-ms="35908" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "ddyyyymm" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:14:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:14:50 IST" duration-ms="37278" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "mmyyyydd" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:14:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:15:23 IST" duration-ms="32920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can enter  date of format: "dd-mm-yyyy" in date field of Schedule Interview screen and gets appropriate error message only if the format is invalid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:15:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:16:14 IST" duration-ms="50911" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when Mandaotry fields are not filled"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:16:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:17:23 IST" duration-ms="68787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user gets appropriate error message when Mandaotry fields are not filled in Schedule Interview screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:17:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:18:13 IST" duration-ms="50285" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +1299,614 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestNGTestRunner@233795b6]" started-at="2025-10-15T15:01:08 IST" name="tearDownClass" finished-at="2025-10-15T15:01:12 IST" duration-ms="4268" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:18:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:18:55 IST" duration-ms="42041" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate candidate rejection from Application Initiated stage and Candidate History"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//form/h6"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [63ef38b57055492e9653b178e0967394, findElement {using=xpath, value=//form/h6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56388}, goog:processID: 15220, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56388/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63ef38b57055492e9653b178e0967394]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//form/h6"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [63ef38b57055492e9653b178e0967394, findElement {using=xpath, value=//form/h6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56388}, goog:processID: 15220, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56388/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63ef38b57055492e9653b178e0967394
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy40.isDisplayed(Unknown Source)
+at stepDefinition.Candidate_test.validate_candidateDetailsScreen(Candidate_test.java:248)
+at ✽.Validate if Candidate details screen is visible(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:202)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:18:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:20:10 IST" duration-ms="75250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can Shortlist a candidate, reject the candidate from shortlisted stage and validate the candidate History"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:20:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:21:06 IST" duration-ms="55750" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can Schedule Interview for a candidate, reject the candidate from Interview Scheduled stage and validate the candidate History"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<...r Interview on 2026-[04-27] with Ranga Akunuri ...> but was:<...r Interview on 2026-[27-04] with Ranga Akunuri ...>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<...r Interview on 2026-[04-27] with Ranga Akunuri ...> but was:<...r Interview on 2026-[27-04] with Ranga Akunuri ...>
+at org.junit.Assert.assertEquals(Assert.java:117)
+at org.junit.Assert.assertEquals(Assert.java:146)
+at stepDefinition.Candidate_test.candidate_history_validation(Candidate_test.java:626)
+at ✽.Validate the Candidate History for "Interview Scheduled" candidate(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:263)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:21:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:22:07 IST" duration-ms="60825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the candidate to interview feature in Dashboard screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:22:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:23:37 IST" duration-ms="90183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can mark Interview failed for a candidate, reject the candidate from Interview Failed stage and validate the candidate history"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:23:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:25:10 IST" duration-ms="92752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can mark Interview Passed for a candidate, reject the candidate from Interview Passed stage and validate the candidate history"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:25:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:26:07 IST" duration-ms="57225" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can Schedule another Interview for the candidate from Interview Passed stage, again reject the candidate from Interview Scheduled stage and validate the candidate History"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button data-v-10d463b7="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space">...</button> is not clickable at point (1402, 579). Other element would receive the click: <div data-v-d5bfe35b="" class="oxd-form-loader">...</div>
+  (Session info: chrome=147.0.7727.103)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e9b96d994c5867698bda405c14e47bab, clickElement {id=f.3406BDA259849A57B242BBA32F768260.d.993AD5D84B6AE4E656BE3BA16FCEEC23.e.261}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51422}, goog:processID: 11768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51422/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e9b96d994c5867698bda405c14e47bab)] -> xpath: //button[@type='submit']]
+Session ID: e9b96d994c5867698bda405c14e47bab]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button data-v-10d463b7="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space">...</button> is not clickable at point (1402, 579). Other element would receive the click: <div data-v-d5bfe35b="" class="oxd-form-loader">...</div>
+  (Session info: chrome=147.0.7727.103)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e9b96d994c5867698bda405c14e47bab, clickElement {id=f.3406BDA259849A57B242BBA32F768260.d.993AD5D84B6AE4E656BE3BA16FCEEC23.e.261}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51422}, goog:processID: 11768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51422/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e9b96d994c5867698bda405c14e47bab)] -> xpath: //button[@type='submit']]
+Session ID: e9b96d994c5867698bda405c14e47bab
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy40.click(Unknown Source)
+at stepDefinition.Candidate_test.save_the_form(Candidate_test.java:427)
+at ✽.User Saves the form(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:391)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:26:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:27:56 IST" duration-ms="108810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can mark Interview failed for a candidate in the second round of interview, then reject the candidate from Interview Failed stage and validate the candidate history"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:27:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:30:03 IST" duration-ms="127313" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can mark Interview passed for a candidate in the second round of interview, then reject the candidate from Interview passed stage and validate the candidate history"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role='listbox']/div/span"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76bbc0cbaea922e541cfedcd16f01805, findElement {using=xpath, value=//div[@role='listbox']/div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56001}, goog:processID: 24924, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56001/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76bbc0cbaea922e541cfedcd16f01805]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role='listbox']/div/span"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76bbc0cbaea922e541cfedcd16f01805, findElement {using=xpath, value=//div[@role='listbox']/div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56001}, goog:processID: 24924, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56001/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76bbc0cbaea922e541cfedcd16f01805
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy40.isDisplayed(Unknown Source)
+at stepDefinition.Candidate_test.candidateFilter_validation(Candidate_test.java:514)
+at ✽.Check if candidate name appears in Candidate filter(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:497)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:30:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:31:58 IST" duration-ms="115070" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can Offer job for candidate who passed second round of interview, then reject the candidate from Job Offered stage and validate the candidate history"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:31:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:34:16 IST" duration-ms="137750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can Decline Job Offer for candidate who was offered the Job, then reject the candidate from Offer Declined stage and validate the candidate history"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:34:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:36:04 IST" duration-ms="107387" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if user can Hire the candidate who was offered the Job and validate the candidate history"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:36:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:37:09 IST" duration-ms="65113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if the Application returns to Application Initiated state from Shortlisted state after modifying Job Vacancy field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:37:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:37:32 IST" duration-ms="23473" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if the Application returns to Application Initiated state from Interview Scheduled state after modifying Job Vacancy field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 19.090
+  (Session info: chrome=147.0.7727.103)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26d8c449678fec85d708d00f23494b65, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64837}, goog:processID: 19628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64837/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26d8c449678fec85d708d00f23494b65]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.090
+  (Session info: chrome=147.0.7727.103)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26d8c449678fec85d708d00f23494b65, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64837}, goog:processID: 19628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64837/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26d8c449678fec85d708d00f23494b65
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+at hooks.Hooks.setup(Hooks.java:54)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:37:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:37:54 IST" duration-ms="22169" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if the Application returns to Application Initiated state from Interview Passed state after modifying Job Vacancy field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 19.323
+  (Session info: chrome=147.0.7727.103)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e04e14306548704b2f90f4a179de5ab, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53969}, goog:processID: 10396, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53969/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e04e14306548704b2f90f4a179de5ab]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.323
+  (Session info: chrome=147.0.7727.103)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e04e14306548704b2f90f4a179de5ab, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53969}, goog:processID: 10396, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53969/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e04e14306548704b2f90f4a179de5ab
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+at hooks.Hooks.setup(Hooks.java:54)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:37:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:39:17 IST" duration-ms="82692" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if the Application returns to Application Initiated state from Interview Passed state after modifying Job Vacancy field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add new Candidate and validate its behaviour"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@role='row'])[2]/div/following-sibling::div/following-sibling::div/div[contains(text(), 'Toby Alex Flenderson')]"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b513386f8ef404625c37269a1a4da806, findElement {using=xpath, value=(//div[@role='row'])[2]/div/following-sibling::div/following-sibling::div/div[contains(text(), 'Toby Alex Flenderson')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51172}, goog:processID: 17824, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51172/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b513386f8ef404625c37269a1a4da806]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@role='row'])[2]/div/following-sibling::div/following-sibling::div/div[contains(text(), 'Toby Alex Flenderson')]"}
+  (Session info: chrome=147.0.7727.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b513386f8ef404625c37269a1a4da806, findElement {using=xpath, value=(//div[@role='row'])[2]/div/following-sibling::div/following-sibling::div/div[contains(text(), 'Toby Alex Flenderson')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.103, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\abhij\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51172}, goog:processID: 17824, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51172/devtoo..., se:cdpVersion: 147.0.7727.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b513386f8ef404625c37269a1a4da806
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at stepDefinition.Candidate_test.validate_candidate_status_in_table(Candidate_test.java:720)
+at ✽.Check if the status of the candidate is "Job Offered"(file:///C:/Users/abhij/OneDrive/Desktop/OrangeHRM_Test_Suite/./src/test/java/features/AddCandidates.feature:751)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:39:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:40:05 IST" duration-ms="48232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate adding and deleting of vacancy"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add a new Vacancy"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:40:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:40:32 IST" duration-ms="26574" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate whether user can create duplicate vacancy"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add a new Vacancy"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:40:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:41:08 IST" duration-ms="36452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate whether user can search newly added vacancy using vacancy name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add a new Vacancy"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:41:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:42:01 IST" duration-ms="52685" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate whether user can edit a Vacancy detail"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add a new Vacancy"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:42:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:42:31 IST" duration-ms="30522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate whether user gets Mandatory field error"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add a new Vacancy"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:42:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-26T15:43:14 IST" duration-ms="43030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate whether user can see newly added vacancy in Candidates section"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add a new Vacancy"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestNGTestRunner@4d5d943d]" started-at="2026-04-26T15:43:15 IST" name="tearDownClass" finished-at="2026-04-26T15:43:35 IST" duration-ms="20445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

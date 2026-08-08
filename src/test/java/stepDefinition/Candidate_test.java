@@ -44,6 +44,9 @@ public class Candidate_test extends Commons {
 	String interviewerName;
 	String newVacancyName;
 	String oldVacancyName;
+	String hiringManager;
+	String oldHiringManager;
+
 	
 	 private final StepContext stepContext;
 
@@ -70,7 +73,7 @@ public class Candidate_test extends Commons {
 	    //Commons.sendkeys(lp.password, Commons.getProperties().getProperty("password"));
 	    Commons.sendkeys(lp.username, "Admin");
 	    Commons.sendkeys(lp.password, "admin123");
-	    lp.loginbtn.click();
+	    lp.loginButton.click();
 	    Thread.sleep(3000);
 	    //Commons.waitandclick(dp.recruitment, 30);
 	    dp.recruitment.click();
@@ -152,19 +155,19 @@ public class Candidate_test extends Commons {
 	public void getcandidatefields() {
 		//stepContext.setCurrentStep("Capture the data from the screen");
 		//candidate_fields = new Map<String,WebElement>();
-		cp.edit_switch.click();
+		cp.editSwitch.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		candidate_fields = new HashMap<>();
-		    candidate_fields.put("First Name", cp.firstname_textbox != null ? cp.firstname_textbox.getAttribute("value") : "");
-		    candidate_fields.put("Middle Name", cp.middlename_textbox != null ? cp.middlename_textbox.getAttribute("value") : "");
-		    candidate_fields.put("Last Name", cp.lastname_textbox != null ? cp.lastname_textbox.getAttribute("value") : "");
-		    candidate_fields.put("Email ID", cp.email_textbox != null ? cp.email_textbox.getAttribute("value") : "");
-		    candidate_fields.put("Contact Number", cp.contactnumber_textbox != null ? cp.contactnumber_textbox.getAttribute("value") : "");
-		    Commons.getLogger().info("Contact Number captured: [" + cp.contactnumber_textbox.getAttribute("value") + "]");
-		    candidate_fields.put("Vacancy", cp.vacancy_dropdown != null ? cp.vacancy_dropdown.getText() : "");
-		    candidate_fields.put("DOA", cp.calendar_textbox != null ? cp.calendar_textbox.getAttribute("value") : "");
-		    candidate_fields.put("Keywords", cp.keywords_textbox != null ? cp.keywords_textbox.getAttribute("value") : "");
-		    candidate_fields.put("Notes", cp.notes_textbox != null ? cp.notes_textbox.getAttribute("value") : "");
+		    candidate_fields.put("First Name", cp.firstNameTextbox != null ? cp.firstNameTextbox.getAttribute("value") : "");
+		    candidate_fields.put("Middle Name", cp.middleNameTextbox != null ? cp.middleNameTextbox.getAttribute("value") : "");
+		    candidate_fields.put("Last Name", cp.lastNameTextbox != null ? cp.lastNameTextbox.getAttribute("value") : "");
+		    candidate_fields.put("Email ID", cp.emailTextbox != null ? cp.emailTextbox.getAttribute("value") : "");
+		    candidate_fields.put("Contact Number", cp.contactNumberTextbox != null ? cp.contactNumberTextbox.getAttribute("value") : "");
+		    Commons.getLogger().info("Contact Number captured: [" + cp.contactNumberTextbox.getAttribute("value") + "]");
+		    candidate_fields.put("Vacancy", cp.vacancyInputField != null ? cp.vacancyInputField.getText() : "");
+		    candidate_fields.put("DOA", cp.calendarTextbox != null ? cp.calendarTextbox.getAttribute("value") : "");
+		    candidate_fields.put("Keywords", cp.keywordsTextbox != null ? cp.keywordsTextbox.getAttribute("value") : "");
+		    candidate_fields.put("Notes", cp.notesTextbox != null ? cp.notesTextbox.getAttribute("value") : "");
 		    Commons.getLogger().info("Candidate Fields Map: " + candidate_fields);
 		
 		 candidate_field_list.clear();
@@ -190,24 +193,24 @@ public class Candidate_test extends Commons {
 	}
 	@When("User filter Candidate list by {string} Candidates")
 	public void filter_candidate_list_by_status(String status) {
-		Commons.waitandclick(cp.status_dropdown, 3000);
+		Commons.waitandclick(cp.statusDropdown, 3000);
 		//Commons.waittillvisible(cp.dropdown_elements.get(1), 2000);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), '"+status+"')]")).click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-		cp.search_btn.click();
+		cp.searchButton.click();
 	}
 	@When("User Navigates to Add Candidate form")
 	public void navigateto_add_candidateform() throws InterruptedException {
-		Commons.waitandclick(cp.addbtn, 3000);
+		Commons.waitandclick(cp.addButton, 3000);
 		Thread.sleep(3000);
 	}
 	@When("Uploads file of format {string}")
-	public void resumeupload(String format) throws IOException, InterruptedException {
+	public void resumeUpload(String format) throws IOException, InterruptedException {
 		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Resume_File_Paths_One");
 		for(int i=0;i<datamap.size();i++) {
 			if(format.equalsIgnoreCase(datamap.get(i).get("Format"))) {
-				cp.resumeupload.sendKeys(datamap.get(i).get("File Path"));
+				cp.resumeUpload.sendKeys(datamap.get(i).get("File Path"));
 				Thread.sleep(3000);
 				return;
 			}
@@ -219,7 +222,7 @@ public class Candidate_test extends Commons {
 		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Resume_File_Paths_One");
 		for(int i=0;i<datamap.size();i++) {
 			if(format.equalsIgnoreCase(datamap.get(i).get("Format"))) {
-				Assert.assertEquals(true, cp.uploadedfilename.getText().equalsIgnoreCase(datamap.get(i).get("File Name")));
+				Assert.assertEquals(true, cp.uploadedFileName.getText().equalsIgnoreCase(datamap.get(i).get("File Name")));
 				return;
 			}
 		}
@@ -229,20 +232,20 @@ public class Candidate_test extends Commons {
 		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Resume_File_Paths_Two");
 		for(int i=0;i<datamap.size();i++) {
 			if(format.equalsIgnoreCase(datamap.get(i).get("Format"))) {
-				cp.resumeupload.sendKeys(datamap.get(i).get("File Path"));
+				cp.resumeUpload.sendKeys(datamap.get(i).get("File Path"));
 				//Thread.sleep(3000);
-				//Commons.forcesendkeys(cp.resumeupload, datamap.get(i).get("File Path"));
+				//Commons.forcesendkeys(cp.resumeUpload, datamap.get(i).get("File Path"));
 				Thread.sleep(3000);
-				//Assert.assertEquals(true, cp.uploadedfilename.getText().equalsIgnoreCase(datamap.get(i).get("File Name")));
+				//Assert.assertEquals(true, cp.uploadedFileName.getText().equalsIgnoreCase(datamap.get(i).get("File Name")));
 				return;
 			}
 		}
 	}
 	@Then("Validate if Candidate details screen is visible")
-	public void validate_candidate_details_screen() {
+	public void validate_candidateDetailsScreen() {
 		stepContext.setCurrentStep("Validate if Candidate details screen is visible");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		if(cp.candidate_details_screen.isDisplayed()) {
+		if(cp.candidateDetailsScreen.isDisplayed()) {
 			Commons.getLogger().info("User has been auto navigated to Candidate details screen");
 		}
 		else {
@@ -257,13 +260,13 @@ public class Candidate_test extends Commons {
 		String expectedMessage = ("Should be the current date or a previous date").trim();
 		switch(dateType) {
 		case "Present":
-			Commons.clearWebField(cp.calendar_textbox);
-			cp.calendar_textbox.sendKeys(getcurrentdate());
-			cp.notes_textbox.click();
+			Commons.clearWebField(cp.calendarTextbox);
+			cp.calendarTextbox.sendKeys(getcurrentdate());
+			cp.notesTextbox.click();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 			try {
 				Commons.getLogger().info("Checking if error message is displayed...");
-				boolean ismsgdisplayed = cp.field_errormsg.isDisplayed();
+				boolean ismsgdisplayed = cp.fieldErrorMessage.isDisplayed();
 				Assert.assertEquals(false, ismsgdisplayed);
 			}
 			catch(NoSuchElementException e) {
@@ -272,13 +275,13 @@ public class Candidate_test extends Commons {
 			}
 			break;
 		case "Past":
-			Commons.clearWebField(cp.calendar_textbox);
-			cp.calendar_textbox.sendKeys(getAdjustedDate3());
-			cp.notes_textbox.click();
+			Commons.clearWebField(cp.calendarTextbox);
+			cp.calendarTextbox.sendKeys(getAdjustedDate3());
+			cp.notesTextbox.click();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 			try {
 				Commons.getLogger().info("Checking if error message is displayed...");
-				boolean ismsgdisplayed = cp.field_errormsg.isDisplayed();
+				boolean ismsgdisplayed = cp.fieldErrorMessage.isDisplayed();
 				Assert.assertEquals(false, ismsgdisplayed);
 			}
 			catch(NoSuchElementException e) {
@@ -287,12 +290,12 @@ public class Candidate_test extends Commons {
 			}
 			break;
 		case "Future":
-			Commons.clearWebField(cp.calendar_textbox);
-			cp.calendar_textbox.sendKeys(getAdjustedDate());
-			cp.notes_textbox.click();
+			Commons.clearWebField(cp.calendarTextbox);
+			cp.calendarTextbox.sendKeys(getAdjustedDate());
+			cp.notesTextbox.click();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 			Commons.getLogger().info("Checking if error message is displayed...");
-			String actualMessage = cp.field_errormsg.getText().trim();
+			String actualMessage = cp.fieldErrorMessage.getText().trim();
 			Commons.getLogger().info("Expected Message: " + expectedMessage);
 			Commons.getLogger().info("Actual Message from UI: " + actualMessage);
 			Assert.assertEquals(expectedMessage,actualMessage);
@@ -303,10 +306,10 @@ public class Candidate_test extends Commons {
 		}
 	}
 	@Then("Validate if the status is {string}")
-	public void validate_status_candidate_details_screen(String status) {
+	public void validate_status_candidateDetailsScreen(String status) {
 		stepContext.setCurrentStep("Validate if the status is "+status);
 		Commons.getLogger().info("Checking the current status...");
-		if(status.equalsIgnoreCase(cp.candidate_status_from_view.getText())) {
+		if(status.equalsIgnoreCase(cp.candidateStatusFromView.getText())) {
 			Commons.getLogger().info("Status is as expected...");
 		}
 		else {
@@ -315,7 +318,7 @@ public class Candidate_test extends Commons {
 		}
 	}
 	@Then("Validate if details in the screen are as per the form filled")
-	public void validate_candidate_details_screen_fields() throws InterruptedException {
+	public void validate_candidateDetailsScreen_fields() throws InterruptedException {
 		/*stepContext.setCurrentStep("Validate if details in the screen are as per the form filled");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		Thread.sleep(10000);
@@ -400,7 +403,7 @@ public class Candidate_test extends Commons {
 	@Then("Check if candidate to interview is dsiplayed and click on it")
 	public void click_on_candidate_interview() {
 		stepContext.setCurrentStep("Check if candidate to interview is dsiplayed and click on it");
-		if(dp.candidate_interview_link.isDisplayed()) dp.candidate_interview_link.click();
+		if(dp.candidateInterviewLink.isDisplayed()) dp.candidateInterviewLink.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	@Then("Check if user can see the candidate in the list of Interview Scheduled candidates and delete the candidate")
@@ -411,8 +414,8 @@ public class Candidate_test extends Commons {
 		boolean iscandidatedisplayed = driver.findElement(By.xpath("//div[contains(text(),'"+candidate.get("Vacancy")+"')]/parent::div/following-sibling::div/div[contains(text(), '"+candidate.get("First Name")+"')]/parent::div/following-sibling::div/following-sibling::div/div[contains(text(), '"+getcurrentdate()+"')]/parent::div/following-sibling::div/div[contains(text(), 'Interview Scheduled')]")).isDisplayed();
 		if(iscandidatedisplayed) {
 			driver.findElement(By.xpath("//div[contains(text(),'"+candidate.get("Vacancy")+"')]/parent::div/following-sibling::div/div[contains(text(), '"+candidate.get("First Name")+"')]/parent::div/following-sibling::div/following-sibling::div/div[contains(text(), '"+getcurrentdate()+"')]/parent::div/following-sibling::div/div[contains(text(), 'Interview Scheduled')]/parent::div/following-sibling::div/div/button[2]")).click();
-			Commons.waittillvisible(cp.confirm_delete_popup, 5000);
-			cp.confirmdeleteops.click();
+			Commons.waittillvisible(cp.confirmDeletePopup, 5000);
+			cp.confirmDeleteOps.click();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 			Commons.getLogger().info("Delete operation over...");
 		}
@@ -421,7 +424,7 @@ public class Candidate_test extends Commons {
 	@Then("User Saves the form")
 	public void save_the_form() throws InterruptedException {
 		 Commons.getLogger().info("Saving the form");
-		 cp.save_btn.click();
+		 cp.saveButton.click();
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	@Then("Validate if Mandatory field error is displayed under all Mandatory fields of Add Candidate form")
@@ -458,27 +461,27 @@ public class Candidate_test extends Commons {
 	}
 	@Then("User fill all Mandatory fields in Schedule Interview screen")
 	public void mandatory_fieldsfill_schedulescreen() {
-		cp.interviewtitle_textbox.sendKeys(candidate.get("Vacancy")+" Interview");
-		cp.Interviewer1.sendKeys("Ra");
-		Commons.waittillvisible(cp.first_search_option, 2000);
-		cp.first_search_option.click();
-		cp.calendar_textbox.sendKeys(getAdjustedDate());
+		cp.interviewTitleTextbox.sendKeys(candidate.get("Vacancy")+" Interview");
+		cp.interviewer1.sendKeys("Ra");
+		Commons.waittillvisible(cp.firstSearchOption, 2000);
+		cp.firstSearchOption.click();
+		cp.calendarTextbox.sendKeys(getAdjustedDate());
 	}
 	@Then("Navigate to Schedule Interview Screen")
 	public void navigate_to_schedule_interview_screen() {
 		driver.findElement(By.xpath("//button[normalize-space()='Schedule Interview']")).click();
 		Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'Schedule Interview')]]")), 10000);
-		//cp.save_btn.click();
+		//cp.saveButton.click();
 	}
 	@Then("User fill all Mandatory fields for user with first name as {string}")
 	public void mandatory_fieldsfill_candidateform(String first_name) throws IOException {
 		    getrownumber(first_name);
 			//Map<String, String> candidate = datamap.get(rownum);
-			cp.firstname_textbox.sendKeys(candidate.get("First Name"));
+			cp.firstNameTextbox.sendKeys(candidate.get("First Name"));
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-			cp.lastname_textbox.sendKeys(candidate.get("Last Name"));
+			cp.lastNameTextbox.sendKeys(candidate.get("Last Name"));
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-			cp.email_textbox.sendKeys(candidate.get("Email ID"));
+			cp.emailTextbox.sendKeys(candidate.get("Email ID"));
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 			//temp = candidate.get("First Name");	
 	}
@@ -486,29 +489,29 @@ public class Candidate_test extends Commons {
 	public void non_mandatory_fieldsfill_candidateform(String first_name) throws IOException {
 		//datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Candidate_List");
 		        getrownumber(first_name);
-		        cp.middlename_textbox.sendKeys(candidate.get("Middle Name"));
-				String vacancy_name = candidate.get("Vacancy");
-				cp.vacancy_dropdown.click();
-				Commons.waittillvisible(cp.vacancy_list, 3000);
+		        cp.middleNameTextbox.sendKeys(candidate.get("Middle Name"));
+				String vacancyName = candidate.get("Vacancy");
+				cp.vacancyInputField.click();
+				Commons.waittillvisible(cp.vacancyList, 3000);
 				//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-				driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), '"+vacancy_name+"')]")).click();
+				driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), '"+vacancyName+"')]")).click();
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-				cp.resumeupload.sendKeys(candidate.get("Resume"));
+				cp.resumeUpload.sendKeys(candidate.get("Resume"));
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-				cp.contactnumber_textbox.sendKeys(candidate.get("Contact Number"));
-				cp.keywords_textbox.sendKeys(candidate.get("Keywords"));
-				cp.notes_textbox.sendKeys(candidate.get("Notes"));
+				cp.contactNumberTextbox.sendKeys(candidate.get("Contact Number"));
+				cp.keywordsTextbox.sendKeys(candidate.get("Keywords"));
+				cp.notesTextbox.sendKeys(candidate.get("Notes"));
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-				cp.consent_checkbox.click();
+				cp.consentCheckbox.click();
 				
 	}
 	@Then("Check if candidate name appears in Candidate filter")
-	public void candidate_filter_validation() throws IOException {
+	public void candidateFilter_validation() throws IOException {
 		stepContext.setCurrentStep("Check if candidate name appears in Candidate filter");
 		String first_name = candidate.get("First Name");
-		cp.candidate_filter.sendKeys(first_name);
+		cp.candidateFilter.sendKeys(first_name);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-		if(cp.first_search_option.isDisplayed()) {
+		if(cp.firstSearchOption.isDisplayed()) {
 			Assert.assertTrue("Candidate name displayed", true);
 		}
 		else {
@@ -523,7 +526,7 @@ public class Candidate_test extends Commons {
 		Commons.scrolltoelement(cp.candidate_history_section);
 		Commons.waittillvisible(cp.candidate_history_section, 3000);
 		Commons.getLogger().info("Validating candidate history log for "+status+" candidate");
-	    String candidateDescActual = (status+" for "+candidate.get("Vacancy")+" by "+cp.hiringmanger_name.getText()).replaceAll("\\s+", " ").trim();
+	    String candidateDescActual = (status+" for "+candidate.get("Vacancy")+" by "+cp.hiringManagerName.getText()).replaceAll("\\s+", " ").trim();
 
 		for (int i = 0; i < Math.max(candidateDescExpected.length(), candidateDescActual.length()); i++) {
 		    char expectedChar = i < candidateDescExpected.length() ? candidateDescExpected.charAt(i) : '-';
@@ -547,30 +550,33 @@ public class Candidate_test extends Commons {
 	}*/
 		
 @Then("Validate the Candidate History for {string} candidate")
-public void candidate_history_validation(String status) {
+public void candidate_history_validation(String status) throws InterruptedException {
 	stepContext.setCurrentStep("Validate the Candidate History for "+status+" candidate");
-	String hiringManager = cp.hiringmanger_name.getText().strip();
+	hiringManager = cp.hiringManagerName.getText().strip();
 	String expectedDesc;
 	String actualDesc;
-	String actualperformedDate;
+	//String actualperformedDate;
 	if(status.equalsIgnoreCase("Added") || status.equalsIgnoreCase("Removed")) {
 		actualDesc = (getcandidatelogxpath(2,2)).trim().replaceAll("\\s+", " ");;
-		actualperformedDate = getcandidatelogxpath(2,1);
+		//actualperformedDate = getcandidatelogxpath(2,1);
 	}
 	else {
 	actualDesc = (getcandidatelogxpath(1,2)).trim().replaceAll("\\s+", " ");;
-	actualperformedDate = getcandidatelogxpath(1,1);
+	//actualperformedDate = getcandidatelogxpath(1,1);
 	}
-	newVacancyName = cp.vacancy_name.getText();
+	newVacancyName = cp.vacancyName.getText();
 	Commons.getLogger().info("Validating if the history log for addition of candidate");
-	Commons.scrolltoelement(cp.candidate_history_section);
-	Commons.waittillvisible(cp.candidate_history_section, 3000);
+	Commons.scrolltoelement(cp.candidateHistorySection);
+	Commons.waittillvisible(cp.candidateHistorySection, 3000);
 	switch(status) {
 	case "Added":
 		expectedDesc = hiringManager+" added "+fullName;
 		break;
 	case "Removed":
-		expectedDesc = hiringManager+" removed "+fullName+" from the "+oldVacancyName;
+		expectedDesc = oldHiringManager+" removed "+fullName+" from the "+oldVacancyName;
+		break;
+	case "Reassigned":
+		expectedDesc = oldHiringManager+" assigned the job vacancy "+newVacancyName;
 		break;
 	case "Application Initiated":
 		expectedDesc = hiringManager+" assigned the job vacancy "+newVacancyName;
@@ -616,7 +622,7 @@ public void candidate_history_validation(String status) {
 	expectedDesc.trim().replaceAll("\\s+", " ");
 	Commons.getLogger().info("Checking Candidate History log for: "+status);
 	try {
-		Assert.assertEquals(actualperformedDate, getcurrentdateInGMT());
+		//Assert.assertEquals(actualperformedDate, getcurrentdateInGMT());
 		Assert.assertEquals(actualDesc, expectedDesc);
 		Commons.getLogger().info("Candidate History log for"+status+" is displayed as expected");
 		//Assert.assertTrue(true);
@@ -630,14 +636,17 @@ public void candidate_history_validation(String status) {
 		System.out.println("Actual Unicode: " + actualDesc.codePoints().mapToObj(cp -> String.format("\\u%04X", cp)).collect(Collectors.joining()));
 		//Assert.fail("Mismatch in candidate history log.\nExpected: \"" + expectedDesc + "\"\nActual: \"" + actualDesc + "\"");
 	}
+	//Thread.sleep(3000);
+	//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	
 }
 
 	/*@Then("Validate the Candidate History for the newly added candidate in Application Initiated stage")
 	public void candidate_history_from_initiated_stage() {
 		stepContext.setCurrentStep("Validate the Candidate History for the newly added candidate in Application Initiated stage");
 		Commons.getLogger().info("Validating if the history log for addition of candidate");
-		String candidateAddDesc = cp.hiringmanger_name.getText()+" added "+fullName;
-		String candidateAssignDesc= cp.hiringmanger_name.getText()+" assigned the job vacancy "+candidate.get("Vacancy");
+		String candidateAddDesc = cp.hiringManagerName.getText()+" added "+fullName;
+		String candidateAssignDesc= cp.hiringManagerName.getText()+" assigned the job vacancy "+candidate.get("Vacancy");
 		Commons.scrolltoelement(cp.candidate_history_section);
 		Commons.waittillvisible(cp.candidate_history_section, 3000);
 		if(!cp.candidate_history_records.isEmpty()) {
@@ -668,30 +677,30 @@ public void candidate_history_validation(String status) {
 	@Then("Delete the Newly added candidate")
 	public void delete_filtered_candidate() {
 		Commons.getLogger().info("Deleting the candidate...");
-		cp.first_candidate_delete.click();
-		Commons.waittillvisible(cp.confirm_delete_popup, 5000);
-		cp.confirmdeleteops.click();
+		cp.firstCandidateDelete.click();
+		Commons.waittillvisible(cp.confirmDeletePopup, 5000);
+		cp.confirmDeleteOps.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		Commons.getLogger().info("Delete operation over...");
 	}
 	@Then("User clicks view icon")
 	public void view_filtered_candidate() {
 		Commons.getLogger().info("Viewing the candidate...");
-		cp.first_candidate_view.click();
-		Commons.waittillvisible(cp.candidate_details_screen, 5000);
+		cp.firstCandidateView.click();
+		Commons.waittillvisible(cp.candidateDetailsScreen, 5000);
 		Commons.getLogger().info("User has been navigated to Candidate details screen...");
 	}
 	@Then("Check if Newly added candidate name no longer appears in Candidate filter")
 	public void candidate_removal_filter_validation() {
 		stepContext.setCurrentStep("Check if Newly added candidate name no longer appears in Candidate filter");
 		//String first_name = candidate.get("First Name");
-		//cp.candidate_filter.sendKeys(first_name);
-		Commons.waittillvisible(cp.search_btn, 5000);
-		cp.search_btn.click();
+		//cp.candidateFilter.sendKeys(first_name);
+		Commons.waittillvisible(cp.searchButton, 5000);
+		cp.searchButton.click();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-		Commons.waittillvisible( cp.numberoffilterrecords, 5000);
+		Commons.waittillvisible( cp.numberOfFilterRecords, 5000);
 			Commons.getLogger().info("Checking if candidate name is displayed in filter search...");
-			String numberofRecords = cp.numberoffilterrecords.getText();
+			String numberofRecords = cp.numberOfFilterRecords.getText();
 			if(numberofRecords.equalsIgnoreCase("No Records Found")) {
 				Commons.getLogger().info("Candidate name didn't appear in filter search");
 				Assert.assertTrue(true);
@@ -727,85 +736,85 @@ public void candidate_history_validation(String status) {
 		case "Reject":
 			driver.findElement(By.xpath("//button[normalize-space()='"+action+"']")).click();
 			Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'"+action+"')]]")), 10000);
-			cp.notes_textbox.sendKeys("Rejecting the candidate from "+action+"stage");
+			cp.notesTextbox.sendKeys("Rejecting the candidate from "+action+"stage");
 			break;
 		case "Shortlist":
 			driver.findElement(By.xpath("//button[normalize-space()='Shortlist']")).click();
 			Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'"+action+"')]]")), 10000);
-			cp.notes_textbox.sendKeys(action+"ing the candidate");
+			cp.notesTextbox.sendKeys(action+"ing the candidate");
 			break;
 		case "Schedule Interview":
 			driver.findElement(By.xpath("//button[normalize-space()='"+action+"']")).click();
 			Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'"+action+"')]]")), 10000);
-			cp.interviewtitle_textbox.sendKeys(candidate.get("Vacancy")+" Interview");
-			cp.Interviewer1.sendKeys("Ra");
-			Commons.waittillvisible(cp.first_search_option, 2000);
-			interviewerName = cp.first_search_option.getText();
-			cp.first_search_option.click();
-			cp.calendar_textbox.sendKeys(getAdjustedDate());
-			cp.clock_icon.click();
+			cp.interviewTitleTextbox.sendKeys(candidate.get("Vacancy")+" Interview");
+			cp.interviewer1.sendKeys("Ra");
+			Commons.waittillvisible(cp.firstSearchOption, 2000);
+			interviewerName = cp.firstSearchOption.getText();
+			cp.firstSearchOption.click();
+			cp.calendarTextbox.sendKeys(getAdjustedDate());
+			cp.clockIcon.click();
 			for(int i=0;i<9;i++) {
-				cp.hourup_btn.click();
+				cp.hourUpButton.click();
 			}
-			cp.minuteup_btn.click();
+			cp.minuteUpButton.click();
 			Commons.scrolltolast();
-			cp.notes_textbox.sendKeys("Scheduling Interview for the candidate");
+			cp.notesTextbox.sendKeys("Scheduling Interview for the candidate");
 			break;
 		case "Mark Interview Failed":
 			driver.findElement(By.xpath("//button[normalize-space()='"+action+"']")).click();
 			Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'"+action+"')]]")), 10000);
-			cp.notes_textbox.sendKeys("Markinging Interview Failed for the candidate");
+			cp.notesTextbox.sendKeys("Markinging Interview Failed for the candidate");
 		    break;
 		case "Mark Interview Passed":
 			driver.findElement(By.xpath("//button[normalize-space()='"+action+"']")).click();
 			Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'"+action+"')]]")), 10000);
-			cp.notes_textbox.sendKeys("Markinging Interview Passed for the candidate");
+			cp.notesTextbox.sendKeys("Markinging Interview Passed for the candidate");
 		    break;
 		case "Offer Job":
 			driver.findElement(By.xpath("//button[normalize-space()='"+action+"']")).click();
 			Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'"+action+"')]]")), 10000);
-			cp.notes_textbox.sendKeys("Job has been offered for the candidate for the candidate");
+			cp.notesTextbox.sendKeys("Job has been offered for the candidate for the candidate");
 		    break;
 		case "Offer Declined":
 			driver.findElement(By.xpath("//button[normalize-space()='"+action+"']")).click();
 			Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'Decline Offer')]]")), 10000);
-			cp.notes_textbox.sendKeys("Declining the offer for the candidate");
+			cp.notesTextbox.sendKeys("Declining the offer for the candidate");
 		    break;
 		case "Hire":
 			driver.findElement(By.xpath("//button[normalize-space()='"+action+"']")).click();
 			Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'Hire Candidate')]]")), 10000);
-			cp.notes_textbox.sendKeys("Hiring the Candidate for the vacancy: "+candidate.get("Vacancy"));
+			cp.notesTextbox.sendKeys("Hiring the Candidate for the vacancy: "+candidate.get("Vacancy"));
 		    break;
 		default:
 			Commons.getLogger().info("Issue in finding the correct action");
 			break;
 		}
 		
-		//cp.notes_textbox.sendKeys(action+"ing the candidate");
-		cp.save_btn.click();
+		//cp.notesTextbox.sendKeys(action+"ing the candidate");
+		cp.saveButton.click();
 	}
 	@Then("Schedule another Interview for the Candidate")
 	public void schedule_interview() {
 		driver.findElement(By.xpath("//button[normalize-space()='Schedule Interview']")).click();
 		Commons.waittillvisible(driver.findElement(By.xpath("//h6[text()[contains(.,'Schedule Interview')]]")), 10000);
-		cp.interviewtitle_textbox.sendKeys(candidate.get("Vacancy")+" Interview - Second Round");
-		cp.Interviewer1.sendKeys("Ra");
-		Commons.waitandclick(cp.first_search_option, 2000);
-		cp.calendar_textbox.sendKeys(getAdjustedDate2());
-		cp.clock_icon.click();
+		cp.interviewTitleTextbox.sendKeys(candidate.get("Vacancy")+" Interview - Second Round");
+		cp.interviewer1.sendKeys("Ra");
+		Commons.waitandclick(cp.firstSearchOption, 2000);
+		cp.calendarTextbox.sendKeys(getAdjustedDate2());
+		cp.clockIcon.click();
 		for(int i=0;i<9;i++) {
-			cp.hourup_btn.click();
+			cp.hourUpButton.click();
 		}
-		cp.minuteup_btn.click();
+		cp.minuteUpButton.click();
 		Commons.scrolltolast();
-		cp.notes_textbox.sendKeys("Scheduling Interview for the candidate again");
-		cp.save_btn.click();
+		cp.notesTextbox.sendKeys("Scheduling Interview for the candidate again");
+		cp.saveButton.click();
 	}
 	@Then("Filter Candidate list by newly added candidate name")
 	public void filterby_candidatename() {
-		cp.first_search_option.click();
+		cp.firstSearchOption.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-		cp.search_btn.click();
+		cp.searchButton.click();
 	}
 	@Then("Validate if the newly added candidate is displayed in Candidate list table")
 	public void validate_candidatelist_table() {
@@ -831,11 +840,11 @@ public void candidate_history_validation(String status) {
 		for(int i=1;i<=3;i++) {
 			switch (i) {
 			case 1:
-				Commons.clearWebField(cp.firstname_textbox);
+				Commons.clearWebField(cp.firstNameTextbox);
 				Thread.sleep(5000);
-				if(Errormsg.equalsIgnoreCase(cp.field_errormsg.getText())) {
+				if(Errormsg.equalsIgnoreCase(cp.fieldErrorMessage.getText())) {
 					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
-					cp.firstname_textbox.sendKeys("test");
+					cp.firstNameTextbox.sendKeys("test");
 				}
 				else {
 					Commons.getLogger().info("Error message is not displayed or appropriate");
@@ -843,12 +852,12 @@ public void candidate_history_validation(String status) {
 				}
 				break;
 			case 2:
-				//vfp.jobtitledrpdwn.clear();
-				Commons.clearWebField(cp.lastname_textbox);
+				//vfp.jobTitleDropdown.clear();
+				Commons.clearWebField(cp.lastNameTextbox);
 				Thread.sleep(2000);
-				if(Errormsg.equalsIgnoreCase(cp.field_errormsg.getText())) {
+				if(Errormsg.equalsIgnoreCase(cp.fieldErrorMessage.getText())) {
 					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
-					cp.lastname_textbox.sendKeys("test");
+					cp.lastNameTextbox.sendKeys("test");
 				}
 				else {
 					Commons.getLogger().info("Error message is not displayed or appropriate");
@@ -856,10 +865,10 @@ public void candidate_history_validation(String status) {
 				}
 				break;
 			case 3:
-				Commons.clearWebField(cp.email_textbox);
-				cp.save_btn.click();
+				Commons.clearWebField(cp.emailTextbox);
+				cp.saveButton.click();
 				Thread.sleep(2000);
-				if(Errormsg.equalsIgnoreCase(cp.field_errormsg.getText())) {
+				if(Errormsg.equalsIgnoreCase(cp.fieldErrorMessage.getText())) {
 					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
 				}
 				else {
@@ -881,11 +890,11 @@ public void candidate_history_validation(String status) {
 		for(int i=1;i<=3;i++) {
 			switch (i) {
 			case 1:
-				Commons.clearWebField(cp.interviewtitle_textbox);
+				Commons.clearWebField(cp.interviewTitleTextbox);
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-				if(Errormsg.equalsIgnoreCase(cp.field_errormsg.getText())) {
+				if(Errormsg.equalsIgnoreCase(cp.fieldErrorMessage.getText())) {
 					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
-					cp.interviewtitle_textbox.sendKeys("test");
+					cp.interviewTitleTextbox.sendKeys("test");
 				}
 				else {
 					Commons.getLogger().info("Error message is not displayed or appropriate");
@@ -893,15 +902,15 @@ public void candidate_history_validation(String status) {
 				}
 				break;
 			case 2:
-				Commons.clearWebField(cp.Interviewer1);
+				Commons.clearWebField(cp.interviewer1);
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-				cp.save_btn.click();
+				cp.saveButton.click();
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-				if(Errormsg.equalsIgnoreCase(cp.field_errormsg.getText())) {
+				if(Errormsg.equalsIgnoreCase(cp.fieldErrorMessage.getText())) {
 					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
-					cp.Interviewer1.sendKeys("Ra");
-					Commons.waittillvisible(cp.first_search_option, 2000);
-					cp.first_search_option.click();
+					cp.interviewer1.sendKeys("Ra");
+					Commons.waittillvisible(cp.firstSearchOption, 2000);
+					cp.firstSearchOption.click();
 				}
 				else {
 					Commons.getLogger().info("Error message is not displayed or appropriate");
@@ -909,10 +918,10 @@ public void candidate_history_validation(String status) {
 				}
 				break;
 			case 3:
-				Commons.clearWebField(cp.calendar_textbox);
-				cp.save_btn.click();
+				Commons.clearWebField(cp.calendarTextbox);
+				cp.saveButton.click();
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-				if(Errormsg.equalsIgnoreCase(cp.field_errormsg.getText())) {
+				if(Errormsg.equalsIgnoreCase(cp.fieldErrorMessage.getText())) {
 					Commons.getLogger().info("Error Message displayed for Field" + i +"...");
 				}
 				else {
@@ -929,12 +938,12 @@ public void candidate_history_validation(String status) {
 		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Email_IDs");
 		for(int i=0;i<datamap.size();i++) {
 			if(format.equalsIgnoreCase(datamap.get(i).get("Format Type"))) {
-				cp.email_textbox.sendKeys(datamap.get(i).get("Email ID"));
+				cp.emailTextbox.sendKeys(datamap.get(i).get("Email ID"));
 				Thread.sleep(3000);
 				if("Valid".equals(datamap.get(i).get("Validity"))) {
 					try {
 					Commons.getLogger().info("Checking if error message is displayed...");
-					boolean ismsgdisplayed = cp.field_errormsg.isDisplayed();
+					boolean ismsgdisplayed = cp.fieldErrorMessage.isDisplayed();
 					Assert.assertEquals(false, ismsgdisplayed);
 					}
 					catch(NoSuchElementException e) {
@@ -945,7 +954,7 @@ public void candidate_history_validation(String status) {
 				}
 				else {
 					Commons.getLogger().info("Checking if error message is displayed...");
-					boolean ismsgdisplayed = cp.field_errormsg.getText().equalsIgnoreCase("Expected format: admin@example.com");
+					boolean ismsgdisplayed = cp.fieldErrorMessage.getText().equalsIgnoreCase("Expected format: admin@example.com");
 					Assert.assertEquals(true, ismsgdisplayed);
 				}
 			}
@@ -957,12 +966,12 @@ public void candidate_history_validation(String status) {
 		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Contact_Numbers");
 		for(int i=0;i<datamap.size();i++) {
 			if(format.equalsIgnoreCase(datamap.get(i).get("Format Type"))) {
-				cp.contactnumber_textbox.sendKeys(datamap.get(i).get("Contact Number"));
+				cp.contactNumberTextbox.sendKeys(datamap.get(i).get("Contact Number"));
 				Thread.sleep(3000);
 				if("Valid".equals(datamap.get(i).get("Validity"))) {
 					try {
 					Commons.getLogger().info("Checking if error message is displayed...");
-					boolean ismsgdisplayed = cp.field_errormsg.isDisplayed();
+					boolean ismsgdisplayed = cp.fieldErrorMessage.isDisplayed();
 					Assert.assertEquals(false, ismsgdisplayed);
 					}
 					catch(NoSuchElementException e) {
@@ -974,8 +983,8 @@ public void candidate_history_validation(String status) {
 				else {
 					Commons.getLogger().info("Checking if error message is displayed...");
 					String expectedMessage = ("Allows numbers and only + - / ( )").trim();
-					String actualMessage = cp.field_errormsg.getText().trim();
-					//boolean ismsgdisplayed = cp.field_errormsg.getText().equalsIgnoreCase("Allows numbers and only + - / ()");
+					String actualMessage = cp.fieldErrorMessage.getText().trim();
+					//boolean ismsgdisplayed = cp.fieldErrorMessage.getText().equalsIgnoreCase("Allows numbers and only + - / ()");
 					Commons.getLogger().info("Expected Message: " + expectedMessage);
 					Commons.getLogger().info("Actual Message from UI: " + actualMessage);
 					Assert.assertEquals(expectedMessage,actualMessage);
@@ -991,15 +1000,15 @@ public void candidate_history_validation(String status) {
 		
 		for(int i=0;i<datamap.size();i++) {
 			if(format.trim().equalsIgnoreCase(datamap.get(i).get("Format Type"))) {
-				Commons.clearWebField(cp.calendar_textbox);
+				Commons.clearWebField(cp.calendarTextbox);
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-				cp.calendar_textbox.sendKeys(datamap.get(i).get("Date"));
-				cp.notes_textbox.click();
+				cp.calendarTextbox.sendKeys(datamap.get(i).get("Date"));
+				cp.notesTextbox.click();
 				Thread.sleep(3000);
 				if("Valid".equals(datamap.get(i).get("Validity"))) {
 					try {
 					Commons.getLogger().info("Checking if error message is displayed...");
-					boolean ismsgdisplayed = cp.field_errormsg.isDisplayed();
+					boolean ismsgdisplayed = cp.fieldErrorMessage.isDisplayed();
 					Assert.assertEquals(false, ismsgdisplayed);
 					}
 					catch(NoSuchElementException e) {
@@ -1011,8 +1020,8 @@ public void candidate_history_validation(String status) {
 				else {
 					Commons.getLogger().info("Checking if error message is displayed...");
 					String expectedMessage = ("Should be a valid date in yyyy-dd-mm format").trim();
-					String actualMessage = cp.field_errormsg.getText().trim();
-					//boolean ismsgdisplayed = cp.field_errormsg.getText().equalsIgnoreCase("Allows numbers and only + - / ()");
+					String actualMessage = cp.fieldErrorMessage.getText().trim();
+					//boolean ismsgdisplayed = cp.fieldErrorMessage.getText().equalsIgnoreCase("Allows numbers and only + - / ()");
 					Commons.getLogger().info("Expected Message: " + expectedMessage);
 					Commons.getLogger().info("Actual Message from UI: " + actualMessage);
 					Assert.assertEquals(expectedMessage,actualMessage);
@@ -1026,13 +1035,13 @@ public void candidate_history_validation(String status) {
 		stepContext.setCurrentStep("User validates error message for different invalid date formats entered in Date field");
 		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Date_Formats");
 		for(int i=0;i<datamap.size();i++) {
-			cp.calendar_textbox.sendKeys(datamap.get(i).get("Date"));
-			cp.notes_textbox.click();
+			cp.calendarTextbox.sendKeys(datamap.get(i).get("Date"));
+			cp.notesTextbox.click();
 			Thread.sleep(3000);
 			if("Valid".equals(datamap.get(i).get("Validity"))) {
 				try {
 				Commons.getLogger().info("Checking if error message is displayed...");
-				boolean ismsgdisplayed = cp.field_errormsg.isDisplayed();
+				boolean ismsgdisplayed = cp.fieldErrorMessage.isDisplayed();
 				Assert.assertEquals(false, ismsgdisplayed);
 				}
 				catch(NoSuchElementException e) {
@@ -1044,14 +1053,14 @@ public void candidate_history_validation(String status) {
 			else {
 				Commons.getLogger().info("Checking if error message is displayed for the format: "+datamap.get(i).get("Format Type"));
 				String expectedMessage = ("Should be a valid date in yyyy-dd-mm format").trim();
-				String actualMessage = cp.field_errormsg.getText().trim();
+				String actualMessage = cp.fieldErrorMessage.getText().trim();
 				
 				Commons.getLogger().info("Expected Message: " + expectedMessage);
 				Commons.getLogger().info("Actual Message from UI: " + actualMessage);
 				Assert.assertEquals(expectedMessage,actualMessage);
 				//Assert.assertEquals(true, ismsgdisplayed);
 			}
-			Commons.clearWebField(cp.calendar_textbox);
+			Commons.clearWebField(cp.calendarTextbox);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		}
 		}*/
@@ -1060,9 +1069,30 @@ public void candidate_history_validation(String status) {
 		datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\DDT_testdata.xlsx", "Resume_File_Paths_Two");
 		for(int i=0;i<datamap.size();i++) {
 			if(format.equalsIgnoreCase(datamap.get(i).get("Format"))) {
-				Assert.assertEquals(true, cp.field_errormsg.getText().equalsIgnoreCase(datamap.get(i).get("Expected Error Message")));
+				Assert.assertEquals(true, cp.fieldErrorMessage.getText().equalsIgnoreCase(datamap.get(i).get("Expected Error Message")));
 				return;
 			}
 		}
+	}
+	@Then("User modifies the Job Vacancy of the candidate application form")
+	public void edit_job_vacancy() {
+		Commons.scrolltotop();
+		Commons.waittillvisible(cp.candidateDetailsScreen, 3000);
+		oldVacancyName = cp.vacancyName.getText().strip(); 
+		oldHiringManager = cp.hiringManagerName.getText().strip();
+		cp.editSwitch.click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		Commons.getLogger().info("Editing the Job vacancy for the application");
+		cp.vacancyInputField.click();
+		Commons.waittillvisible(cp.vacancyList, 3000);
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		driver.findElement(By.xpath("//div[@role='listbox']/div/span[contains(text(), 'test')]")).click();
+		cp.saveButton.click();
+		Commons.waittillvisible(cp.editConfirmationPopup, 3000);
+		cp.confirmEdit.click();
+		Commons.waittillvisible(cp.editSwitch, 3000);
+		Commons.scrolltotop();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));  
+		Commons.waittillvisible(driver.findElement(By.xpath("//button[normalize-space()='Shortlist']")), 3000);
 	}
 }

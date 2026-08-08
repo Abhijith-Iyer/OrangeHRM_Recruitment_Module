@@ -1,0 +1,11 @@
+pageObjects\VacancyformPage.class
+utilities\StepCaptureListener.class
+stepDefinition\Commons.class
+pageObjects\BasePage.class
+utilities\DataReader.class
+testRunner\FailedTestRunner.class
+testRunner\TestRunner.class
+testRunner\TestNGTestRunner.class
+utilities\StepContext.class
+hooks\Hooks.class
+pageObjects\VacanciesPage.class
